@@ -10,8 +10,44 @@ html {
     scroll-behavior: smooth;
 }
 
+h1 {
+    color: #273AAA;
+    font-family: Archivo;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 900;
+}
 
+h2 {
+    color: #273AAA;
+    font-family: Archivo;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
 
+p {
+    color: #212529;
+    font-family: Lato;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #273AAA;
+    text-align: center;
+    font-family: Lato;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+a:hover {
+    font-weight: 900;
+}
 
 
 
