@@ -221,4 +221,17 @@ ul {
 
 @media (min-width: 1024px) {
     
+    #indputFelt {
+        font-size: 1rem;
+    }
+
+    #soegeResultater {
+        width: 10.5rem;
+    }
+
+    #soegeResultater li a {
+        font-size: 1rem;
+    }
+
+
 }
