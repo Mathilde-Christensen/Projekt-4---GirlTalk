@@ -220,7 +220,7 @@ ul {
     text-align: center;
     padding-right: 60px;
     padding-left:60px;
-    font-size: 0.9em;
+    font-size: 1em;
     gap: 20px;
 }
 
@@ -260,7 +260,7 @@ ul {
 }
 
 .holdet__gallery__name{
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: center; /* Centrer teksten */
     font-weight:bold;
     color: #273AAA !important;
@@ -276,7 +276,7 @@ ul {
     white-space: nowrap; /* Sørger for at teksten ikke brydes */
     display: block; /* Sikrer, at teksten opfører sig som en blok */
     text-align: center; /* Centrer teksten */
-    font-size: 0.7em !important; /* Sørger for at den er mindre end name */
+    font-size: 0.8em !important; /* Sørger for at den er mindre end name */
 }
 
 #prevButton, #nextButton {
