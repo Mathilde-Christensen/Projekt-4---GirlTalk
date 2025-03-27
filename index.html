@@ -11,6 +11,22 @@
     <script src="kirja.js" defer></script>
 </head>
 <body>
+
+    <div class="header">
+
+
+        <!-- Mathilde -->  
+        <div id="soegefelt">
+            <button id="soegefeltButton" onclick="soeFeltIndput()">Søg</button>
+    
+            <div id="soegBoks" style="display: none;">
+                <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;">x</button>
+                <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
+            </div>
+    
+            <ul id="soegeResultater"></ul> <!-- tom ul liste som bliver fyldt i js med søgeresultater -->
+        </div>    
+    </div>
     
     <div class="hero">
         <img class="hero_billede_disktop" src="billeder/hero_billede_disktop.png" alt="en pige som kigger ind i kamraet og smiler">
