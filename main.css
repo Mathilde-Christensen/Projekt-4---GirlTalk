@@ -105,6 +105,12 @@ ul {
 
 /*Kirja*/
 
+.frivilligehus__img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .holdet{
     display: flex;
     flex-direction: column;
