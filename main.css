@@ -133,7 +133,7 @@ ul {
     gap: 20px;
 }
 
-.gallery-container {
+.holdet__container {
     width: 100%;
     overflow: hidden; /* Sørger for, at billederne ikke ryger ud af containeren */
     position: relative;
@@ -172,7 +172,7 @@ ul {
     font-size: 0.9em;
     text-align: center; /* Centrer teksten */
     font-weight:bold;
-    color: #273AAA;
+    color: #273AAA !important;
     margin-top: 2px;
     white-space: nowrap;
     max-width: fit-content; /* Sørger for, at det kun fylder det nødvendige */
@@ -185,7 +185,7 @@ ul {
     white-space: nowrap; /* Sørger for at teksten ikke brydes */
     display: block; /* Sikrer, at teksten opfører sig som en blok */
     text-align: center; /* Centrer teksten */
-    font-size: 0.7em !important; /* Sørger for at den er mindre end .gallery-name */
+    font-size: 0.7em !important; /* Sørger for at den er mindre end name */
 }
 
 #prevButton, #nextButton {
