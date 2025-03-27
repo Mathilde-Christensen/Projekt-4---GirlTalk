@@ -103,6 +103,121 @@ ul {
     text-align: left;
 }
 
+/*Kirja*/
+
+.holdet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    width: 92%;
+    height: 500px;
+    margin: 50px auto;
+    background-color: #F7C7D9;
+}
+
+.holdet h2{
+    color: #273AAA;
+    text-align: center;
+    font-size: 3em;
+}
+
+.holdet p{
+    color: #000000;
+    text-align: center;
+    padding-right: 60px;
+    padding-left:60px;
+    font-size: 0.9em;
+    gap: 20px;
+}
+
+.gallery-container {
+    width: 100%;
+    overflow: hidden; /* Sørger for, at billederne ikke ryger ud af containeren */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.holdet__gallery {
+    display: flex;
+    width: 100%;
+    transition: transform 0.1s ease-out;
+}
+
+.holdet__gallery__li {
+    width: calc(100% / 7); /* Sikrer, at præcis 7 billeder vises */
+    flex: 0 0 auto;
+    text-align:center;
+}
+
+.holdet__gallery__li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px; /* Dette gør billederne runde*/
+    object-fit: cover; /* Gør at billederne passer fint i cirklerne */
+    margin-top: 30px;
+    margin-bottom: 5px;
+    border: 4px solid #273AAA;
+}
+
+.holdet__gallery__li img:hover{
+    border: 4px solid transparent;
+}
+
+.holdet__gallery__name{
+    font-size: 0.9em !important;
+    text-align: center; /* Centrer teksten */
+    font-weight:bold;
+    color: #273AAA;
+    margin-top: 2px;
+    white-space: nowrap;
+    max-width: fit-content; /* Sørger for, at det kun fylder det nødvendige */
+    display: inline-block;
+
+}
+
+.holdet__gallery__titel {
+    color: #000000;
+    white-space: nowrap; /* Sørger for at teksten ikke brydes */
+    display: block; /* Sikrer, at teksten opfører sig som en blok */
+    text-align: center; /* Centrer teksten */
+    font-size: 0.7em !important; /* Sørger for at den er mindre end .gallery-name */
+}
+
+#prevButton, #nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    background-color: #273AAA;
+    color: #F7C7D9;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%; 
+}
+
+#prevButton{
+    left: 0px;
+    top:70%;
+    z-index: 10; /* Sørger for, at knappen ligger øverst */
+    pointer-events: auto; /* Sørger for, at den kan klikkes */
+
+}
+
+#nextButton{
+    right: 0px;
+    top:70%;
+}
+
+#nextButton:hover, #prevButton:hover{
+    background-color: #1d46da;
+}
+ 
 
 @media (min-width: 1024px) {
     

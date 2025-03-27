@@ -5,7 +5,6 @@ const nextButton = document.getElementById("nextButton");
 
 let index = 0;
 const imagesPerSlide = 5; // Antal synlige billeder per slide
-const scrollStep = 3; // Antal gange der kan scrolles før den vender tilbage til start
 const totalImages = images.length; // Tæller hvor mange billeder, der er i galleriet
 
 const imageWidth = images[0].getBoundingClientRect().width; //Henter bredden af et billede dynamisk og sikrer nøjagtig bredde af billede
