@@ -161,11 +161,40 @@ ul {
 
 /*Kirja*/
 
-.frivilligehus__img{
+.frivilligehus__container{
+    position: relative;
+    height: 100vh;
     display:flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
 }
+
+.frivilligehus__img{
+    max-height: 90vh;
+    width:auto;
+    opacity: 70%;
+}
+
+.etage-link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: all 0.2s ease;
+}
+
+.etage-link:hover {
+    background-color: #F7C7D9;
+}
+
+.etage-1 { top: 20%; }  
+.etage-2 { top: 40%; }   
+.etage-3 { top: 60%; }  
+.etage-4 { top: 80%; }   
 
 .holdet{
     display: flex;
