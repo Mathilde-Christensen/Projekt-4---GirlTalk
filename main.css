@@ -49,8 +49,59 @@ a:hover {
     font-weight: 900;
 }
 
+ul {
+    list-style-type: none;
+}
 
+/* Mathilde js style */
 
+#soegefeltButton {
+    border: none;
+    background-color: #FFFEF9;
+}
+
+.soegefeltBillede {
+    width: 80%;
+}
+
+#lukKnap {
+    border: none;
+    background-color: #FFFEF9;
+}
+
+.lukKnapBillede {
+    width: 30%;
+}
+
+#indputFelt {
+    border-radius: 1.75rem;
+    border: 2px solid #F7C7D9;
+    background: #FFFEF9;
+    color: #273AAA;
+    font-family: Lato;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+#indputFelt:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#soegeResultater {
+    width: 8.5rem;
+    border-radius: 0rem 0rem 0.6875rem 0.6875rem;
+    background: #FDEFF4;
+    margin: 0rem 1rem;
+}
+
+#soegeResultater li a {
+    display: block;                  
+    padding: 0.5rem;
+    text-align: left;
+}
 
 
 @media (min-width: 1024px) {
