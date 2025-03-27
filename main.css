@@ -133,7 +133,7 @@ ul {
     gap: 20px;
 }
 
-.gallery-container {
+.holdet__container {
     width: 100%;
     overflow: hidden; /* Sørger for, at billederne ikke ryger ud af containeren */
     position: relative;
