@@ -156,7 +156,7 @@ ul {
     font-family: Lato;
     font-size: 0.8125rem;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 400;
 }
 
 /*Kirja*/
@@ -306,6 +306,18 @@ ul {
 
 @media (min-width: 1024px) {
     
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
     #indputFelt {
         font-size: 1rem;
     }
@@ -319,6 +331,11 @@ ul {
     }
 
     /*her*/
+
+    .hero {
+        height: 45rem;
+    }
+
     .hero_billede_disktop {
         width: 100%;
         opacity: 0.6;
@@ -330,6 +347,22 @@ ul {
 
     .hero_billede_mobil {
         display: none;
+    }
+
+    .hero_ansøg_button {
+        font-size: 1.5rem;
+        width: 10.375rem;
+        height: 4rem;
+        padding: 1rem;
+    }
+
+    .hero__text {
+        margin: 0px 66px;
+        height: 45rem;
+    }
+
+    .hero__p {
+        padding: 0rem 0rem 2rem 0rem;
     }
 
 }
