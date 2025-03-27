@@ -58,17 +58,13 @@ let soegResultater = [
         keywords: ["frivillig", "rådgivning", "ungrådgiver", "forældrerådgiver", "gruppeleder", "ansøg" ]
       },
 
-      {
-        displayName: "Bliv frivillig",
-        link: "index.html",
+       {
+        displayName: "GirlTalks frivillig univers",
+        link: "#girltalk__frivilligeunivers__h2",
         keywords: ["frivillig", "rådgivning", "ungrådgiver", "forældrerådgiver", "gruppeleder", "ansøg" ]
       },
 
-       {
-        displayName: "Frivillig universGirlTalks frivillig univers",
-        link: "#",
-        keywords: ["frivillig", "rådgivning", "ungrådgiver", "forældrerådgiver", "gruppeleder", "ansøg" ]
-      },
+      
 ];
 
 

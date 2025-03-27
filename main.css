@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+    /* at padding og border bliver integreret i elementets samlede bredde og højde på hele siden, nemmer at arbejde med */
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
