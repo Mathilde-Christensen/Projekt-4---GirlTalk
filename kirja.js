@@ -4,7 +4,7 @@ const prevButton = document.getElementById("prevButton");
 const nextButton = document.getElementById("nextButton");
 
 let index = 0;
-const imagesPerSlide = 5; // Antal synlige billeder per slide
+const imagesPerSlide = 7; // Antal synlige billeder per slide
 const scrollStep = 4; // Antal gange der kan scrolles før den vender tilbage til start
 const totalImages = images.length; // Tæller hvor mange billeder, der er i galleriet
 
