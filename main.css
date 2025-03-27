@@ -169,7 +169,7 @@ ul {
 }
 
 .holdet__gallery__name{
-    font-size: 0.9em !important;
+    font-size: 0.9em;
     text-align: center; /* Centrer teksten */
     font-weight:bold;
     color: #273AAA;
