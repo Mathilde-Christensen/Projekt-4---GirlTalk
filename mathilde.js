@@ -22,53 +22,53 @@ function soeFeltIndput() { //funktionen kører, når knappen "Søg"bliver trykke
 }
 
 let soegResultater = [ 
-    // 🌍 Kontinenter og rejsetyper
-    { displayName: "Afrika", link: "afrika.html" },
-    { displayName: "Europa", link: "europa.html" },
-    { displayName: "Nordamerika", link: "nordamerika.html" },
-    { displayName: "Sydamerika", link: "sydamerika.html" },
-    { displayName: "Australien", link: "australien.html" },
-    { displayName: "Asien", link: "asien.html" },
-    { displayName: "Oceanien", link: "oceanien.html" },
-    { displayName: "Solorejser", link: "soloRejser.html" },
-    { displayName: "Grupperejser", link: "gruppeRejse.html" },
+    {
+        displayName: "Ungrådgiver",
+        link: "ungrådgiver.html",
+        keywords: ["frivillig", "rådgivning", "unge"]
+      },
 
-    // 🏙️ Populære storbyer
-    { displayName: "New York", link: "newyork.html" },
-    { displayName: "London", link: "london.html" },
-    { displayName: "Paris", link: "paris.html" },
-    { displayName: "Tokyo", link: "tokyo.html" },
-    { displayName: "Bangkok", link: "bangkok.html" },
-    { displayName: "Dubai", link: "dubai.html" },
-    { displayName: "Sydney", link: "sydney.html" },
-    { displayName: "Berlin", link: "berlin.html" },
-    { displayName: "Los Angeles", link: "losangeles.html" },
+      {
+        displayName: "Gruppeleder",
+        link: "gruppeleder.html",
+        keywords: ["frivillig", "rådgivning", "unge", ]
+      },
 
-    // 🏝️ Eksotiske destinationer
-    { displayName: "Bali", link: "bali.html" },
-    { displayName: "Maldiverne", link: "maldiverne.html" },
-    { displayName: "Hawaii", link: "hawaii.html" },
-    { displayName: "Fiji", link: "fiji.html" },
-    { displayName: "Seychellerne", link: "seychellerne.html" },
+      {
+        displayName: "Forældrerådgiver",
+        link: "forældrerådgiver.html",
+        keywords: ["frivillig", "rådgivning", "forældre", "pårørede" ]
+      },
 
-    // 🏔️ Naturoplevelser
-    { displayName: "Grand Canyon", link: "grandcanyon.html" },
-    { displayName: "Machu Picchu", link: "machupicchu.html" },
-    { displayName: "Safari i Kenya", link: "safari-kenya.html" },
-    { displayName: "Amazonas", link: "amazonas.html" },
-    { displayName: "Antarktis", link: "antarktis.html" },
+      {
+        displayName: "Hold fordrag",
+        link: "index.html",
+        keywords: ["frivillig", "rådgivning", "fordrag" ]
+      },
 
-    // 🎿 Skisportssteder
-    { displayName: "Alperne", link: "alperne.html" },
-    { displayName: "Aspen", link: "aspen.html" },
-    { displayName: "Whistler", link: "whistler.html" },
+      {
+        displayName: "Mød Marie som er frivillig",
+        link: "holdet.html",
+        keywords: ["frivillig", "rådgivning", "ungrådgiver", "forældrerådgiver", "gruppeleder"]
+      },
 
-    // 🏕️ Backpacking & eventyr
-    { displayName: "Backpacking i Sydøstasien", link: "backpacking-sydostasien.html" },
-    { displayName: "Interrail i Europa", link: "interrail-europa.html" },
-    { displayName: "Roadtrip i USA", link: "roadtrip-usa.html" },
-    { displayName: "Caminoen", link: "caminoen.html" },
-    { displayName: "Mount Everest Basecamp", link: "everestbasecamp.html" }
+      {
+        displayName: "Bliv frivillig",
+        link: "index.html",
+        keywords: ["frivillig", "rådgivning", "ungrådgiver", "forældrerådgiver", "gruppeleder", "ansøg" ]
+      },
+
+      {
+        displayName: "Bliv frivillig",
+        link: "index.html",
+        keywords: ["frivillig", "rådgivning", "ungrådgiver", "forældrerådgiver", "gruppeleder", "ansøg" ]
+      },
+
+       {
+        displayName: "Frivillig universGirlTalks frivillig univers",
+        link: "#",
+        keywords: ["frivillig", "rådgivning", "ungrådgiver", "forældrerådgiver", "gruppeleder", "ansøg" ]
+      },
 ];
 
 
