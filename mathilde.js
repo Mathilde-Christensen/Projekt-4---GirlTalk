@@ -25,47 +25,104 @@ let soegResultater = [
     {
         displayName: "Ungrådgiver",
         link: "ungrådgiver.html",
-        keywords: ["frivillig", "rådgivning", "unge"]
       },
 
       {
         displayName: "Gruppeleder",
         link: "gruppeleder.html",
-        keywords: ["frivillig", "rådgivning", "unge", ]
       },
 
       {
         displayName: "Forældrerådgiver",
         link: "forældrerådgiver.html",
-        keywords: ["frivillig", "rådgivning", "forældre", "pårørede" ]
       },
 
       {
         displayName: "Hold fordrag",
         link: "index.html",
-        keywords: ["frivillig", "rådgivning", "fordrag" ]
       },
 
       {
         displayName: "Mød Marie som er frivillig",
         link: "holdet.html",
-        keywords: ["frivillig", "rådgivning", "ungrådgiver", "forældrerådgiver", "gruppeleder"]
       },
 
       {
         displayName: "Bliv frivillig",
         link: "index.html",
-        keywords: ["frivillig", "rådgivning", "ungrådgiver", "forældrerådgiver", "gruppeleder", "ansøg" ]
       },
 
        {
         displayName: "GirlTalks frivillig univers",
         link: "#girltalk__frivilligeunivers__h2",
-        keywords: ["frivillig", "rådgivning", "ungrådgiver", "forældrerådgiver", "gruppeleder", "ansøg" ]
       },
 
-      
+      {
+        displayName: "Mød de firvillige",
+        link: "#holdet__h2",
+      },
+
+      {
+        displayName: "Ansøg om at blive frivillig",
+        link: "#ansøg__h2",
+      },
+
+      {
+        displayName: "Vores tilbud" ,
+        link: "vorestilbud.html" ,
+      },
+
+      {
+        displayName: "Støt" ,
+        link: "støt.html",
+      },
+
+      {
+        displayName: "Om os",
+        link: "omos.html",
+      },
+
+      {
+        displayName: "Til unge" ,
+        link: "tilunge.html",
+      },
+
+      {
+        displayName: "Til forældre og nære voksne",
+        link: "forældre.html" ,
+      },
+
+      {
+        displayName: "Frodrag og workshops" ,
+        link: "fordrag.html" ,
+      },
+
+      {
+        displayName: "Bliv medsøster",
+        link: "medsøster.html",
+      },
+
+      {
+        displayName: "Kontakt" ,
+        link: "kontakt.html",
+      },
+
+      {
+        displayName: "Nyheder" ,
+        link: "nyheder.html" ,
+      },
+
+      {
+        displayName: "Ambassadører" ,
+        link: "ambassadører" ,
+      },
+
+      {
+        displayName: "Shop" ,
+        link: "shop.html" ,
+      },
 ];
+
 
 
 function filterLinks() { //Funktionen starter når man skriver i inputfeltet ( onkeyup="filterLinks()"i HTML)
