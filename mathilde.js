@@ -156,3 +156,29 @@ function filterLinks() { //Funktionen starter når man skriver i inputfeltet ( o
         }
     }
 }
+
+//popup ungerådgiver
+const openBtnUngerådgiver = document.getElementById("openUngerådgiver");
+const closeBtnUngerådgiver = document.getElementById("closeUngerådgiver");
+const popupUngerådgiver = document.getElementById("ungerådgiver__popup__content");
+
+openBtnUngerådgiver.addEventListener("click", () => {
+    popupUngerådgiver.style.display = "block"; 
+});
+
+closeBtnUngerådgiver.addEventListener("click", () => {
+    popupUngerådgiver.style.display = "none";
+});
+
+//popup Maria
+const openBtnMaria = document.getElementById("OpenMaria");
+const closeBtnMaria = document.getElementById("closeMaria");
+const popupMaria = document.getElementById("Maria__popup__content");
+
+openBtnMaria.addEventListener("click", () => {
+  popupMaria.style.display = "block";
+});
+
+closeBtnMaria.addEventListener("click", () => {
+  popupMaria.style.display = "none";
+});
