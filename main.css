@@ -93,7 +93,7 @@ ul {
     transition: 1s;                       
     padding-top: 20px;                     
     box-shadow: 2px 0px 0px #F7C7D9;      /*------Eeeeller 10 - boksens skygge til højre*/
-    z-index: 1000;                      
+    z-index: 1000;                          /*sørger for at hamburgermenuen er forrest end andet indhold*/                 
 }
 
 .sidenav a, .dropdown-knappen { 
@@ -113,14 +113,6 @@ ul {
 .sidenav a:hover, .dropdown-knappen:hover, .dropdown-container a:hover { 
     background: #FFB6C1;  
     font-weight: bold;              
-}
-
-
-.dropdown-knappen { 
-    font-family: 'Montserrat', sans-serif;  
-    font-size: 15px;                        
-    font-weight: 500;                      
-    color: #273AAA;                              
 }
 
 .dropdown-container a { 
@@ -192,6 +184,7 @@ ul {
     display: block;                  
     padding: 0.5rem;
     text-align: left;
+    z-index: 1000;  
 }
 
 /*hero*/ 
@@ -586,3 +579,5 @@ ul {
 
 
 }
+
+
