@@ -190,6 +190,7 @@ ul {
     font-weight: bold;
     font-size: 1.2em;
     transition: all 0.2s ease;
+    background-color: #F7C7D9;
 }
 
 .etage-link:hover {
@@ -208,7 +209,7 @@ ul {
     justify-content: center;
     gap: 10px;
     position: relative;
-    width: 92%;
+    width: 100%;
     height: 500px;
     margin: 50px auto;
     background-color: #F7C7D9;
@@ -298,7 +299,7 @@ ul {
 }
 
 #prevButton{
-    left: 0px;
+    left: 5px;
     top:70%;
     z-index: 10; /* Sørger for, at knappen ligger øverst */
     pointer-events: auto; /* Sørger for, at den kan klikkes */
@@ -306,7 +307,7 @@ ul {
 }
 
 #nextButton{
-    right: 0px;
+    right: 5px;
     top:70%;
 }
 
