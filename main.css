@@ -319,7 +319,7 @@ ul {
 .ansøg {
     position: relative;
     width: 100%;
-    height: 15rem;
+    height: 14rem;
     overflow: hidden;
     background-color: #F7C7D9;
 }
@@ -339,7 +339,7 @@ ul {
 .ansøg__text {
     z-index: 1;
     width: 50%;
-    height: 15rem;
+    height: 14rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -458,17 +458,6 @@ ul {
         width: 10.375rem;
         height: 4rem;
         padding: 1rem;
-    }
-
-    .ansøg__billede__mobil {
-        display: none;
-    }
-
-    .ansøg__billede__disktop {
-        width: 100%;
-        display: block;
-        position: absolute;
-        object-fit: cover;
     }
 
     .ansøg {
