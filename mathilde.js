@@ -156,3 +156,5 @@ function filterLinks() { //Funktionen starter når man skriver i inputfeltet ( o
         }
     }
 }
+
+
