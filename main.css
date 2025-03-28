@@ -186,6 +186,8 @@ ul {
     border-radius: 0rem 0rem 0.6875rem 0.6875rem;
     background: #FDEFF4;
     margin: 0rem 1rem;
+    position: absolute;
+    z-index: 2;
 }
 
 #soegeResultater li a {
