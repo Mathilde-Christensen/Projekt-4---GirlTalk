@@ -314,6 +314,16 @@ ul {
     background-color: #1d46da;
 }
 
+/*GirlTalk frivillig univers*/
+
+.frivilligunivers__text {
+    margin: 20px 10px;
+}
+
+#girltalk__frivilligeunivers__h2 {
+    margin: 0px 0px 10px 0px;
+}
+
 /*Ansøg*/
 
 .ansøg {
@@ -471,6 +481,16 @@ ul {
 
     .ansøg__p {
         padding: 0rem 0rem 2rem 0rem;
+    }
+
+    /*GirlTalk frivillig univers*/
+
+    .frivilligunivers__text {
+        margin: 50px 66px;
+    }
+
+    #girltalk__frivilligeunivers__h2 {
+        margin: 0rem 0rem 1rem 0rem;
     }
 
 
