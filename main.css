@@ -251,17 +251,22 @@ ul {
 
 /*Kirja*/
 
+.frivilligunivers__text{
+    padding: 1rem 0.5rem;
+}
+
 .frivilligehus__container{
     position: relative;
-    height: 100vh;
+    height: auto;
     display:flex;
     align-items:center;
     justify-content: center;
+    padding:20px;
 }
 
 .frivilligehus__img{
-    max-height: 90vh;
-    width:auto;
+    max-height: 60vh;
+    width:100%;
     opacity: 70%;
 }
 
@@ -269,11 +274,11 @@ ul {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 0.8125em;
     transition: all 0.2s ease;
     background-color: #F7C7D9;
 }
@@ -293,26 +298,27 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     position: relative;
     width: 100%;
-    height: 550px;
+    height: auto;
     margin: 0px auto;
+    padding-bottom: 1rem;
     background-color: #F7C7D9;
+}
+
+.holdet__container{
+    padding-bottom: 1rem;
 }
 
 .holdet h2{
     color: #273AAA;
-    padding-right: 60px;
-    padding-left:60px;
+    padding: 2rem 1rem 0.5rem 1rem;
+    
 }
 
-.holdet p{
-    color: #000000;
-    padding: 0rem 0rem 1rem 0rem;
-    padding-right: 60px;
-    padding-left:60px;
-    gap: 20px;
+#om-holdet{
+    padding: 0rem 0rem 1rem 1rem;
 }
 
 .holdet__container {
@@ -331,30 +337,29 @@ ul {
 }
 
 .holdet__gallery__li {
-    width: calc(100% / 7); /* Sikrer, at præcis 7 billeder vises */
+    width: calc(100% / 2); /* Sikrer, at præcis 2 billeder vises */
     flex: 0 0 auto;
     text-align:center;
 }
 
 .holdet__gallery__li img {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 50px; /* Dette gør billederne runde*/
     object-fit: cover; /* Gør at billederne passer fint i cirklerne */
-    margin-top: 30px;
-    margin-bottom: 5px;
+    margin: 0px; /* Reduceret margin mellem billederne */
     border: 4px solid #273AAA;
 }
 
 .holdet__gallery__li img:hover{
-    border: 4px solid transparent;
+    border: 2px solid transparent;
 }
 
-.holdet__gallery__name{
-    font-size: 1.2em;
+#holdet__gallery__name{
+    font-size: 0.8125em;
     text-align: center; /* Centrer teksten */
     font-weight:bold;
-    color: #273AAA !important;
+    color: #273AAA;
     margin-top: 2px;
     white-space: nowrap;
     max-width: fit-content; /* Sørger for, at det kun fylder det nødvendige */
@@ -367,7 +372,7 @@ ul {
     white-space: nowrap; /* Sørger for at teksten ikke brydes */
     display: block; /* Sikrer, at teksten opfører sig som en blok */
     text-align: center; /* Centrer teksten */
-    font-size: 1em; /* Sørger for at den er mindre end name */
+    font-size: 0.8125rem; /* Sørger for at den er mindre end name */
 }
 
 #prevButton, #nextButton {
@@ -378,7 +383,7 @@ ul {
     color: #F7C7D9;
     border: none;
     padding: 10px 15px;
-    font-size: 24px;
+    font-size: 15px;
     cursor: pointer;
     border-radius: 50%; 
 }
@@ -442,7 +447,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px 20px;
+    margin: 0px 15px;
 }
 
 .ansøg__button {
@@ -580,6 +585,158 @@ ul {
     #girltalk__frivilligeunivers__h2 {
         margin: 0rem 0rem 1rem 0rem;
     }
+
+    .frivilligehus__container{
+        position: relative;
+        height: 100vh;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+    
+    .frivilligehus__img{
+        max-height: 90vh;
+        width:auto;
+        opacity: 70%;
+    }
+    
+    .etage-link {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2em;
+        transition: all 0.2s ease;
+        background-color: #F7C7D9;
+    }
+    
+    .etage-link:hover {
+        background-color: #F7C7D9;
+        text-decoration:underline;
+    }
+    
+    .etage-1 { top: 20%; }  
+    .etage-2 { top: 40%; }   
+    .etage-3 { top: 60%; }  
+    .etage-4 { top: 80%; }   
+    
+    .holdet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+        width: 100%;
+        height: 550px;
+        margin: 0px auto;
+        background-color: #F7C7D9;
+    }
+    
+    .holdet h2{
+        color: #273AAA;
+        padding-right: 60px;
+        padding-left:60px;
+    }
+    
+    .holdet p{
+        color: #000000;
+        padding: 0rem 0rem 1rem 0rem;
+        padding-right: 60px;
+        padding-left:60px;
+        gap: 20px;
+    }
+    
+    .holdet__container {
+        width: 100%;
+        overflow: hidden; /* Sørger for, at billederne ikke ryger ud af containeren */
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .holdet__gallery {
+        display: flex;
+        width: 100%;
+        transition: transform 0.1s ease-out;
+    }
+    
+    .holdet__gallery__li {
+        width: calc(100% / 7); /* Sikrer, at præcis 7 billeder vises */
+        flex: 0 0 auto;
+        text-align:center;
+    }
+    
+    .holdet__gallery__li img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px; /* Dette gør billederne runde*/
+        object-fit: cover; /* Gør at billederne passer fint i cirklerne */
+        margin-top: 30px;
+        margin-bottom: 5px;
+        border: 4px solid #273AAA;
+    }
+    
+    .holdet__gallery__li img:hover{
+        border: 4px solid transparent;
+    }
+    
+    .holdet__gallery__name{
+        font-size: 1.2em;
+        text-align: center; /* Centrer teksten */
+        font-weight:bold;
+        color: #273AAA !important;
+        margin-top: 2px;
+        white-space: nowrap;
+        max-width: fit-content; /* Sørger for, at det kun fylder det nødvendige */
+        display: inline-block;
+    
+    }
+    
+    .holdet__gallery__titel {
+        color: #000000;
+        white-space: nowrap; /* Sørger for at teksten ikke brydes */
+        display: block; /* Sikrer, at teksten opfører sig som en blok */
+        text-align: center; /* Centrer teksten */
+        font-size: 1em; /* Sørger for at den er mindre end name */
+    }
+    
+    #prevButton, #nextButton {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); 
+        background-color: #273AAA;
+        color: #F7C7D9;
+        border: none;
+        padding: 10px 15px;
+        font-size: 24px;
+        cursor: pointer;
+        border-radius: 50%; 
+    }
+    
+    #prevButton{
+        left: 5px;
+        top:70%;
+        z-index: 10; /* Sørger for, at knappen ligger øverst */
+        pointer-events: auto; /* Sørger for, at den kan klikkes */
+    
+    }
+    
+    #nextButton{
+        right: 5px;
+        top:70%;
+        z-index: 10; /* Sørger for, at knappen ligger øverst */
+        pointer-events: auto; /* Sørger for, at den kan klikkes */
+    }
+    
+    #nextButton:hover, #prevButton:hover{
+        background-color: #1d46da;
+    }
+    
 
 
 
