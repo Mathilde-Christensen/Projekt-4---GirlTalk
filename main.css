@@ -256,7 +256,7 @@ ul {
 }
 
 .frivilligehus__container{
-    
+    position: relative;
     height: auto;
     display:flex;
     align-items:center;
@@ -475,21 +475,6 @@ ul {
     margin: 0px 0px 10px 0px;
 }
 
-.ungerådgiver__popup__content {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    backdrop-filter: blur(5px);
-    background-color:  rgba(247, 199, 217, 0.7);
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 /*Ansøg*/
 
 .ansøg {
@@ -665,6 +650,7 @@ ul {
         display:flex;
         align-items:center;
         justify-content: center;
+        margin: 50px 66px;
     }
     
     .frivilligehus__img{
@@ -713,11 +699,12 @@ ul {
     
     .holdet h2{
         color: #273AAA;
-        margin: 0rem 0rem 1rem 0rem;
+        padding: 0rem 60px 0 60px;
+        margin: 50px 66px 0 0;
     }
 
     #om-holdet{
-        padding: 0rem 0rem 2rem 0rem;
+        padding: 0rem 60px 2rem 60px;
     }
     
     .holdet p{
