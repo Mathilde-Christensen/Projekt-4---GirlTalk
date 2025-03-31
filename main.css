@@ -256,7 +256,7 @@ ul {
 }
 
 .frivilligehus__container{
-    
+    position: relative;
     height: auto;
     display:flex;
     align-items:center;
@@ -307,10 +307,6 @@ ul {
     background-color: #F7C7D9;
 }
 
-.holdet__container{
-    padding-bottom: 1rem;
-}
-
 .holdet h2{
     color: #273AAA;
     padding: 2rem 1rem 0.5rem 1rem;
@@ -355,7 +351,7 @@ ul {
     border: 2px solid transparent;
 }
 
-.holde__button {
+.holdet__button {
     background-color: #F7C7D9;
     border: none;
 }
@@ -460,6 +456,13 @@ ul {
     border: none;
 }
 
+#closeMaria img {
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    border: none;
+    object-fit: contain;
+}
 
 
 /*GirlTalk frivillig univers*/
@@ -662,6 +665,7 @@ ul {
         display:flex;
         align-items:center;
         justify-content: center;
+        margin: 50px 66px;
     }
     
     .frivilligehus__img{
@@ -710,11 +714,12 @@ ul {
     
     .holdet h2{
         color: #273AAA;
-        margin: 0rem 0rem 1rem 0rem;
+        padding: 0rem 60px 0 60px;
+        margin: 50px 66px 0 0;
     }
 
     #om-holdet{
-        padding: 0rem 0rem 2rem 0rem;
+        padding: 0rem 60px 2rem 60px;
     }
     
     .holdet p{
