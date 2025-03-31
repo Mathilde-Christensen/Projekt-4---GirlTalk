@@ -158,17 +158,64 @@ function filterLinks() { //Funktionen starter når man skriver i inputfeltet ( o
 }
 
 //popup ungerådgiver
-const openBtnUngerådgiver = document.getElementById("openUngerådgiver");
-const closeBtnUngerådgiver = document.getElementById("closeUngerådgiver");
-const popupUngerådgiver = document.getElementById("ungerådgiver__popup__content");
+const openBtnUngerådgiver = document.getElementById("openUngerodgiver");
+const closeBtnUngerådgiver = document.getElementById("closeUngerodgiver");
+const popupUngerådgiver = document.getElementById("ungerodgiver__popup__content");
 
 openBtnUngerådgiver.addEventListener("click", () => {
-    popupUngerådgiver.style.display = "block"; 
+    popupUngerådgiver.style.display = "flex"; 
 });
 
 closeBtnUngerådgiver.addEventListener("click", () => {
     popupUngerådgiver.style.display = "none";
 });
+
+
+
+
+const openBtnGruppeleder = document.getElementById("openGruppeleder");
+const closeBtnGruppeleder = document.getElementById("closeGruppeleder");
+const popupGruppeleder = document.getElementById("gruppeleder__popup__content");
+
+openBtnGruppeleder.addEventListener("click", () => {
+  popupGruppeleder.style.display = "flex"; // eller "block", alt efter hvad du bruger i styling
+});
+
+closeBtnGruppeleder.addEventListener("click", () => {
+  popupGruppeleder.style.display = "none";
+});
+
+
+
+
+const openBtnForaeldrerådgiver = document.getElementById("openForaeldrerodgiver");
+const closeBtnForaeldrerådgiver = document.getElementById("closeForaeldrerodgiver");
+const popupForaeldrerådgiver = document.getElementById("foraeldrerodgiver__popup__content");
+
+openBtnForaeldrerådgiver.addEventListener("click", () => {
+  popupForaeldrerådgiver.style.display = "flex"; // eller "block"
+});
+
+closeBtnForaeldrerådgiver.addEventListener("click", () => {
+  popupForaeldrerådgiver.style.display = "none";
+});
+
+
+
+
+const openBtnFordrag = document.getElementById("openFordrag");
+const closeBtnFordrag = document.getElementById("closeFordrag");
+const popupFordrag = document.getElementById("fordrag__popup__content");
+
+openBtnFordrag.addEventListener("click", () => {
+  popupFordrag.style.display = "flex"; // eller "block"
+});
+
+closeBtnFordrag.addEventListener("click", () => {
+  popupFordrag.style.display = "none";
+});
+
+
 
 //popup Maria
 const openBtnMaria = document.getElementById("OpenMaria");
@@ -176,7 +223,7 @@ const closeBtnMaria = document.getElementById("closeMaria");
 const popupMaria = document.getElementById("Maria__popup__content");
 
 openBtnMaria.addEventListener("click", () => {
-  popupMaria.style.display = "block";
+  popupMaria.style.display = "flex";
 });
 
 closeBtnMaria.addEventListener("click", () => {

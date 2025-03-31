@@ -20,15 +20,15 @@ function closeNavOutside(event) {
 }
 
 var dropdown = document.querySelector('.dropdown-knappen');
-var dropdownContainer = document.querySelector('.dropdown-container');
+var dropdownIndhold = document.querySelector('.dropdown-indhold');
 
 dropdown.addEventListener('click', function(event) {
     event.stopPropagation();
-    dropdownContainer.style.display = dropdownContainer.style.display === 'block' ? 'none' : 'block';
+    dropdownIndhold.style.display = dropdownIndhold.style.display === 'block' ? 'none' : 'block';
 });
 
 document.addEventListener('click', function(event) {
-    if (!dropdown.contains(event.target) && !dropdownContainer.contains(event.target)) {
-        dropdownContainer.style.display = 'none';
+    if (!dropdown.contains(event.target) && !dropdownIndhold.contains(event.target)) {
+        dropdownIndhold.style.display = 'none';
     }
 });
