@@ -271,23 +271,24 @@ ul {
     opacity: 70%;
 }
 
-.etage-link {
-    position: relative; /* Bliver en forælder for det absolutte element */
-    background: none; 
-    border-radius: 0; 
-    padding: 0; 
+.etage-button {
+    position: absolute;
+    left: 50%; /* Placeres i midten af huset */
+    transform: translateX(-50%); /* Finjusterer centering */
 }
 
-#openUngerådgiver {
+#openUngerodgiver, #openGruppeleder, #openForaeldrerodgiver, #openFordrag {
     display: inline-block;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     padding: 0.5rem 1rem;
     border-radius: 8px; /* Afrundet hjørner */
+    width: 150px; /* Fast bredde */
+    height: 50px; /* Fast højde */
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.8125em;
+    font-size: 1em;
     color: #273AAA;
     background-color: #F7C7D9;
     border: none;
@@ -298,7 +299,7 @@ ul {
 }
 
 
-.etage-link:hover, #openUngerådgiver:hover {
+.etage-button:hover, #openUngerodgiver:hover, #openGruppeleder:hover, #openForaeldrerodgiver:hover, #openFordrag:hover {
     background-color: #F7C7D9;
     text-decoration: underline;
     font-weight: bold;
@@ -601,23 +602,40 @@ ul {
         opacity: 70%;
     }
     
-    .etage-link {
+    .etage-button {
+        position: absolute;
+        left: 50%; /* Placeres i midten af huset */
+        transform: translateX(-50%); /* Finjusterer centering */
+    }
+
+    #openUngerodgiver, #openGruppeleder, #openForaeldrerodgiver, #openFordrag {
+        display: inline-block;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        padding: 0.5rem 0.5rem;
-        border-radius: 8px;
+        padding: 0.5rem 1rem;
+        border-radius: 8px; /* Afrundet hjørner */
+        width: 150px; /* Fast bredde */
+        height: 50px; /* Fast højde */
         text-decoration: none;
         font-weight: bold;
-        font-size: 0.8125em;
-        transition: all 0.2s ease;
+        font-size: 1em;
+        color: #273AAA;
         background-color: #F7C7D9;
+        border: none;
+        transition: all 0.2s ease;
+        text-align: center;
+        line-height: 1;
+        z-index:10;
     }
     
-    .etage-link:hover {
+    
+    .etage-button:hover, #openUngerodgiver:hover, #openGruppeleder:hover, #openForaeldrerodgiver:hover, #openFordrag:hover {
         background-color: #F7C7D9;
-        text-decoration:underline;
+        text-decoration: underline;
+        font-weight: bold;
     }
+    
     
     .etage-1 { top: 20%; }  
     .etage-2 { top: 40%; }   
@@ -906,22 +924,38 @@ ul {
         opacity: 70%;
     }
     
-    .etage-link {
+    .etage-button {
+        position: absolute;
+        left: 50%; /* Placeres i midten af huset */
+        transform: translateX(-50%); /* Finjusterer centering */
+    }
+
+    #openUngerodgiver, #openGruppeleder, #openForaeldrerodgiver, #openFordrag {
+        display: inline-block;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         padding: 0.5rem 1rem;
-        border-radius: 8px;
+        border-radius: 8px; /* Afrundet hjørner */
+        width: 150px; /* Fast bredde */
+        height: 50px; /* Fast højde */
         text-decoration: none;
         font-weight: bold;
-        font-size: 1.2em;
-        transition: all 0.2s ease;
+        font-size: 1em;
+        color: #273AAA;
         background-color: #F7C7D9;
+        border: none;
+        transition: all 0.2s ease;
+        text-align: center;
+        line-height: 1;
+        z-index:10;
     }
     
-    .etage-link:hover {
+    
+    .etage-button:hover, #openUngerodgiver:hover, #openGruppeleder:hover, #openForaeldrerodgiver:hover, #openFordrag:hover {
         background-color: #F7C7D9;
-        text-decoration:underline;
+        text-decoration: underline;
+        font-weight: bold;
     }
     
     .etage-1 { top: 20%; }  
@@ -1153,4 +1187,9 @@ footer {
     font-size: 0.9rem;
 }
 
+@media (max-width: 768px) {
+    .footer-indhold {
+        display: none;
+    }
+}
 
