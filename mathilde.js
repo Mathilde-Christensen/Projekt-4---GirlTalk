@@ -163,7 +163,7 @@ const closeBtnUngerådgiver = document.getElementById("closeUngerådgiver");
 const popupUngerådgiver = document.getElementById("ungerådgiver__popup__content");
 
 openBtnUngerådgiver.addEventListener("click", () => {
-    popupUngerådgiver.style.display = "block"; 
+    popupUngerådgiver.style.display = "flex"; 
 });
 
 closeBtnUngerådgiver.addEventListener("click", () => {
@@ -176,7 +176,7 @@ const closeBtnMaria = document.getElementById("closeMaria");
 const popupMaria = document.getElementById("Maria__popup__content");
 
 openBtnMaria.addEventListener("click", () => {
-  popupMaria.style.display = "block";
+  popupMaria.style.display = "flex";
 });
 
 closeBtnMaria.addEventListener("click", () => {

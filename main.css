@@ -412,6 +412,56 @@ ul {
     background-color: #1d46da;
 }
 
+#Maria__popup__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    background-color:  rgba(247, 199, 217, 0.7);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content__box {
+    background: #FDEFF4;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 365px;
+    height: 650px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.maria__information {
+    display: flex;
+    padding: 0.5rem;
+}
+
+.Maria__popup__ul {
+    font-weight: 900;
+}
+
+.Maria__popup__p {
+    margin: 0.5rem 0rem;
+}
+
+.closeMariar {
+    background-color: #FDEFF4;
+    border: none;
+}
+
+
+
 /*GirlTalk frivillig univers*/
 
 .frivilligunivers__text {
@@ -628,6 +678,8 @@ ul {
     .etage-3 { top: 60%; }  
     .etage-4 { top: 80%; }   
     
+    /*style holdet*/
+    
     .holdet{
         display: flex;
         flex-direction: column;
@@ -744,7 +796,23 @@ ul {
         background-color: #1d46da;
     }
     
+    .Maria__popup__p {
+        font-size: 0.8125rem;
+        font-style: normal;
+        font-weight: 400;
+    }
 
+    .Maria__popup__ul {
+        font-size: 0.8125rem;
+        font-style: normal;
+        font-weight: 900;
+    }
+
+    .Maria__popup__h2 {
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 900;
+    }
 
 
 }
