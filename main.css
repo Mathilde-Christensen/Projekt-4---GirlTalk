@@ -580,9 +580,95 @@ ul {
     #girltalk__frivilligeunivers__h2 {
         margin: 0rem 0rem 1rem 0rem;
     }
-
-
-
 }
 
+/*Footeren*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfbf5;
+    color: #333;
+}
+
+footer {
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.footer-sektion {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.footer-knap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #1e40af;
+    font-size: 1rem;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.footer-knap span {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.footer-indhold {
+    display: block;
+    padding-left: 20px;
+    font-size: 0.9rem;
+}
+
+.footer-indhold ul {
+    list-style: none;
+}
+
+.footer-indhold ul li {
+    margin-bottom: 8px;
+}
+
+.footer-indhold ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-indhold ul li a:hover {
+    text-decoration: underline;
+}
+
+.socialemedier-ikoner {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.socialemedier-ikoner a {
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-sektion.kontakt-information,
+.footer-sektion.kontakt {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .footer-indhold {
+        display: none;
+    }
+}
 
