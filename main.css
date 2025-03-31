@@ -493,6 +493,21 @@ ul {
     margin: 0px 0px 10px 0px;
 }
 
+.ungerodgiver__popup__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    background-color:  rgba(247, 199, 217, 0.7);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 /*Ansøg*/
 
 .ansøg {
