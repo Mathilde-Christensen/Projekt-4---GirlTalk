@@ -316,8 +316,8 @@ ul {
     transform: translateX(-50%);
     padding: 0.5rem 1rem;
     border-radius: 8px; /* Afrundet hjørner */
-    width: 150px; /* Fast bredde */
-    height: 50px; /* Fast højde */
+    width: 170px;
+    height: 50px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1em;
@@ -642,9 +642,9 @@ ul {
         left: 50%;
         transform: translateX(-50%);
         padding: 0.5rem 1rem;
-        border-radius: 8px; /* Afrundet hjørner */
-        width: 150px; /* Fast bredde */
-        height: 50px; /* Fast højde */
+        border-radius: 8px; /* afrundet hjørner */
+        width: 170px; 
+        height: 50px; 
         text-decoration: none;
         font-weight: bold;
         font-size: 1em;
@@ -961,8 +961,8 @@ ul {
         transform: translateX(-50%);
         padding: 0.5rem 1rem;
         border-radius: 8px; /* Afrundet hjørner */
-        width: 150px; /* Fast bredde */
-        height: 50px; /* Fast højde */
+        width: 170px; 
+        height: 50px; 
         text-decoration: none;
         font-weight: bold;
         font-size: 1em;
