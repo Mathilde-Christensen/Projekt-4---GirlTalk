@@ -349,7 +349,87 @@
 
     </div>
 
-
+    <div class="casper-form-wrapper">
+      <form class="casper-form-container">
+        <div class="casper-dropdown-row">
+          <div class="casper-dropdown">
+            <label>Hvad er du interesseret i at hjælpe med?</label>
+            <button type="button" id="dropdownBtn1" class="casper-dropdown-btn">Vælg mulighed ▼</button>
+            <ul id="dropdownMenu1" class="casper-dropdown-menu">
+              <li data-value="Rådgivning">Unge rådgiver</li>
+              <li data-value="Events">Events</li>
+              <li data-value="Kommunikation">Forældrerådgiver</li>
+            </ul>
+            <input type="hidden" id="dropdownValue1" name="interesse">
+          </div>
+    
+          <div class="casper-dropdown">
+            <label>Hvilken afdeling vil du tilknyttes?</label>
+            <button type="button" id="dropdownBtn2" class="casper-dropdown-btn">Vælg afdeling ▼</button>
+            <ul id="dropdownMenu2" class="casper-dropdown-menu">
+              <li data-value="København">København</li>
+              <li data-value="Aarhus">Aarhus</li>
+              <li data-value="Aalborg">Aalborg</li>
+              <li data-value="Odense">Odense</li>
+            </ul>
+            <input type="hidden" id="dropdownValue2" name="afdeling">
+          </div>
+    
+          <div class="casper-dropdown">
+            <label>Har du været til infoaften?</label>
+            <button type="button" id="dropdownBtn3" class="casper-dropdown-btn">Vælg svar ▼</button>
+            <ul id="dropdownMenu3" class="casper-dropdown-menu">
+              <li data-value="Ja">Ja</li>
+              <li data-value="Nej">Nej</li>
+            </ul>
+            <input type="hidden" id="dropdownValue3" name="infoaften">
+          </div>
+        </div>
+    
+        <div class="casper-form-group">
+          <label>Dit fulde navn *</label>
+          <input type="text" required>
+        </div>
+        <div class="casper-form-group">
+          <label>Dit fødselsår *</label>
+          <input type="number" required>
+        </div>
+        <div class="casper-form-group">
+          <label>Dit telefonnummer *</label>
+          <input type="tel" required>
+        </div>
+        <div class="casper-form-group">
+          <label>Din e-mail *</label>
+          <input type="email" required>
+        </div>
+        <div class="casper-form-group">
+          <label>Din adresse *</label>
+          <input type="text" required>
+        </div>
+    
+        <div class="casper-form-group">
+          <label>Vedhæft dit CV *</label>
+          <input type="file" accept=".pdf,.doc,.docx" required>
+        </div>
+        <div class="casper-form-group">
+          <label>Vedhæft din ansøgning *</label>
+          <input type="file" accept=".pdf,.doc,.docx" required>
+        </div>
+    
+        <div class="casper-form-group">
+          <label>Hvad tiltaler dig ved netop GirlTalk?</label>
+          <textarea rows="5" placeholder="Skriv her..." required></textarea>
+        </div>
+    
+        <div class="casper-form-group casper-checkbox-group">
+          <input type="checkbox" id="samtykke" required>
+          <label for="samtykke">Jeg giver samtykke til, at GirlTalk må bruge mine oplysninger i forbindelse med min ansøgning.</label>
+        </div>
+    
+        <button type="submit" class="casper-submit-btn">Tilmeld mig</button>
+      </form>
+    </div>
+    
     <!--Alice - footer-->
     <footer>
 
