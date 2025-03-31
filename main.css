@@ -58,7 +58,6 @@ ul {
 
 .header {
     background: #FFFEF9;
-    padding: 20px;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
@@ -68,8 +67,11 @@ ul {
 .logo {
     padding: 1rem;
     position: absolute;
-    left: 50%; /* Centrerer logoet */
-    transform: translateX(-50%); /* Finjusterer centering */
+    left:28%; 
+    transform: translateX(-50%); 
+    width: 154px; 
+    height: 47px; 
+    margin-top: 6px;
 }
 
 .hero_billede_disktop {
@@ -110,12 +112,12 @@ ul {
     width: 100%;    
 }
 
-.sidenav a:hover, .dropdown-knappen:hover, .dropdown-container a:hover { 
+.sidenav a:hover, .dropdown-knappen:hover, .dropdown-indhold a:hover { 
     background: #FFB6C1;  
     font-weight: bold;              
 }
 
-.dropdown-container a { 
+.dropdown-indhold a { 
     font-family: 'Montserrat', sans-serif; 
     font-size: 13px;                       
     font-weight: 75;                   
@@ -125,15 +127,14 @@ ul {
 
 .hamburger { 
     background: #FFFEF9;                /*sørg fir sammw farve som baggrund, som vi vælger*/
-    padding: 10px;
+    padding: 0px;
     cursor: pointer;
     position: absolute;
-    left: 10px;
-    top: 23px;
+    left: 7px;
+    top: 16px;                        /*placeringen horisontalt*/
     font-size: 24px;
     border: none;
 }
-
 
 
 /* Mathilde js style */
@@ -141,15 +142,25 @@ ul {
 #soegefeltButton {
     border: none;
     background-color: #FFFEF9;
+    width: 45px; 
+    height: 48px; 
+    margin-top: 2px;
+    margin-left: auto;              /**/
+    display: flex;                  /**/
+    align-items: center;            /**/
 }
 
 .soegefeltBillede {
-    width: 80%;
+    width: 67%;
+    margin-top: 6px;
 }
 
 #lukKnap {
     border: none;
     background-color: #FFFEF9;
+    margin-left: auto;              /**/
+    display: flex;                  /**/
+    align-items: center;            /**/
 }
 
 .lukKnapBillede {
@@ -165,7 +176,11 @@ ul {
     font-size: 0.8125rem;
     font-style: normal;
     font-weight: 700;
-    padding: 0.5rem;
+    padding: 0.4rem;
+    margin-left: auto;              /**/
+    display: flex;                  /**/
+    align-items: center;            /**/
+    margin-top: -1%;                /**/
 }
 
 #indputFelt:focus {
@@ -189,6 +204,23 @@ ul {
     z-index: 1000;  
 }
 
+@media (min-width: 600px) {
+    .hamburger { 
+        background: #fff9f9;                /*sørg fir sammw farve som baggrund, som vi vælger*/
+        padding: 0px;
+        cursor: pointer;
+        position: absolute;
+        left: 7px;
+        top: 160px;                        /*placeringen horisontalt*/
+        font-size: 24px;
+        border: none;
+        
+    }
+}
+
+
+@media (min-width: 1024px) {
+}
 /*hero*/ 
 
 .hero {
@@ -906,7 +938,7 @@ footer {
     font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .footer-indhold {
         display: none;
     }
