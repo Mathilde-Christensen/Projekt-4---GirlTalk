@@ -490,6 +490,90 @@ ul {
     flex-direction: column;
 }
 
+.gruppeleder__popup__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    background-color:  rgba(247, 199, 217, 0.7);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foraeldrerodgiver__popup__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    background-color:  rgba(247, 199, 217, 0.7);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fordrag__popup__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    background-color:  rgba(247, 199, 217, 0.7);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box {
+    background: #FDEFF4;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 365px;
+    height: 650px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.closePopup {
+    background-color: #FDEFF4;
+    border: none;
+}
+
+.popup__li {
+    margin: 1rem 0rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.pink__hjerte {
+    padding: 0.5rem;
+}
+
+.sort__hjerte__popup {
+    padding: 0.5rem;
+}
+
+
+
+
+
 /*Ansøg*/
 
 .ansøg {
