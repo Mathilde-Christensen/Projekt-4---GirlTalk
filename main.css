@@ -136,6 +136,7 @@ ul {
     top: 16px;                        /*placeringen horisontalt*/
     font-size: 24px;
     border: none;
+    z-index: 100;
 }
 
 /* Dropdown
