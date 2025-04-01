@@ -398,6 +398,7 @@ ul {
     width: calc(100% / 2); /* Sikrer, at præcis 2 billeder vises */
     flex: 0 0 auto;
     text-align:center;
+    text-align: center;
 }
 
 .holdet__gallery__li img {
