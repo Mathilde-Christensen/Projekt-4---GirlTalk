@@ -364,7 +364,6 @@ ul {
     position: relative;
     width: 100%;
     height: auto;
-    margin: 0px auto;
     padding-bottom: 1rem;
     background-color: #F7C7D9;
 }
@@ -436,6 +435,14 @@ ul {
     display: block; /* Sikrer, at teksten opfører sig som en blok */
     text-align: center; /* Centrer teksten */
     font-size: 0.8125rem; /* Sørger for at den er mindre end name */
+}
+
+#holdet__gallery__name,.holdet__gallery__titel {
+    margin: 0.5rem 0;
+    padding: 0 60px 1rem 60px;
+    text-align: center;
+    gap: 10px;
+    display: block; /* Sikrer at teksten opfører sig som en blok */
 }
 
 #prevButton, #nextButton {
@@ -1045,6 +1052,14 @@ ul {
         text-align: center; /* Centrer teksten */
         font-size: 0.8125rem; /* Sørger for at den er mindre end name */
     }
+
+    #holdet__gallery__name,.holdet__gallery__titel {
+        margin: 0.5rem 0;
+        padding: 0 60px 1rem 60px;
+        text-align: center;
+        gap: 10px;
+        display: block; /* Sikrer at teksten opfører sig som en blok */
+}
     
     #prevButton, #nextButton {
         position: absolute;
@@ -1305,11 +1320,6 @@ ul {
         padding: 10px 70px 0 70px;
     }
     
-    .holdet p{
-        padding: 0 60px 1rem 60px;
-        gap: 10px;
-    }
-    
     .holdet__container {
         width: 100%;
         overflow: hidden; /* Sørger for, at billederne ikke ryger ud af containeren */
@@ -1363,6 +1373,14 @@ ul {
         display: block; /* Sikrer, at teksten opfører sig som en blok */
         text-align: center; /* Centrer teksten */
         font-size: 1em; /* Sørger for at den er mindre end name */
+    }
+
+    #holdet__gallery__name,.holdet__gallery__titel {
+        margin: 0.5rem 0;
+        padding: 0 60px 1rem 60px;
+        text-align: center;
+        gap: 10px;
+        display: block; /* Sikrer at teksten opfører sig som en blok */
     }
     
     #prevButton, #nextButton {
