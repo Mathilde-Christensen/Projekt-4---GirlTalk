@@ -310,12 +310,12 @@ ul {
     display:flex;
     align-items:center;
     justify-content: center;
-    padding-bottom:10px;
+    padding-bottom:40px;
 }
 
 .frivilligehus__img{
     max-height: 60vh;
-    width:100%;
+    width:300px;
     opacity: 70%;
 }
 
@@ -333,11 +333,11 @@ ul {
     transform: translateX(-50%);
     padding: 0.5rem 1rem;
     border-radius: 8px; /* afrundet hjørner */
-    width: 180px; 
-    height: 50px; 
+    width: 120px; 
+    height: 30px; 
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 0.7em;
     color: #273AAA;
     background-color: #F7C7D9;
     border: none;
@@ -354,10 +354,10 @@ ul {
     font-weight: bold;
 }
 
-.etage-1 { top: 20%; }  
-.etage-2 { top: 40%; }   
-.etage-3 { top: 60%; }  
-.etage-4 { top: 80%; }   
+.etage-1 { top: 16%; }  
+.etage-2 { top: 36%; }   
+.etage-3 { top: 55%; }  
+.etage-4 { top: 76%; }   
 
 .holdet{
     gap: 5px;
@@ -372,7 +372,7 @@ ul {
 #holdet__h2{
     color: #273AAA;
     text-align: left;
-    padding: 4rem 60px 2rem 60px;
+    padding: 4rem 20px 2rem 15px;
 }
 
 #om-holdet{
