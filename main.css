@@ -527,11 +527,10 @@ ul {
 }
 
 #closeMaria img {
-    width: auto;
-    height: auto;
     border-radius: 0;
     border: none;
     object-fit: contain;
+    width: 30%;
 }
 
 
@@ -1112,11 +1111,10 @@ ul {
     }
     
     #closeMaria img {
-        width: auto;
-        height: auto;
         border-radius: 0;
         border: none;
         object-fit: contain;
+        width: 30%;
     }
 
     
@@ -1422,4 +1420,12 @@ ul {
         font-style: normal;
         font-weight: 900;
     }
+
+    #closeMaria img {
+        border-radius: 0;
+        border: none;
+        object-fit: contain;
+        width: 30%;
+    }
+
 }
