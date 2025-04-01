@@ -178,7 +178,7 @@ const closeBtnGruppeleder = document.getElementById("closeGruppeleder");
 const popupGruppeleder = document.getElementById("gruppeleder__popup__content");
 
 openBtnGruppeleder.addEventListener("click", () => {
-  popupGruppeleder.style.display = "flex"; // eller "block", alt efter hvad du bruger i styling
+  popupGruppeleder.style.display = "flex"; 
 });
 
 closeBtnGruppeleder.addEventListener("click", () => {
@@ -193,7 +193,7 @@ const closeBtnForaeldrerådgiver = document.getElementById("closeForaeldrerodgiv
 const popupForaeldrerådgiver = document.getElementById("foraeldrerodgiver__popup__content");
 
 openBtnForaeldrerådgiver.addEventListener("click", () => {
-  popupForaeldrerådgiver.style.display = "flex"; // eller "block"
+  popupForaeldrerådgiver.style.display = "flex"; 
 });
 
 closeBtnForaeldrerådgiver.addEventListener("click", () => {
@@ -208,7 +208,7 @@ const closeBtnFordrag = document.getElementById("closeFordrag");
 const popupFordrag = document.getElementById("fordrag__popup__content");
 
 openBtnFordrag.addEventListener("click", () => {
-  popupFordrag.style.display = "flex"; // eller "block"
+  popupFordrag.style.display = "flex"; 
 });
 
 closeBtnFordrag.addEventListener("click", () => {
