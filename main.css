@@ -338,7 +338,7 @@ ul {
     opacity: 70%;
 }
 
-.etage-link {
+.etage-button {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -355,7 +355,7 @@ ul {
     background-color: #F7C7D9;
 }
 
-.etage-link:hover {
+.etage-button:hover {
     background-color: #F7C7D9;
     text-decoration:underline;
 }
@@ -1080,7 +1080,7 @@ ul {
         opacity: 70%;
     }
     
-    .etage-link {
+    .etage-button {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -1096,7 +1096,7 @@ ul {
         background-color: #F7C7D9;
     }
     
-    .etage-link:hover {
+    .etage-button:hover {
         background-color: #F7C7D9;
         text-decoration:underline;
     }
