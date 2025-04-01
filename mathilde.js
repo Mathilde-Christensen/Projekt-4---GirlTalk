@@ -144,7 +144,9 @@ function filterLinks() { //Funktionen starter når man skriver i inputfeltet ( o
     }
 
     if (resultater.length === 0) { // hvis der ikke findes et nogen elementer i resultater listen skrives der en besked på siden
-        liste.innerHTML = "<li>Der blev desværre ikke fundet noget resultat. Kontrollere stavemåde eller brug et andet udtryk</li>";
+        liste.innerHTML = `<li class="no-result">
+        Der blev desværre ikke fundet noget resultat. Kontrollér stavemåde eller brug et andet udtryk
+        </li>`;
     } else {
         for (let i = 0; i < resultater.length; i++) { // for loopet tjekker resultater listen igennem som er lavet efter soegResultater match
             let li = document.createElement("li"); // laver det til et li element 
