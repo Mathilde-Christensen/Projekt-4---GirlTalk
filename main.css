@@ -627,7 +627,11 @@ ul {
     margin: 1rem 0rem;
     display: flex;
     align-items: center;
-
+    color: #212529;
+    font-family: Lato;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .pink__hjerte {
@@ -636,6 +640,32 @@ ul {
 
 .sort__hjerte__popup {
     padding: 0.5rem;
+}
+
+.popup__h3 {
+    color: #212529;
+    font-family: Lato;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 900;
+    text-align: left;
+}
+
+.popup__p {
+    color: #212529;
+    font-family: Lato;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.popup__h2 {
+    color: #273AAA;
+    font-family: Archivo;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
 
 
