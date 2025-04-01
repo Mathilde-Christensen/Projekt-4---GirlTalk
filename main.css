@@ -203,6 +203,7 @@ ul {
     align-items: center;            /**/
 }
 
+
 .soegefeltBillede {
     width: 67%;
     margin-top: 6px;
@@ -245,7 +246,7 @@ ul {
     width: 8.5rem;
     border-radius: 0rem 0rem 0.6875rem 0.6875rem;
     background: #FDEFF4;
-    margin: 0rem 1rem;
+    margin: 0rem 13rem;
     position: absolute;
     z-index: 2;
 }
