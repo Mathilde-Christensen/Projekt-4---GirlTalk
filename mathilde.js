@@ -188,6 +188,7 @@ closeBtnGruppeleder.addEventListener("click", () => {
 
 
 
+
 const openBtnForaeldrerådgiver = document.getElementById("openForaeldrerodgiver");
 const closeBtnForaeldrerådgiver = document.getElementById("closeForaeldrerodgiver");
 const popupForaeldrerådgiver = document.getElementById("foraeldrerodgiver__popup__content");
