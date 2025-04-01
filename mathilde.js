@@ -223,7 +223,7 @@ closeBtnFordrag.addEventListener("click", () => {
 //popup Maria
 const openBtnMaria = document.getElementById("OpenMaria");
 const closeBtnMaria = document.getElementById("closeMaria");
-const popupMaria = document.getElementById("Maria__popup__content");
+const popupMaria = document.getElementById("maria__popup__content");
 
 openBtnMaria.addEventListener("click", () => {
   popupMaria.style.display = "flex";
