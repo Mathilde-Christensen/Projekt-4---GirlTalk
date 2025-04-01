@@ -136,9 +136,11 @@ ul {
     border: none;
 }
 
+/* Dropdown
 .dropdown:focus-within .dropdown-indhold {
     display: block;
 }
+*/
 
 @media (min-width: 0px) and (max-width: 360px){ 
 .dropdown {
@@ -1122,13 +1124,7 @@ ul {
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fdfbf5;
-    color: #333;
-}
-
-footer {
+.footer {
     padding: 20px;
     background-color: #fff;
     border-top: 1px solid #ccc;
@@ -1196,7 +1192,12 @@ footer {
 .footer-sektion.kontakt-information,
 .footer-sektion.kontakt {
     margin-top: 20px;
-    font-size: 0.9rem;
+    font-size: 1rem;
+}
+
+.footer-sektion p {
+    font-size: 1rem;
+
 }
 
 @media (max-width: 1024px) {
