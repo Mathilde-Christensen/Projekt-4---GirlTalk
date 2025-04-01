@@ -864,16 +864,15 @@ ul {
 
 @media (min-width: 600px) {
     /*Header*/
-        .logo {
-            padding: 1rem;
-            position: absolute;
-            left:50%; 
-            transform: translateX(-50%); 
-            width: 154px; 
-            height: 47px; 
-            margin-top: 6px;
-            }   
-
+    .logo {
+        padding: 1rem;
+        position: absolute;
+        left:50%; 
+        transform: translateX(-50%); 
+        width: 154px; 
+        height: 47px; 
+        margin-top: 6px;
+    }   
 
     /*her*/
     .hero {
