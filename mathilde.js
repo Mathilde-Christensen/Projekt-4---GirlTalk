@@ -144,7 +144,9 @@ function filterLinks() { //Funktionen starter når man skriver i inputfeltet ( o
     }
 
     if (resultater.length === 0) { // hvis der ikke findes et nogen elementer i resultater listen skrives der en besked på siden
-        liste.innerHTML = "<li>Der blev desværre ikke fundet noget resultat. Kontrollere stavemåde eller brug et andet udtryk</li>";
+        liste.innerHTML = `<li class="no-result">
+        Der blev desværre ikke fundet noget resultat. Kontrollér stavemåde eller brug et andet udtryk
+        </li>`;
     } else {
         for (let i = 0; i < resultater.length; i++) { // for loopet tjekker resultater listen igennem som er lavet efter soegResultater match
             let li = document.createElement("li"); // laver det til et li element 
@@ -178,7 +180,7 @@ const closeBtnGruppeleder = document.getElementById("closeGruppeleder");
 const popupGruppeleder = document.getElementById("gruppeleder__popup__content");
 
 openBtnGruppeleder.addEventListener("click", () => {
-  popupGruppeleder.style.display = "flex"; // eller "block", alt efter hvad du bruger i styling
+  popupGruppeleder.style.display = "flex"; 
 });
 
 closeBtnGruppeleder.addEventListener("click", () => {
@@ -188,12 +190,13 @@ closeBtnGruppeleder.addEventListener("click", () => {
 
 
 
+
 const openBtnForaeldrerådgiver = document.getElementById("openForaeldrerodgiver");
 const closeBtnForaeldrerådgiver = document.getElementById("closeForaeldrerodgiver");
 const popupForaeldrerådgiver = document.getElementById("foraeldrerodgiver__popup__content");
 
 openBtnForaeldrerådgiver.addEventListener("click", () => {
-  popupForaeldrerådgiver.style.display = "flex"; // eller "block"
+  popupForaeldrerådgiver.style.display = "flex"; 
 });
 
 closeBtnForaeldrerådgiver.addEventListener("click", () => {
@@ -208,7 +211,7 @@ const closeBtnFordrag = document.getElementById("closeFordrag");
 const popupFordrag = document.getElementById("fordrag__popup__content");
 
 openBtnFordrag.addEventListener("click", () => {
-  popupFordrag.style.display = "flex"; // eller "block"
+  popupFordrag.style.display = "flex"; 
 });
 
 closeBtnFordrag.addEventListener("click", () => {
