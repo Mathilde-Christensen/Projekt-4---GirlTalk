@@ -69,7 +69,7 @@
             <div id="soegBoks" style="display: none;">
                 <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;"><img class="lukKnapBillede" src="billeder/luknap.svg" alt="kryds"></button>
                 <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
-                
+
                 <ul id="soegeResultater"></ul> <!-- tom ul liste som bliver fyldt i js med søgeresultater -->
             </div>
     
@@ -339,21 +339,23 @@
 
                     <div id="Maria__popup__content" style="display: none;">
                         <div class="content__box">
-                            <button id="closeMaria" class="closeMariar"><img class="lukKnapBillede" src="billeder/luknap.svg" alt="kryds"></button>
+                            <button id="closeMaria" class="closePopup">
+                                <img class="lukKnapBillede" src="billeder/luknap.svg" alt="kryds">
+                            </button>
 
-                                <div class="maria__information">
-                                    <img src="billeder/amalie_frivillig.webp" alt="frivillig portræt">
-                    
-                                        <div class="maria__information__text">
-                                            <h2 class="Maria__popup__h2">Maria</h2>
-                            
-                                            <ul class="Maria__popup__ul">
-                                                <li>Frivilligrolle: Gruppeleder</li>
-                                                <li>Alder: 23 år</li>
-                                                <li>Placering: Aarhus</li>
-                                            </ul> 
-                                        </div> 
-                                </div>
+                            <div class="maria__information">
+                                <img src="billeder/amalie_frivillig.webp" alt="frivillig portræt">
+                
+                                    <div class="maria__information__text">
+                                        <h2 class="Maria__popup__h2">Maria</h2>
+                        
+                                        <ul class="Maria__popup__ul">
+                                            <li>Frivilligrolle: Gruppeleder</li>
+                                            <li>Alder: 23 år</li>
+                                            <li>Placering: Aarhus</li>
+                                        </ul> 
+                                    </div> 
+                            </div>
             
                             <p class="Maria__popup__p">
                                 Jeg læser psykologi på 4. semester og arbejder også lidt ved siden af ​​studiet. 
