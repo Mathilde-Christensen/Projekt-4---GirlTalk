@@ -618,7 +618,7 @@ ul {
 
 .box {
     background: #FDEFF4;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 8px;
     max-width: 500px;
     width: 365px;
@@ -626,9 +626,7 @@ ul {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    text-align: left;
 }
 
 .closePopup {
@@ -637,51 +635,88 @@ ul {
 }
 
 .popup__li {
-    margin: 1rem 0rem;
+    margin: 0rem 0rem;
     display: flex;
     align-items: center;
     color: #212529;
     font-family: Lato;
-    font-size: 0.8125rem;
+    font-size: 0.7rem;
     font-style: normal;
     font-weight: 400;
 }
 
 .pink__hjerte {
-    padding: 0.5rem;
+    padding: 0.4rem 0.4rem 0.4rem 0rem;
 }
 
 .sort__hjerte__popup {
-    padding: 0.5rem;
+    padding: 0.4rem 0.4rem 0.4rem 0rem;
 }
 
 .popup__h3 {
     color: #212529;
     font-family: Lato;
-    font-size: 0.8125rem;
+    font-size: 0.7rem;
     font-style: normal;
     font-weight: 900;
     text-align: left;
+    margin: 0.5rem 0rem;
 }
 
 .popup__p {
     color: #212529;
     font-family: Lato;
-    font-size: 0.8125rem;
+    font-size: 0.7rem;
     font-style: normal;
     font-weight: 400;
+    padding: 0.4rem 0rem;
 }
 
 .popup__h2 {
     color: #273AAA;
     font-family: Archivo;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    padding: 0.5rem 0rem;
+    text-align: left;
 }
 
+.popup__ansøg {
+    width: 6.375rem;
+    height: 1.88175rem;
+    border-radius: 2.0625rem;
+    border: none;
+    background: #F7C7D9;
+    color: #273AAA;
+    text-align: center;
+    font-family: Lato;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    align-self: center;
+    margin: 0.5rem;
+}
 
+.popup__ansøg:hover {
+    background-color: #FDEFF4;
+    border: 2px solid #F7C7D9;
+}
+
+.close__box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.closePopup {
+    position: absolute;
+  top: 2.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+}
 
 /*Ansøg*/
 
@@ -982,6 +1017,8 @@ ul {
         border: none;
         object-fit: contain;
     }
+
+    
 }
  
 
