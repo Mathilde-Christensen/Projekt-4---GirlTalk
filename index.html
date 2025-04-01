@@ -51,6 +51,7 @@
             <img class="logo" src="billeder/girltalk_logo.png" alt="GirlTalk logo">
         </a>
 
+        <!--Dropdown
         <div class="dropdown">
             <div class="dropdown-indhold">
                 <a href="#">Vores tilbud</a>
@@ -59,6 +60,7 @@
                 <a href="#">Shop</a>
             </div>
         </div>
+        -->
 
         <!-- Mathilde -->  
         <div id="soegefelt">
@@ -67,9 +69,11 @@
             <div id="soegBoks" style="display: none;">
                 <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;"><img class="lukKnapBillede" src="billeder/luknap.svg" alt="kryds"></button>
                 <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
+
+                <ul id="soegeResultater"></ul> <!-- tom ul liste som bliver fyldt i js med søgeresultater -->
             </div>
     
-            <ul id="soegeResultater"></ul> <!-- tom ul liste som bliver fyldt i js med søgeresultater -->
+            
         </div>    
     </div>
     
@@ -102,7 +106,7 @@
                 GirlTalks frivilligunivers - opdag de mange måder, hvor du kan gøre en forskel
             </h2>
 
-            <p>Her kan du klikke dig rundt i huset og møde de forskellige typer frivillige. 
+            <p>Her kan du klikke dig rundt i huset og mød de forskellige frivilligenheder. 
                 Nogle rådgiver online, andre leder grupper, holder foredrag eller taler med forældre. 
                 Fælles for dem?  De gør en forskel – på hver deres måde. <br>
                 Så… hvilket rum hører du til?
@@ -115,190 +119,202 @@
             <img class="frivilligehus__img" src="billeder/Frivilligehuset.webp" alt="illustration af frivilligehus">
 
             <div id="ungerodgiver__popup" class="etage-button etage-1">
-
                 <button id="openUngerodgiver">Ungrådgiver</button>
-    
-                <div id="ungerodgiver__popup__content"  class="ungerodgiver__popup__content" style="display: none;">
-                    <button id="closeUngerodgiver" class="closeUngerodgiver"><img class="lukKnapBillede" src="billeder/luknap.svg" alt="kryds"></button>
-    
-                    <h2 class="ungerodgiver__popup__h2">Bliv ungrådgiver</h2>
-                    <p class="ungerodgiver__popup__p">Giv unge piger et trygt rum, hvor de kan tale frit
-                         – og få rådgivning, der gør en forskel.
-                    </p>
-    
-                    <h3 class="ungerodgiver__popup__h3">Tid det kræver</h3>
-                    <ul class="ungerodgiver__popup__ul">
-                        <li><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Fast aftenvagt hver anden uge (18.30–00.00)</li>
-                        <li><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">+ én weekendvagt hver anden måned</li>
-                        <li><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Fysisk fremmøde i København, Aarhus, Odense eller Aalborg</li>
-                    </ul>
-    
-                    <h3 class="ungerodgiver__popup__h3">Hvad du laver</h3>
-                    <p class="ungerodgiver__popup__p">
-                        Som ungerådgiver hos GirlTalk støtter du unge piger (12–24 år)
-                         gennem anonyme samtaler i chat og brevkasse. 
-                         Du skaber et trygt og fortroligt rum, hvor de kan dele svære tanker,
-                         få støtte og føle sig hørt. Sammen med et team af andre frivillige og en vagtleder lytter du,
-                         stiller spørgsmål og hjælper med at skabe klarhed i det, der fylder.
-                    </p>
-    
-                    <h3 class="ungerodgiver__popup__h3">Hvad du får ud af det</h3>
-                    <ul class="ungerodgiver__popup__ul">
-                        <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">En rådgiveruddannelse det første år + løbende kurser</li>
-                        <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Supervision og sparring med andre frivillige</li>
-                        <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Mulighed for at blive holdleder eller gruppeleder senere</li>
-                        <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Erfaring med rådgivning, unges trivsel og samtaleteknik</li>
-                        <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Et stærkt fællesskab med engagerede frivillige</li>
-                        <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Meningsfulde samtaler – og følelsen af virkelig at gøre en forskel</li>
-                    </ul>
-    
-                    <button class="ungerodgiver__popup__ansøg">Ansøg</button>
-    
-                </div>
-    
             </div>
 
 
             <div id="gruppeleder__popup" class="etage-button etage-2">
-
                 <button id="openGruppeleder">Gruppeleder</button>
-    
-                <div id="gruppeleder__popup__content"  class="gruppeleder__popup__content" style="display: none;">
-                    <button id="closeGruppeleder" class="closeGruppeleder"><img class="lukKnapBillede" src="billeder/luknap.svg" alt="kryds"></button>
-    
-                    <h2 class="gruppeleder__popup__h2">Bliv gruppeleder</h2>
-                    <p class="gruppeleder__popup__p">Skab et trygt fællesskab, 
-                        hvor piger og unge kvinder kan tale åbent og udvikle sig – 
-                        sammen med dig.
-                    </p>
-    
-                    <h3 class="gruppeleder__popup__h3">Tid det kræver</h3>
-                    <ul class="gruppeleder__popup__ul">
-                        <li><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">4–5 timer om ugen i 8–16 uger (afhængigt af gruppeforløb)</li>
-                        <li><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Fysisk fremmøde + forberedelse og supervision</li>
-                        <li><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Du leder gruppen sammen med en fast makker</li>
-                    </ul>
-    
-                    <h3 class="gruppeleder__popup__h3">Hvad du laver</h3>
-                    <p class="gruppeleder__popup__p">
-                        Som gruppeleder i GirlTalk planlægger og faciliterer du samtaler og aktiviteter i en gruppe af unge piger. 
-                        Sammen med din makker skaber du et trygt og tillidsfuldt rum, 
-                        hvor deltagerne kan dele tanker, spejle sig i hinanden og få nye redskaber med sig. 
-                        Du lytter, støtter og guider piger i alderen 13–24 år gennem samtaler og kreative øvelser, 
-                        og i nogle forløb har du også individuelle samtaler med deltagerne. Undervejs får du faglig oplæring,
-                        deltager i supervision og sparrer løbende med andre frivillige og GirlTalks team.
-                    </p>
-    
-                    <h3 class="gruppeleder__popup__h3">Hvad du får ud af det</h3>
-                    <ul class="gruppeleder__popup__ul">
-                        <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">En rådgiveruddannelse det første år + løbende kurser</li>
-                        <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Supervision og sparring med andre frivillige</li>
-                        <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Mulighed for at blive holdleder eller gruppeleder senere</li>
-                        <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Erfaring med rådgivning, unges trivsel og samtaleteknik</li>
-                        <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Et stærkt fællesskab med engagerede frivillige</li>
-                        <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Meningsfulde samtaler – og følelsen af virkelig at gøre en forskel</li>
-                    </ul>
-    
-                    <button class="gruppeleder__popup__ansøg">Ansøg</button>
-    
-                </div>
-    
             </div>
 
             <div id="foraeldrerodgiver__popup" class="etage-button etage-3">
-
                 <button id="openForaeldrerodgiver">Forældrerådgiver</button>
+            </div>
               
-                <div id="foraeldrerodgiver__popup__content" class="foraeldrerodgiver__popup__content" style="display: none;">
-                  
-                  <button id="closeForaeldrerodgiver" class="closeForaeldrerodgiver">
+
+            <div id="fordrag__popup" class="etage-button etage-4">
+                <button id="openFordrag">Hold foredrag</button>
+            </div>
+
+        </div>
+
+        <div id="ungerodgiver__popup__content"  class="ungerodgiver__popup__content" style="display: none;">
+
+            <div class="box">
+
+                <button id="closeUngerodgiver" class="closePopup"><img class="lukKnapBillede" src="billeder/luknap.svg" alt="kryds"></button>
+
+                <h2 class="popup__h2">Bliv ungrådgiver</h2>
+                <p class="popup__p">Giv unge piger et trygt rum, hvor de kan tale frit
+                        – og få rådgivning, der gør en forskel.
+                </p>
+
+                <h3 class="popup__h3">Tid det kræver</h3>
+                <ul class="popup__ul">
+                    <li class="popup__li"><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Fast aftenvagt hver anden uge (18.30–00.00)</li>
+                    <li class="popup__li"><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">+ én weekendvagt hver anden måned</li>
+                    <li class="popup__li"><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Fysisk fremmøde i København, Aarhus, Odense eller Aalborg</li>
+                </ul>
+
+                <h3 class="popup__h3">Hvad du laver</h3>
+                <p class="popup__p">
+                    Som ungerådgiver hos GirlTalk støtter du unge piger (12–24 år)
+                        gennem anonyme samtaler i chat og brevkasse. 
+                        Du skaber et trygt og fortroligt rum, hvor de kan dele svære tanker,
+                        få støtte og føle sig hørt. Sammen med et team af andre frivillige og en vagtleder lytter du,
+                        stiller spørgsmål og hjælper med at skabe klarhed i det, der fylder.
+                </p>
+
+                <h3 class="popup__h3">Hvad du får ud af det</h3>
+                <ul class="popup__ul">
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">En rådgiveruddannelse det første år + løbende kurser</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Supervision og sparring med andre frivillige</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Mulighed for at blive holdleder eller gruppeleder senere</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Erfaring med rådgivning, unges trivsel og samtaleteknik</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Et stærkt fællesskab med engagerede frivillige</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Meningsfulde samtaler – og følelsen af virkelig at gøre en forskel</li>
+                </ul>
+
+                <button class="popup__ansøg">Ansøg</button>
+            </div>
+
+        </div>
+
+        <div id="gruppeleder__popup__content"  class="gruppeleder__popup__content" style="display: none;">
+
+            <div class="box">
+                <button id="closeGruppeleder" class="closePopup"><img class="lukKnapBillede" src="billeder/luknap.svg" alt="kryds"></button>
+
+                <h2 class="popup__h2">Bliv gruppeleder</h2>
+                <p class="popup__p">Skab et trygt fællesskab, 
+                    hvor piger og unge kvinder kan tale åbent og udvikle sig – 
+                    sammen med dig.
+                </p>
+
+                <h3 class="popup__h3">Tid det kræver</h3>
+                <ul class="popup__ul">
+                    <li class="popup__li"><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">4–5 timer om ugen i 8–16 uger (afhængigt af gruppeforløb)</li>
+                    <li class="popup__li"><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Fysisk fremmøde + forberedelse og supervision</li>
+                    <li class="popup__li"><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Du leder gruppen sammen med en fast makker</li>
+                </ul>
+
+                <h3 class="popup__h3">Hvad du laver</h3>
+                <p class="popup__p">
+                    Som gruppeleder i GirlTalk planlægger og faciliterer du samtaler og aktiviteter i en gruppe af unge piger. 
+                    Sammen med din makker skaber du et trygt og tillidsfuldt rum, 
+                    hvor deltagerne kan dele tanker, spejle sig i hinanden og få nye redskaber med sig. 
+                    Du lytter, støtter og guider piger i alderen 13–24 år gennem samtaler og kreative øvelser, 
+                    og i nogle forløb har du også individuelle samtaler med deltagerne. Undervejs får du faglig oplæring,
+                    deltager i supervision og sparrer løbende med andre frivillige og GirlTalks team.
+                </p>
+
+                <h3 class="popup__h3">Hvad du får ud af det</h3>
+                <ul class="popup__ul">
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">En rådgiveruddannelse det første år + løbende kurser</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Supervision og sparring med andre frivillige</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Mulighed for at blive holdleder eller gruppeleder senere</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Erfaring med rådgivning, unges trivsel og samtaleteknik</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Et stærkt fællesskab med engagerede frivillige</li>
+                </ul>
+
+                <button class="popup__ansøg">Ansøg</button>
+            </div>
+            
+        </div> 
+        
+        <div id="foraeldrerodgiver__popup__content" class="foraeldrerodgiver__popup__content" style="display: none;">
+
+            <div class="box">
+                <button id="closeForaeldrerodgiver" class="closePopup">
                     <img class="lukKnapBillede" src="billeder/luknap.svg" alt="kryds">
-                  </button>
-              
-                  <h2 class="foraeldrerodgiver__popup__h2">Bliv forældrerådgiver</h2>
-                  
-                  <p class="foraeldrerodgiver__popup__p">
+                </button>
+                
+                <h2 class="popup__h2">Bliv forældrerådgiver</h2>
+                    
+                <p class="popup__p">
                     Samtalepartner for forældre, der ønsker at støtte deres døtre bedre.
-                  </p>
-              
-                  <h3 class="foraeldrerodgiver__popup__h3">Tid det kræver</h3>
-                  <ul class="foraeldrerodgiver__popup__ul">
-                    <li><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Ca. 3 timer hver anden uge + 4 årlige møder (undervisning & supervision)</li>
-                    <li><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Fysisk fremmøde på GirlTalks kontor i København</li>
-                  </ul>
-              
-                  <h3 class="foraeldrerodgiver__popup__h3">Hvad du laver</h3>
-                  <p class="foraeldrerodgiver__popup__p">
+                </p>
+                
+                <h3 class="popup__h3">Tid det kræver</h3>
+                <ul class="popup__ul">
+                    <li class="popup__li"><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Ca. 3 timer hver anden uge + 4 årlige møder (undervisning & supervision)</li>
+                    <li class="popup__li"><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Fysisk fremmøde på GirlTalks kontor i København</li>
+                </ul>
+                
+                <h3 class="popup__h3">Hvad du laver</h3>
+                <p class="popup__p">
                     Som forældrerådgiver i GirlTalk tager du samtaler med forældre og pårørende, 
                     der har unge piger i deres liv. Du hjælper dem med at forstå, 
                     støtte og navigere i de udfordringer, deres døtre står i – alt fra mistrivsel til svære relationer. 
                     Du er en del af et trygt rådgivningsmiljø, hvor der er plads til faglig sparring og opbakning, 
                     og du deltager løbende i undervisning og supervision, 
                     så du bliver klædt godt på til rollen og udvikler dig som rådgiver undervejs.
-                  </p>
-              
-                  <h3 class="foraeldrerodgiver__popup__h3">Hvad du får ud af det</h3>
-                  <ul class="foraeldrerodgiver__popup__ul">
-                    <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Faglig udvikling og mulighed for at arbejde med forældresamtaler i praksis</li>
-                    <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Løbende undervisning, oplæg og supervision</li>
-                    <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Erfaring i rådgivning, relationer og psykisk trivsel</li>
-                    <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Et stærkt fællesskab med andre engagerede frivillige</li>
-                    <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Muligheden for at gøre en forskel – både for forældre og de piger, de støtter</li>
-                  </ul>
-              
-                  <button class="foraeldrerådgiver__popup__ansøg">Ansøg</button>
-                </div>
-              </div>
-              
+                </p>
+                
+                <h3 class="popup__h3">Hvad du får ud af det</h3>
+                <ul class="popup__ul">
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Faglig udvikling og mulighed for at arbejde med forældresamtaler i praksis</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Løbende undervisning, oplæg og supervision</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Erfaring i rådgivning, relationer og psykisk trivsel</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Et stærkt fællesskab med andre engagerede frivillige</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Muligheden for at gøre en forskel – både for forældre og de piger, de støtter</li>
+                </ul>
+                
+                <button class="popup__ansøg">Ansøg</button>
+            </div>
 
-              <div id="fordrag__popup" class="etage-button etage-4">
+        </div> 
 
-                <button id="openFordrag">Hold foredrag</button>
-              
-                <div id="fordrag__popup__content" class="fordrag__popup__content" style="display: none;">
-                  
-                  <button id="closeFordrag" class="closeFordrag">
+
+        <div id="fordrag__popup__content" class="fordrag__popup__content" style="display: none;">
+                
+            <div class="box">
+
+                
+                <button id="closeFordrag" class="closePopup">
                     <img class="lukKnapBillede" src="billeder/luknap.svg" alt="kryds">
-                  </button>
-              
-                  <h2 class="fordrag__popup__h2">Hold foredrag</h2>
-                  
-                  <p class="fordrag__popup__p">
+                </button>
+                   
+                
+                <h2 class="popup__h2">Hold foredrag</h2>
+                    
+                <p class="popup__p">
                     Del din historie – og vær med til at styrke unges selvværd og tro på sig selv.
-                  </p>
-              
-                  <h3 class="fordrag__popup__h3">Tid det kræver</h3>
-                  <ul class="fordrag__popup__ul">
-                    <li><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">2–6 timer om måneden/li>
-                    <li><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">1–3 foredrag om måneden</li>
-                    <li><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Bookes med ca. 14 dages varsel</li>
-                    <li><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Oplæring: 3 dages workshop</li>
-                  </ul>
-              
-                  <h3 class="fordrag__popup__h3">Hvad du laver</h3>
-                  <p class="fordrag__popup__p">
+                </p>
+                
+                <h3 class="popup__h3">Tid det kræver</h3>
+                    <ul class="popup__ul">
+                    <li class="popup__li"><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">2–6 timer om måneden/li>
+                    <li class="popup__li"><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">1–3 foredrag om måneden</li>
+                    <li class="popup__li"><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Bookes med ca. 14 dages varsel</li>
+                    <li class="popup__li"><img class="sort__hjerte__popup" src="billeder/sort_hjerte.svg" alt="sort hjerte">Oplæring: 3 dages workshop</li>
+                </ul>
+                
+                <h3 class="popup__h3">Hvad du laver</h3>
+                <p class="popup__p">
                     Som foredragsholder i GirlTalk tager du ud på skoler og institutioner og holder vores ung-til-ung foredrag
                     “Altid god nok – også uden filter”. Her taler du med piger om emner som selvværd, grænser,
                     identitet og sociale medier – og deler en personlig historie, som de kan spejle sig i. 
                     Gennem dit nærvær og dine erfaringer skaber du refleksion, 
                     støtter op om det, der fylder, og viser, at de ikke er alene.
-                  </p>
-              
-                  <h3 class="fordrag__popup__h3">Hvad du får ud af det</h3>
-                  <ul class="fordrag__popup__ul">
-                    <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Grundig oplæring og hjælp til at forme dit foredrag</li>
-                    <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Personlig udvikling og træning i at tale foran andre</li>
-                    <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Løn: 750 kr. for 1 lektion / 1200 kr. for workshop + kørsel</li>
-                    <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">En stærk rolle som ung rollemodel, der gør en forskel</li>
-                    <li><img src="billeder/pink__hjerte.svg" alt="pink hjerte">Mulighed for at nå bredt ud og røre mange på én gang</li>
-                  </ul>
-              
-                  <button class="fordrag__popup__ansøg">Ansøg</button>
-                </div>
-              </div>
+                </p>
+                
+                <h3 class="popup__h3">Hvad du får ud af det</h3>
+                <ul class="popup__ul">
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Grundig oplæring og hjælp til at forme dit foredrag</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Personlig udvikling og træning i at tale foran andre</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Løn: 750 kr. for 1 lektion / 1200 kr. for workshop + kørsel</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">En stærk rolle som ung rollemodel, der gør en forskel</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.svg" alt="pink hjerte">Mulighed for at nå bredt ud og røre mange på én gang</li>
+                </ul>
+                
+                <button class="popup__ansøg">Ansøg</button>
 
+            </div>
+            
         </div>
-
+        
+        
 
     </div>
 
@@ -323,21 +339,24 @@
 
                     <div id="Maria__popup__content" style="display: none;">
                         <div class="content__box">
-                            <button id="closeMaria" class="closeMariar"><img class="lukKnapBillede" src="billeder/luknap.svg" alt="kryds"></button>
 
-                                <div class="maria__information">
-                                    <img src="billeder/amalie_frivillig.webp" alt="frivillig portræt">
-                    
-                                        <div class="maria__information__text">
-                                            <h2 class="Maria__popup__h2">Maria</h2>
-                            
-                                            <ul class="Maria__popup__ul">
-                                                <li>Frivilligrolle: Gruppeleder</li>
-                                                <li>Alder: 23 år</li>
-                                                <li>Placering: Aarhus</li>
-                                            </ul> 
-                                        </div> 
-                                </div>
+                            <button id="closeMaria" class="closePopup">
+                                <img class="lukKnapBillede" src="billeder/luknap.svg" alt="kryds">
+                            </button>
+
+                            <div class="maria__information">
+                                <img src="billeder/amalie_frivillig.webp" alt="frivillig portræt">
+                
+                                    <div class="maria__information__text">
+                                        <h2 class="Maria__popup__h2">Maria</h2>
+                        
+                                        <ul class="Maria__popup__ul">
+                                            <li>Frivilligrolle: Gruppeleder</li>
+                                            <li>Alder: 23 år</li>
+                                            <li>Placering: Aarhus</li>
+                                        </ul> 
+                                    </div> 
+                            </div>
             
                             <p class="Maria__popup__p">
                                 Jeg læser psykologi på 4. semester og arbejder også lidt ved siden af ​​studiet. 
@@ -506,96 +525,6 @@
 
             <button class="ansøg__button">Ansøg</button>
         </div>
-      
-        <form class="form-container">
-      
-          <!-- 🔽 3 Custom Dropdowns -->
-          <div class="dropdown-row">
-            <div class="dropdown">
-              <label>Hvad er du interesseret i at hjælpe med?</label>
-              <button type="button" id="dropdownBtn1" class="dropdown-btn">Vælg mulighed ▼</button>
-              <ul id="dropdownMenu1" class="dropdown-menu">
-                <li data-value="Rådgivning">Unge rådgiver</li>
-                <li data-value="Events">Events</li>
-                <li data-value="Kommunikation">Forældrerådgiver</li>
-              </ul>
-              <input type="hidden" id="dropdownValue1" name="interesse">
-            </div>
-      
-            <div class="dropdown">
-              <label>Hvilken afdeling vil du tilknyttes?</label>
-              <button type="button" id="dropdownBtn2" class="dropdown-btn">Vælg afdeling ▼</button>
-              <ul id="dropdownMenu2" class="dropdown-menu">
-                <li data-value="København">København</li>
-                <li data-value="Aarhus">Aarhus</li>
-                <li data-value="Online">Aalborg</li>
-                <li data-value="Online">Odense</li>
-              </ul>
-              <input type="hidden" id="dropdownValue2" name="afdeling">
-            </div>
-      
-            <div class="dropdown">
-              <label>Har du været til infoaften?</label>
-              <button type="button" id="dropdownBtn3" class="dropdown-btn">Vælg svar ▼</button>
-              <ul id="dropdownMenu3" class="dropdown-menu">
-                <li data-value="Ja">Ja</li>
-                <li data-value="Nej">Nej</li>
-              </ul>
-              <input type="hidden" id="dropdownValue3" name="infoaften">
-            </div>
-          </div>
-      
-          <!-- 👤 Personlige oplysninger -->
-          <div class="form-group">
-            <label>Dit fulde navn *</label>
-            <input type="text" required>
-          </div>
-          <div class="form-group">
-            <label>Dit fødselsår *</label>
-            <input type="number" required>
-          </div>
-          <div class="form-group">
-            <label>Dit telefonnummer *</label>
-            <input type="tel" required>
-          </div>
-          <div class="form-group">
-            <label>Din e-mail *</label>
-            <input type="email" required>
-          </div>
-          <div class="form-group">
-            <label>Din adresse *</label>
-            <input type="text" required>
-          </div>
-      
-          <!-- 📎 Vedhæft filer -->
-          <div class="form-group">
-            <label>Vedhæft dit CV *</label>
-            <input type="file" accept=".pdf,.doc,.docx" required>
-          </div>
-          <div class="form-group">
-            <label>Vedhæft din ansøgning *</label>
-            <input type="file" accept=".pdf,.doc,.docx" required>
-          </div>
-      
-          <!-- 📝 Tekstfelt flyttet hertil -->
-          <div class="form-group">
-            <label>Hvad tiltaler dig ved netop Girltalk?</label>
-            <textarea rows="5" placeholder="Skriv her..." required></textarea>
-          </div>
-      
-          <!-- ✅ Samtykke -->
-          <div class="form-group checkbox-group">
-            <input type="checkbox" id="samtykke" required>
-            <label for="samtykke">Jeg giver samtykke til, at Girltalk må bruge mine oplysninger i forbindelse med min ansøgning.</label>
-          </div>
-      
-          <!-- 🚀 Tilmeld -->
-          <button type="submit" class="submit-btn">Tilmeld mig</button>
-      
-        </form>
-      
-        <script src="casper.js"></script>
-      
     
     <!--Alice - footer-->
 
@@ -633,7 +562,7 @@
         </div>
     
         <div class="footer-sektion kontakt">
-            <p>LOGO IND HER</p>
+            <img class="footer_logo" src="billeder/girltalk_logo.png" alt="girltalks logo">
             <p>Martinsvej 7, 1
             <p>1926 Frederiksberg C</p>
             <p>CVR 30 14 53 48</p>
