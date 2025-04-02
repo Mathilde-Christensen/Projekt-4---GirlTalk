@@ -349,9 +349,8 @@ ul {
 
 
 .etage-button:hover, #openUngerodgiver:hover, #openGruppeleder:hover, #openForaeldrerodgiver:hover, #openFordrag:hover {
-    background-color: #F7C7D9;
-    text-decoration: underline;
-    font-weight: bold;
+    background-color: #FDEFF4;
+    border: 2px solid #F7C7D9;
 }
 
 .etage-1 { top: 16%; }  
@@ -945,12 +944,6 @@ footer {
     }
     
     
-    .etage-button:hover, #openUngerodgiver:hover, #openGruppeleder:hover, #openForaeldrerodgiver:hover, #openFordrag:hover {
-        background-color: #F7C7D9;
-        text-decoration: underline;
-        font-weight: bold;
-    }
-    
     
     .etage-1 { top: 16%; }  
     .etage-2 { top: 35%; }   
@@ -1312,13 +1305,6 @@ footer {
         text-align: center;
         line-height: 1;
         z-index:10;
-    }
-    
-    
-    .etage-button:hover, #openUngerodgiver:hover, #openGruppeleder:hover, #openForaeldrerodgiver:hover, #openFordrag:hover {
-        background-color: #F7C7D9;
-        text-decoration: underline;
-        font-weight: bold;
     }
     
     .etage-1 { top: 18%; }  
