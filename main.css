@@ -62,7 +62,7 @@ ul {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    z-index: 5;
+    z-index: 1;
     width: 100%;
 }
 
@@ -399,6 +399,7 @@ ul {
     height: 330px;
     padding-bottom: 1rem;
     background-color: #F7C7D9;
+    z-index:1;
 }
 
 #holdet__h2 {
@@ -420,6 +421,7 @@ ul {
     justify-content: center;
     align-items: flex-start;
     padding-top: 10px;
+    z-index:1;
 }
 
 .holdet__gallery {
@@ -572,10 +574,7 @@ ul {
 .maria__popup__p {
     margin: 0.5rem 0rem;
 }
-.closeMariar {
-    background-color: #FDEFF4;
-    border: none;
-}
+
 #closeMaria img {
     border-radius: 0;
     border: none;
@@ -786,7 +785,6 @@ ul {
 
 
 .ansog__text {
-    z-index: 1;
     width: 50%;
     height: 14rem;
     position: relative;
@@ -1178,12 +1176,6 @@ footer {
         font-weight: 900;
     }
 
-
-    .closeMariar {
-        background-color: #FDEFF4;
-        border: none;
-    }
-
     #closeMaria img {
         border-radius: 0;
         border: none;
@@ -1468,7 +1460,7 @@ footer {
 
     .holdet__gallery__titel {
         color: #000000;
-        white-space: nowrap; 
+        white-space: nowrap;
         display: block;
         font-size: 1em;
         top:150px;
