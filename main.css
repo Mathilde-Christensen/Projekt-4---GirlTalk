@@ -1569,7 +1569,6 @@ ul {
         margin-right: 0;
     }
     
-    /* Knapper til foldbare sektioner */
     .footer-knap {
         background: none;
         border: none;
@@ -1606,7 +1605,6 @@ ul {
         color: #000;
     }
     
-    /* Kontakt information */
     .kontakt {
         text-align: left;
         font-size: 16px;
