@@ -280,7 +280,7 @@ ul {
     padding: 0rem 0rem 1rem 0rem;
 }
 
-.hero_ansøg_button {
+.hero_ansog_button {
     width: 6.375rem;
     height: 1.88175rem;
     border-radius: 2.0625rem;
@@ -294,7 +294,7 @@ ul {
     font-weight: 400;
 }
 
-.hero_ansøg_button:hover {
+.hero_ansog_button:hover {
     background-color: #FDEFF4;
     border: 2px solid #F7C7D9;
 }
@@ -702,7 +702,7 @@ ul {
     text-align: left;
 }
 
-.popup__ansøg {
+.popup__ansog {
     width: 6.375rem;
     height: 1.88175rem;
     border-radius: 2.0625rem;
@@ -718,7 +718,7 @@ ul {
     margin: 0.5rem;
 }
 
-.popup__ansøg:hover {
+.popup__ansog:hover {
     background-color: #FDEFF4;
     border: 2px solid #F7C7D9;
 }
@@ -739,7 +739,7 @@ ul {
 
 /*Ansøg*/
 
-.ansøg {
+.ansog {
     position: relative;
     width: 100%;
     height: 14rem;
@@ -747,11 +747,11 @@ ul {
     background-color: #F7C7D9;
 }
 
-.ansøg__billede__disktop {
+.ansog__billede__disktop {
     display: none;
 }
 
-.ansøg__billede__mobil {
+.ansog__billede__mobil {
     width: 100%;
     display: block;
     position: absolute;
@@ -759,7 +759,7 @@ ul {
 }
 
 
-.ansøg__text {
+.ansog__text {
     z-index: 1;
     width: 50%;
     height: 14rem;
@@ -770,7 +770,7 @@ ul {
     margin: 0px 15px;
 }
 
-.ansøg__button {
+.ansog__button {
     width: 6.375rem;
     height: 1.88175rem;
     border-radius: 2.0625rem;
@@ -784,16 +784,16 @@ ul {
     font-weight: 400;
 }
 
-.ansøg__button:hover {
+.ansog__button:hover {
     background-color: #FDEFF4;
     border: 2px solid #F7C7D9;
 }
 
-#ansøg__h2 {
+#ansog__h2 {
     padding: 0.5rem 0rem;
 }
 
-.ansøg__p {
+.ansog__p {
     padding: 0rem 0rem 1rem 0rem;
 }
 
@@ -972,11 +972,11 @@ footer {
     #holdet__h2{
         color: #273AAA;
         text-align: left;
-        padding: 2.5rem 1rem 0.5rem 1rem;
+        padding: 2.5rem 1rem 0.5rem 1.2rem;
     }
     
     #om-holdet{
-        padding: 0 1rem 1rem 1rem;
+        padding: 0 1rem 1rem 1.2rem;
     }
     
     .holdet__container {
@@ -1222,7 +1222,7 @@ footer {
         display: none;
     }
 
-    .hero_ansøg_button {
+    .hero_ansog_button {
         font-size: 1.5rem;
         width: 10.375rem;
         height: 4rem;
@@ -1241,23 +1241,23 @@ footer {
 
     /*ansøg*/
 
-    .ansøg__button {
+    .ansog__button {
         font-size: 1.5rem;
         width: 10.375rem;
         height: 4rem;
         padding: 1rem;
     }
 
-    .ansøg {
+    .ansog {
         height: 28rem;
     }
 
-    .ansøg__text {
+    .ansog__text {
         height: 28rem;
         margin: 0px 66px;
     }
 
-    .ansøg__p {
+    .ansog__p {
         padding: 0rem 0rem 2rem 0rem;
     }
 
