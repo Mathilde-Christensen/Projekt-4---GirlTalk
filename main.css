@@ -399,7 +399,6 @@ ul {
     height: 330px;
     padding-bottom: 1rem;
     background-color: #F7C7D9;
-    z-index:1;
 }
 
 #holdet__h2 {
@@ -421,7 +420,6 @@ ul {
     justify-content: center;
     align-items: flex-start;
     padding-top: 10px;
-    z-index:1;
 }
 
 .holdet__gallery {
