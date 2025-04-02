@@ -800,17 +800,11 @@ ul {
 
 /*Footeren*/
 
-footer {
+.footer {
     padding: 20px;
-    background-color: #fff;
-    border-top: 1px solid #ccc;
+    background-color: #FFFEF9;
+    border-top: 1px solid #FFFEF9;
     flex-grow: 1;
-    margin-top: auto;
-}
-
-.footer-sektion {
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
 }
 
 .footer-knap {
@@ -819,12 +813,12 @@ footer {
     align-items: center;
     cursor: pointer;
     color: #1e40af;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     background: none;
     border: none;
     padding: 10px;
-    width: 100%;
+    width: 20;              /*afstand fra plus/minus og tekst*/
     text-align: left;
 }
 
@@ -835,8 +829,8 @@ footer {
 
 .footer-indhold {
     display: block;
-    padding-left: 20px;
-    font-size: 0.9rem;
+    padding-left: 50px;
+    font-size: 1.3rem;
 }
 
 .footer-indhold ul {
@@ -849,11 +843,12 @@ footer {
 
 .footer-indhold ul li a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
+    font-size: 1rem;
 }
 
 .footer-indhold ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .socialemedier-ikoner {
@@ -864,7 +859,7 @@ footer {
 
 .socialemedier-ikoner a {
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .footer-sektion.kontakt-information,
@@ -874,20 +869,45 @@ footer {
 }
 
 .footer-sektion p {
+    font-family: Archivo;
     font-size: 1rem;
 }
 
-@media (max-width: 1024px) {
-    .footer-indhold {
-        display: none;
-    }
+.kontakt_os {
+    font-family: Archivo;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1e40af;
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+    font-weight: bold;
+    text-align: left;
 }
 
+.footer-sektion.kontakt-information p {
+    margin-bottom: 3%;
+}
 
+.footer_logo{
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
 
-    
-    
-  
+.cvr {
+    margin-top: 20px;
+    margin-bottom: 7%;
+}
+
+.faq {
+    margin-top:30px;
+    color: #1d46da;
+}
+
+.footer-sektion.kontakt-information {
+    margin-bottom: 10%;
+}
+
 
 @media (min-width: 600px) {
     /*Header*/
@@ -1163,6 +1183,9 @@ footer {
         width: 30%;
     }
 
+    .footer-indhold {
+        display: none;
+    }
     
 }
  
@@ -1486,5 +1509,86 @@ footer {
         object-fit: contain;
         width: 30%;
     }
-
+    
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f9f9f9;
+        padding: 40px;
+        font-family: Arial, sans-serif;
+        color: #000;
+    }
+    
+    .footer-sektion {
+        flex: 1;
+        margin-right: 20px;
+    }
+    
+    .footer-sektion:last-child {
+        margin-right: 0;
+    }
+    
+    /* Knapper til foldbare sektioner */
+    .footer-knap {
+        background: none;
+        border: none;
+        font-weight: bold;
+        font-size: 18px;
+        color: #1a2fb0;
+        cursor: pointer;
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .footer-knap span {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+    
+    .footer-indhold {
+        display: none;
+    }
+    
+    .footer-indhold ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-indhold ul li {
+        margin-bottom: 8px;
+    }
+    
+    .footer-indhold ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    /* Kontakt information */
+    .kontakt {
+        text-align: left;
+        font-size: 16px;
+    }
+    
+    .kontakt p {
+        margin: 5px 0;
+    }
+    
+    .footer_logo {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+    
+    .kontakt-information h4 {
+        font-size: 18px;
+        color: #1a2fb0;
+    }
+    
+    .faq {
+        color: #1a2fb0;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
 }
