@@ -409,8 +409,8 @@ ul {
 .holdet__gallery__li img {
     width: 60px;
     height: 60px;
-    border-radius: 50px; /* Dette gør billederne runde*/
-    object-fit: cover; /* Gør at billederne passer fint i cirklerne */
+    border-radius: 50px;
+    object-fit: cover; 
     border: 4px solid #273AAA;
     display: block;
     margin: 0 auto;
@@ -433,8 +433,8 @@ ul {
     text-align: center;
     margin: 0;
     font-size: 0.8125em;
-    display: block; /* Sikrer, at teksten opfører sig som en blok */
-    text-align: center; /* Centrer teksten */
+    display: block;
+    text-align: center; 
 }
 
 #holdet__gallery__name{
@@ -442,7 +442,7 @@ ul {
     color: #273AAA;
     margin-top: 2px;
     white-space: nowrap;
-    max-width: fit-content; /* Sørger for, at det kun fylder det nødvendige */
+    max-width: fit-content; 
     display: inline-block;
     top:70px;
 
@@ -450,8 +450,8 @@ ul {
 
 .holdet__gallery__titel {
     color: #000000;
-    white-space: nowrap; /* Sørger for at teksten ikke brydes */
-    display: block; /* Sikrer, at teksten opfører sig som en blok */
+    white-space: nowrap; 
+    display: block; 
     top:90px;
 }
 
@@ -1002,28 +1002,30 @@ ul {
         display: flex;
         justify-content: center;
         align-items: flex-start; /* Placerer billederne højere oppe */
-        padding-top: 30px; /* Eventuel justering for at få dem lidt ned */
     }
     
     .holdet__gallery {
         display: flex;
-        gap: 20px;
+        gap: 0;
         width: 100%;
         transition: transform 0.1s ease-out;
+        padding-top:10px;
     }
     
     .holdet__gallery__li {
-        width: calc(100% / 4); /* Sikrer, at præcis 2 billeder vises */
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        width: calc(100% / 4); /* præcis 4 billeder vises */
         flex: 0 0 auto;
         text-align:center;
     }
     
     .holdet__gallery__li img {
-        width: 60px;
-        height: 60px;
-        border-radius: 50px; /* Dette gør billederne runde*/
-        object-fit: cover; /* Gør at billederne passer fint i cirklerne */
-        margin: 0px; /* Reduceret margin mellem billederne */
+        width: 80px;
+        height: 80px;
+        border-radius: 50px; 
+        object-fit: cover; 
         border: 4px solid #273AAA;
         display: block;
         margin: 0 auto;
@@ -1032,6 +1034,7 @@ ul {
     .holdet__gallery__li img:hover{
         border: 2px solid transparent;
     }
+
     
     .holdet__button {
         background-color: #F7C7D9;
@@ -1040,24 +1043,24 @@ ul {
     
     #holdet__gallery__name{
         font-size: 0.8125em;
-        text-align: center; /* Centrer teksten */
+        text-align: center; 
         font-weight:bold;
         color: #273AAA;
         margin-top: 2px;
         white-space: nowrap;
-        max-width: fit-content; /* Sørger for, at det kun fylder det nødvendige */
+        max-width: fit-content;
         display: inline-block;
-        top:70px;
+        top:80px;
     
     }
     
     .holdet__gallery__titel {
         color: #000000;
-        white-space: nowrap; /* Sørger for at teksten ikke brydes */
-        display: block; /* Sikrer, at teksten opfører sig som en blok */
-        text-align: center; /* Centrer teksten */
-        font-size: 0.8125rem; /* Sørger for at den er mindre end name */
-        top:90px;
+        white-space: nowrap;
+        display: block; 
+        text-align: center; 
+        font-size: 0.8125rem;
+        top:100px;
     }
 
     #holdet__gallery__name,.holdet__gallery__titel {
@@ -1069,10 +1072,8 @@ ul {
         padding: 0 60px 1rem 60px;
         text-align: center;
         gap: 10px;
-        display: block; /* Sikrer at teksten opfører sig som en blok */
-        text-align: center; /* Centrer teksten */
-
-
+        display: block; 
+        text-align: center;
     }
 
     
@@ -1092,16 +1093,16 @@ ul {
     #prevButton{
         left: 10px;
         top:70%;
-        z-index: 10; /* Sørger for, at knappen ligger øverst */
-        pointer-events: auto; /* Sørger for, at den kan klikkes */
+        z-index: 10;
+        pointer-events: auto; 
     
     }
     
     #nextButton{
         right: 10px;
         top:70%;
-        z-index: 10; /* Sørger for, at knappen ligger øverst */
-        pointer-events: auto; /* Sørger for, at den kan klikkes */
+        z-index: 10;
+        pointer-events: auto; 
     }
     
     #nextButton:hover, #prevButton:hover{
@@ -1301,8 +1302,8 @@ ul {
     
     .etage-button {
         position: absolute;
-        left: 50%; /* Placeres i midten af huset */
-        transform: translateX(-50%); /* Finjusterer centering */
+        left: 50%; /* placerer sig i midten af huset */
+        transform: translateX(-50%); /* finjusterer centering */
     }
 
     #openUngerodgiver, #openGruppeleder, #openForaeldrerodgiver, #openFordrag {
@@ -1371,13 +1372,17 @@ ul {
     
     .holdet__gallery {
         display: flex;
-        gap: 20px;
+        gap: 0;
         width: 100%;
         transition: transform 0.1s ease-out;
         padding-top:50px;
+        
     }
     
     .holdet__gallery__li {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
         width: calc(100% / 7); /* Sikrer, at præcis 7 billeder vises */
         flex: 0 0 auto;
         text-align:center;
@@ -1389,14 +1394,26 @@ ul {
         border-radius: 50px; /* Dette gør billederne runde*/
         object-fit: cover; /* Gør at billederne passer fint i cirklerne */
         margin-top: 90px;
-        margin-bottom: 5px;
         border: 4px solid #273AAA;
         display: block;
         margin: 0 auto;
+    
     }
+
+    .holdet__gallery__li button.holdet__button {
+        padding: 0;
+        margin: 0;
+        border: none;
+        background: none;
+        display: block;
+    }  
     
     .holdet__gallery__li img:hover{
         border: 4px solid transparent;
+    }
+
+    .holdet__gallery__li:first-child {
+        margin-left: 2px; /* sørger for at maria-billede kan styles */
     }
 
     #holdet__gallery__name,.holdet__gallery__titel {
@@ -1404,21 +1421,19 @@ ul {
         width: 100%;
         left: 50%;
         transform: translateX(-50%);
-        text-align: center;
-        margin: 0;
         font-size: 1rem;
-        display: block; /* Sikrer, at teksten opfører sig som en blok */
-        text-align: center; /* Centrer teksten */
+        display: block;
+        text-align: center; 
+        margin-top: 5px;
     }
     
     #holdet__gallery__name{
         font-size: 1.2em;
-        text-align: center; /* Centrer teksten */
         font-weight:bold;
         color: #273AAA;
         margin-top: 2px;
         white-space: nowrap;
-        max-width: fit-content; /* Sørger for, at det kun fylder det nødvendige */
+        max-width: fit-content;
         display: inline-block;
         top:120px;
     
@@ -1427,9 +1442,8 @@ ul {
     .holdet__gallery__titel {
         color: #000000;
         white-space: nowrap; /* Sørger for at teksten ikke brydes */
-        display: block; /* Sikrer, at teksten opfører sig som en blok */
-        text-align: center; /* Centrer teksten */
-        font-size: 1em; /* Sørger for at den er mindre end name */
+        display: block;
+        font-size: 1em;
         top:150px;
     }
     
@@ -1449,16 +1463,16 @@ ul {
     #prevButton{
         left: 5px;
         top:70%;
-        z-index: 10; /* Sørger for, at knappen ligger øverst */
-        pointer-events: auto; /* Sørger for, at den kan klikkes */
+        z-index: 10;
+        pointer-events: auto; /* knappen kan klikkes */
     
     }
     
     #nextButton{
         right: 5px;
         top:70%;
-        z-index: 10; /* Sørger for, at knappen ligger øverst */
-        pointer-events: auto; /* Sørger for, at den kan klikkes */
+        z-index: 10; 
+        pointer-events: auto; 
     }
     
     #nextButton:hover, #prevButton:hover{
