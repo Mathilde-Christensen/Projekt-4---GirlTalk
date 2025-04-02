@@ -546,7 +546,6 @@ ul {
     align-items: center;
     flex-direction: column;
 }
-
 .content__box {
     background: #FDEFF4;
     padding: 1rem;
@@ -561,12 +560,10 @@ ul {
     flex-direction: column;
     text-align: left;
 }
-
 .maria__information {
     display: flex;
     padding: 0.5rem;
 }
-
 .maria__popup__ul {
     font-weight: 900;
     color: #212529;
@@ -575,30 +572,95 @@ ul {
     font-style: normal;
     padding: 0rem 1rem;
 }
-
 .maria__popup__h2 {
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 900;
     padding: 1rem 1rem 0rem 1rem;
 }
-
 .maria__popup__p {
     margin: 0.5rem 0rem;
 }
-
 .closeMariar {
     background-color: #FDEFF4;
     border: none;
 }
-
 #closeMaria img {
     border-radius: 0;
     border: none;
     object-fit: contain;
     width: 30%;
 }
-
+.maria__img {
+    width: 130px;
+    height: 130px;
+    border-radius: 170px;
+    /* Dette gør billederne runde*/
+    object-fit: cover;
+    /* Gør at billederne passer fint i cirklerne */
+    margin: 0px;
+    /* Reduceret margin mellem billederne */
+    border: 4px solid #273AAA;
+}
+#maria__popup__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    background-color: rgba(247, 199, 217, 0.7);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content__box {
+    background: #FDEFF4;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 365px;
+    height: 550px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+.maria__information {
+    display: flex;
+    padding: 0.5rem;
+}
+.maria__popup__ul {
+    font-weight: 900;
+    color: #212529;
+    font-family: Lato;
+    font-size: 0.8125rem;
+    font-style: normal;
+    padding: 0rem 1rem;
+}
+.maria__popup__h2 {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 900;
+    padding: 1rem 1rem 0rem 1rem;
+}
+.maria__popup__p {
+    margin: 0.5rem 0rem;
+}
+.closeMariar {
+    background-color: #FDEFF4;
+    border: none;
+}
+#closeMaria img {
+    border-radius: 0;
+    border: none;
+    object-fit: contain;
+    width: 30%;
+}
 .maria__img {
     width: 130px;
     height: 130px;
