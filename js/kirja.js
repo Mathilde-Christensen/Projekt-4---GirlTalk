@@ -1,4 +1,3 @@
-// Funktion til at bestemme antallet af synlige billeder baseret på skærmstørrelse
 function getImagesPerSlide() {
     if (window.matchMedia("(max-width: 480px)").matches) {
         return 2; // Mobilformat: 2 billeder pr. slide
