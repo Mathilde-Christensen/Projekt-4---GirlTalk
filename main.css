@@ -365,6 +365,7 @@ ul {
     height: 330px;
     padding-bottom: 1rem;
     background-color: #F7C7D9;
+    z-index:1;
 }
 
 #holdet__h2{
@@ -386,6 +387,7 @@ ul {
     justify-content: center;
     align-items: flex-start; /* Placerer billederne højere oppe */
     padding-top: 10px; /* Eventuel justering for at få dem lidt ned */
+    z-index:1;
 }
 
 .holdet__gallery {
@@ -958,6 +960,7 @@ footer {
         margin: 0px auto;
         padding-bottom: 1rem;
         background-color: #F7C7D9;
+        z-index:1;
     }
     
     #holdet__h2{
@@ -978,6 +981,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: flex-start; /* Placerer billederne højere oppe */
+        z-index:1;
     }
     
     .holdet__gallery {
@@ -1319,6 +1323,7 @@ footer {
         width: 100%;
         height: 510px;
         background-color: #F7C7D9;
+        z-index:1;
     }
     
     #holdet__h2{
@@ -1338,8 +1343,10 @@ footer {
         position: relative;
         display: flex;
         justify-content: center;
-        align-items: flex-start; /* Placerer billederne højere oppe */
-        padding-top: 30px; /* Eventuel justering for at få dem lidt ned */
+        align-items: flex-start; 
+        padding-top: 30px; 
+        z-index:1;
+
     }
     
     .holdet__gallery {
@@ -1363,8 +1370,8 @@ footer {
     .holdet__gallery__li img {
         width: 100px;
         height: 100px;
-        border-radius: 50px; /* Dette gør billederne runde*/
-        object-fit: cover; /* Gør at billederne passer fint i cirklerne */
+        border-radius: 50px; 
+        object-fit: cover; 
         margin-top: 90px;
         border: 4px solid #273AAA;
         display: block;
@@ -1378,14 +1385,11 @@ footer {
         border: none;
         background: none;
         display: block;
+        z-index:10;
     }  
     
     .holdet__gallery__li img:hover{
         border: 4px solid transparent;
-    }
-
-    .holdet__gallery__li:first-child {
-        margin-left: 2px; /* sørger for at maria-billede kan styles */
     }
 
     #holdet__gallery__name,.holdet__gallery__titel {
