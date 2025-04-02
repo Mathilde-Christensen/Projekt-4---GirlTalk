@@ -62,17 +62,17 @@ ul {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    z-index: 5;
+    z-index: 1;
     width: 100%;
 }
 
 .logo {
     padding: 1rem;
     position: absolute;
-    left:28%; 
-    transform: translateX(-50%); 
-    width: 154px; 
-    height: 47px; 
+    left: 28%;
+    transform: translateX(-50%);
+    width: 154px;
+    height: 47px;
     margin-top: 6px;
 }
 
@@ -86,23 +86,28 @@ ul {
     font-weight: 600;
 }
 
-.sidenav { 
-    height: 100%;                           /*skal boksen gå hele vejen ned? */
+.sidenav {
+    height: 100%;
+    /*skal boksen gå hele vejen ned? */
     width: 0;
     position: fixed;
-    top: 0;                                
+    top: 0;
     left: 0;
-    background-color: #FFFEF9;            /*------Eeeeelller FDEFF4?-------*/
-    overflow-x: hidden;                    
-    transition: 1s;                       
-    padding-top: 20px;                     
-    box-shadow: 2px 0px 0px #F7C7D9;      /*------Eeeeller 10 - boksens skygge til højre*/
-    z-index: 1000;                          /*sørger for at hamburgermenuen er forrest end andet indhold*/                 
+    background-color: #FFFEF9;
+    /*------Eeeeelller FDEFF4?-------*/
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 20px;
+    box-shadow: 2px 0px 0px #F7C7D9;
+    /*------Eeeeller 10 - boksens skygge til højre*/
+    z-index: 1000;
+    /*sørger for at hamburgermenuen er forrest end andet indhold*/
 }
 
-.sidenav a, .dropdown-knappen { 
+.sidenav a,
+.dropdown-knappen {
     font-family: 'Montserrat', sans-serif;
-    padding: 10px 15px;            
+    padding: 10px 15px;
     text-decoration: none;
     font-size: 15px;
     color: #273AAA;
@@ -111,29 +116,34 @@ ul {
     background: transparent;
     border: none;
     text-align: left;
-    width: 100%;    
+    width: 100%;
 }
 
-.sidenav a:hover, .dropdown-knappen:hover, .dropdown-indhold a:hover { 
-    background: #FFB6C1;  
-    font-weight: bold;              
+.sidenav a:hover,
+.dropdown-knappen:hover,
+.dropdown-indhold a:hover {
+    background: #FFB6C1;
+    font-weight: bold;
 }
 
-.dropdown-indhold a { 
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 13px;                       
-    font-weight: 75;                   
-    color: #273AAA; 
-    padding: 10px 65px;                     /*---- dropdowns længde hen til højre ----*/
+.dropdown-indhold a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 75;
+    color: #273AAA;
+    padding: 10px 65px;
+    /*---- dropdowns længde hen til højre ----*/
 }
 
-.hamburger { 
-    background: #FFFEF9;                /*sørg fir sammw farve som baggrund, som vi vælger*/
+.hamburger {
+    background: #FFFEF9;
+    /*sørg fir sammw farve som baggrund, som vi vælger*/
     padding: 0px;
     cursor: pointer;
     position: absolute;
     left: 7px;
-    top: 16px;                        /*placeringen horisontalt*/
+    top: 16px;
+    /*placeringen horisontalt*/
     font-size: 24px;
     border: none;
     z-index: 100;
@@ -145,7 +155,7 @@ ul {
 }
 */
 
-        
+
 
 /* Mathilde js style */
 
@@ -166,12 +176,15 @@ ul {
 #soegefeltButton {
     border: none;
     background-color: #FFFEF9;
-    width: 45px; 
-    height: 48px; 
+    width: 45px;
+    height: 48px;
     margin-top: 2px;
-    margin-left: auto;              /**/
-    display: flex;                  /**/
-    align-items: center;            /**/
+    margin-left: auto;
+    /**/
+    display: flex;
+    /**/
+    align-items: center;
+    /**/
 }
 
 
@@ -183,9 +196,12 @@ ul {
 #lukKnap {
     border: none;
     background-color: #FFFEF9;
-    margin-left: auto;              /**/
-    display: flex;                  /**/
-    align-items: center;            /**/
+    margin-left: auto;
+    /**/
+    display: flex;
+    /**/
+    align-items: center;
+    /**/
 }
 
 .lukKnapBillede {
@@ -202,10 +218,14 @@ ul {
     font-style: normal;
     font-weight: 700;
     padding: 0.4rem;
-    margin-left: auto;              /**/
-    display: flex;                  /**/
-    align-items: center;            /**/
-    margin-top: -1%;                /**/
+    margin-left: auto;
+    /**/
+    display: flex;
+    /**/
+    align-items: center;
+    /**/
+    margin-top: -1%;
+    /**/
 }
 
 #indputFelt:focus {
@@ -225,10 +245,10 @@ ul {
 }
 
 #soegeResultater li a {
-    display: block;                  
+    display: block;
     padding: 0.5rem;
     text-align: left;
-    z-index: 1000;  
+    z-index: 1000;
 }
 
 .no-result {
@@ -239,7 +259,7 @@ ul {
     font-weight: 700;
 }
 
-/*hero*/ 
+/*hero*/
 
 .hero {
     position: relative;
@@ -262,7 +282,6 @@ ul {
 }
 
 .hero__text {
-    z-index: 1;
     width: 50%;
     height: 25rem;
     position: relative;
@@ -280,7 +299,7 @@ ul {
     padding: 0rem 0rem 1rem 0rem;
 }
 
-.hero_ansøg_button {
+.hero_ansog_button {
     width: 6.375rem;
     height: 1.88175rem;
     border-radius: 2.0625rem;
@@ -294,50 +313,52 @@ ul {
     font-weight: 400;
 }
 
-.hero_ansøg_button:hover {
+.hero_ansog_button:hover {
     background-color: #FDEFF4;
     border: 2px solid #F7C7D9;
 }
 
 /*Kirja*/
 
-.frivilligunivers__text{
+.frivilligunivers__text {
     padding: 1rem 0.5rem;
 }
 
-.frivilligehus__container{
+.frivilligehus__container {
     position: relative;
     height: auto;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    padding-bottom:40px;
+    padding-bottom: 40px;
 }
 
-.frivilligehus__img{
+.frivilligehus__img {
     max-height: 60vh;
-    width:300px;
+    width: 300px;
     opacity: 70%;
 }
 
 .etage-button {
     position: absolute;
-    left: 50%; /* Placeres i midten af huset */
-    transform: translateX(-50%); /* Finjusterer centering */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-#openUngerodgiver, #openGruppeleder, #openForaeldrerodgiver, #openFordrag {
+#openUngerodgiver,
+#openGruppeleder,
+#openForaeldrerodgiver,
+#openFordrag {
     display: inline-block;
     position: absolute;
     align-items: center;
     left: 50%;
     transform: translateX(-50%);
     padding: 0.5rem 1rem;
-    border-radius: 8px; /* afrundet hjørner */
+    border-radius: 2.0625rem; /* afrundet hjørner */
     width: 120px; 
     height: 30px; 
     text-decoration: none;
-    font-weight: bold;
     font-size: 0.7em;
     color: #273AAA;
     background-color: #F7C7D9;
@@ -345,22 +366,31 @@ ul {
     transition: all 0.2s ease;
     text-align: center;
     line-height: 1;
-    z-index:10;
 }
 
 
 .etage-button:hover, #openUngerodgiver:hover, #openGruppeleder:hover, #openForaeldrerodgiver:hover, #openFordrag:hover {
-    background-color: #F7C7D9;
-    text-decoration: underline;
-    font-weight: bold;
+    background-color: #FDEFF4;
+    border: 2px solid #F7C7D9;
 }
 
-.etage-1 { top: 16%; }  
-.etage-2 { top: 36%; }   
-.etage-3 { top: 55%; }  
-.etage-4 { top: 76%; }   
+.etage-1 {
+    top: 16%;
+}
 
-.holdet{
+.etage-2 {
+    top: 36%;
+}
+
+.etage-3 {
+    top: 55%;
+}
+
+.etage-4 {
+    top: 76%;
+}
+
+.holdet {
     gap: 5px;
     position: relative;
     width: 100%;
@@ -369,13 +399,13 @@ ul {
     background-color: #F7C7D9;
 }
 
-#holdet__h2{
+#holdet__h2 {
     color: #273AAA;
     text-align: left;
     padding: 2rem 1rem 0 1rem;
 }
 
-#om-holdet{
+#om-holdet {
     padding: 0.5rem 1rem 1rem 1rem;
 }
 
@@ -386,8 +416,8 @@ ul {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Placerer billederne højere oppe */
-    padding-top: 10px; /* Eventuel justering for at få dem lidt ned */
+    align-items: flex-start;
+    padding-top: 10px;
 }
 
 .holdet__gallery {
@@ -409,14 +439,14 @@ ul {
 .holdet__gallery__li img {
     width: 60px;
     height: 60px;
-    border-radius: 50px; /* Dette gør billederne runde*/
-    object-fit: cover; /* Gør at billederne passer fint i cirklerne */
+    border-radius: 50px;
+    object-fit: cover; 
     border: 4px solid #273AAA;
     display: block;
     margin: 0 auto;
 }
 
-.holdet__gallery__li img:hover{
+.holdet__gallery__li img:hover {
     border: 2px solid transparent;
 }
 
@@ -425,7 +455,8 @@ ul {
     border: none;
 }
 
-#holdet__gallery__name, .holdet__gallery__titel {
+#holdet__gallery__name,
+.holdet__gallery__titel {
     position: absolute;
     width: 100%;
     left: 50%;
@@ -433,58 +464,58 @@ ul {
     text-align: center;
     margin: 0;
     font-size: 0.8125em;
-    display: block; /* Sikrer, at teksten opfører sig som en blok */
-    text-align: center; /* Centrer teksten */
+    display: block;
+    text-align: center; 
 }
 
-#holdet__gallery__name{
-    font-weight:bold;
+#holdet__gallery__name {
+    font-weight: bold;
     color: #273AAA;
     margin-top: 2px;
     white-space: nowrap;
-    max-width: fit-content; /* Sørger for, at det kun fylder det nødvendige */
+    max-width: fit-content; 
     display: inline-block;
-    top:70px;
+    top: 70px;
 
 }
 
 .holdet__gallery__titel {
     color: #000000;
-    white-space: nowrap; /* Sørger for at teksten ikke brydes */
-    display: block; /* Sikrer, at teksten opfører sig som en blok */
+    white-space: nowrap; 
+    display: block; 
     top:90px;
 }
 
 
-#prevButton, #nextButton {
+#prevButton,
+#nextButton {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
     background-color: #273AAA;
     color: #F7C7D9;
     border: none;
     padding: 10px 15px;
     font-size: 15px;
     cursor: pointer;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
-#prevButton{
+#prevButton {
     left: 5px;
-    top:70%;
-    z-index: 10; /* Sørger for, at knappen ligger øverst */
-    pointer-events: auto; /* Sørger for, at den kan klikkes */
+    top: 70%;
+    pointer-events: auto;
 
 }
 
-#nextButton{
+#nextButton {
     right: 5px;
-    top:70%;
-    z-index: 10; /* Sørger for, at knappen ligger øverst */
-    pointer-events: auto; /* Sørger for, at den kan klikkes */
+    top: 70%;
+    pointer-events: auto;
 }
 
-#nextButton:hover, #prevButton:hover{
+#nextButton:hover,
+#prevButton:hover {
     background-color: #1d46da;
 }
 
@@ -495,14 +526,13 @@ ul {
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(5px);
-    background-color:  rgba(247, 199, 217, 0.7);
-    z-index: 9999;
+    background-color: rgba(247, 199, 217, 0.7);
+    z-index: 11;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 .content__box {
     background: #FDEFF4;
     padding: 1rem;
@@ -517,12 +547,10 @@ ul {
     flex-direction: column;
     text-align: left;
 }
-
 .maria__information {
     display: flex;
     padding: 0.5rem;
 }
-
 .maria__popup__ul {
     font-weight: 900;
     color: #212529;
@@ -531,21 +559,14 @@ ul {
     font-style: normal;
     padding: 0rem 1rem;
 }
-
 .maria__popup__h2 {
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 900;
     padding: 1rem 1rem 0rem 1rem;
 }
-
 .maria__popup__p {
     margin: 0.5rem 0rem;
-}
-
-.closeMariar {
-    background-color: #FDEFF4;
-    border: none;
 }
 
 #closeMaria img {
@@ -553,17 +574,16 @@ ul {
     border: none;
     object-fit: contain;
     width: 30%;
+    z-index:1000;
 }
-
 .maria__img {
     width: 130px;
     height: 130px;
-    border-radius: 170px; /* Dette gør billederne runde*/
-    object-fit: cover; /* Gør at billederne passer fint i cirklerne */
-    margin: 0px; /* Reduceret margin mellem billederne */
+    border-radius: 170px;
+    object-fit: cover;
+    margin: 0px;
     border: 4px solid #273AAA;
 }
-
 
 /*GirlTalk frivillig univers*/
 
@@ -582,7 +602,7 @@ ul {
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(5px);
-    background-color:  rgba(247, 199, 217, 0.7);
+    background-color: rgba(247, 199, 217, 0.7);
     z-index: 9999;
     display: flex;
     justify-content: center;
@@ -597,7 +617,7 @@ ul {
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(5px);
-    background-color:  rgba(247, 199, 217, 0.7);
+    background-color: rgba(247, 199, 217, 0.7);
     z-index: 9999;
     display: flex;
     justify-content: center;
@@ -612,7 +632,7 @@ ul {
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(5px);
-    background-color:  rgba(247, 199, 217, 0.7);
+    background-color: rgba(247, 199, 217, 0.7);
     z-index: 9999;
     display: flex;
     justify-content: center;
@@ -627,7 +647,7 @@ ul {
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(5px);
-    background-color:  rgba(247, 199, 217, 0.7);
+    background-color: rgba(247, 199, 217, 0.7);
     z-index: 9999;
     display: flex;
     justify-content: center;
@@ -651,6 +671,7 @@ ul {
 .closePopup {
     background-color: #FDEFF4;
     border: none;
+    z-index:10000;
 }
 
 .popup__li {
@@ -675,7 +696,7 @@ ul {
 .popup__h3 {
     color: #212529;
     font-family: Lato;
-    font-size: 0.7rem;
+    font-size: 0.8125rem;
     font-style: normal;
     font-weight: 900;
     text-align: left;
@@ -702,7 +723,7 @@ ul {
     text-align: left;
 }
 
-.popup__ansøg {
+.popup__ansog {
     width: 6.375rem;
     height: 1.88175rem;
     border-radius: 2.0625rem;
@@ -718,7 +739,7 @@ ul {
     margin: 0.5rem;
 }
 
-.popup__ansøg:hover {
+.popup__ansog:hover {
     background-color: #FDEFF4;
     border: 2px solid #F7C7D9;
 }
@@ -731,15 +752,16 @@ ul {
 
 .closePopup {
     position: absolute;
-  top: 2.5rem;
-  right: 0.5rem;
-  background: none;
-  border: none;
+    top: 2.5rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    z-index:10000;
 }
 
 /*Ansøg*/
 
-.ansøg {
+.ansog {
     position: relative;
     width: 100%;
     height: 14rem;
@@ -747,11 +769,11 @@ ul {
     background-color: #F7C7D9;
 }
 
-.ansøg__billede__disktop {
+.ansog__billede__disktop {
     display: none;
 }
 
-.ansøg__billede__mobil {
+.ansog__billede__mobil {
     width: 100%;
     display: block;
     position: absolute;
@@ -759,8 +781,7 @@ ul {
 }
 
 
-.ansøg__text {
-    z-index: 1;
+.ansog__text {
     width: 50%;
     height: 14rem;
     position: relative;
@@ -770,7 +791,7 @@ ul {
     margin: 0px 15px;
 }
 
-.ansøg__button {
+.ansog__button {
     width: 6.375rem;
     height: 1.88175rem;
     border-radius: 2.0625rem;
@@ -784,16 +805,16 @@ ul {
     font-weight: 400;
 }
 
-.ansøg__button:hover {
+.ansog__button:hover {
     background-color: #FDEFF4;
     border: 2px solid #F7C7D9;
 }
 
-#ansøg__h2 {
+#ansog__h2 {
     padding: 0.5rem 0rem;
 }
 
-.ansøg__p {
+.ansog__p {
     padding: 0rem 0rem 1rem 0rem;
 }
 
@@ -909,17 +930,20 @@ ul {
 }
 
 
+   
+  
 @media (min-width: 600px) {
+
     /*Header*/
     .logo {
         padding: 1rem;
         position: absolute;
-        left:50%; 
-        transform: translateX(-50%); 
-        width: 154px; 
-        height: 47px; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: 154px;
+        height: 47px;
         margin-top: 6px;
-    }   
+    }
 
     /*her*/
     .hero {
@@ -930,43 +954,46 @@ ul {
         height: 35rem;
     }
 
-    .frivilligunivers__text{
+    .frivilligunivers__text {
         padding: 1rem 0.5rem;
     }
-    
-    .frivilligehus__container{
+
+    .frivilligehus__container {
         position: relative;
         height: auto;
-        display:flex;
-        align-items:center;
+        display: flex;
+        align-items: center;
         justify-content: center;
-        padding-bottom:45px;
+        padding-bottom: 45px;
     }
-    
-    .frivilligehus__img{
+
+    .frivilligehus__img {
         max-height: 60vh;
-        width:300px;
+        width: 300px;
         opacity: 70%;
     }
-    
+
     .etage-button {
         position: absolute;
         left: 50%;
-        transform: translateX(-50%); /* finjusterer centering */
+        transform: translateX(-50%);
+        /* finjusterer centering */
     }
 
-    #openUngerodgiver, #openGruppeleder, #openForaeldrerodgiver, #openFordrag {
+    #openUngerodgiver,
+    #openGruppeleder,
+    #openForaeldrerodgiver,
+    #openFordrag {
         display: inline-block;
         position: absolute;
         align-items: center;
         left: 50%;
         transform: translateX(-50%);
         padding: 0.5rem 1rem;
-        border-radius: 8px; /* afrundet hjørner */
+        border-radius:2.0625rem;
         width: 120px; 
         height: 35px; 
         text-decoration: none;
-        font-weight: bold;
         font-size: 0.75em;
         color: #273AAA;
         background-color: #F7C7D9;
@@ -974,15 +1001,8 @@ ul {
         transition: all 0.2s ease;
         text-align: center;
         line-height: 1;
-        z-index:10;
     }
     
-    
-    .etage-button:hover, #openUngerodgiver:hover, #openGruppeleder:hover, #openForaeldrerodgiver:hover, #openFordrag:hover {
-        background-color: #F7C7D9;
-        text-decoration: underline;
-        font-weight: bold;
-    }
     
     
     .etage-1 { top: 16%; }  
@@ -999,131 +1019,142 @@ ul {
         padding-bottom: 1rem;
         background-color: #F7C7D9;
     }
-    
-    #holdet__h2{
+
+    #holdet__h2 {
         color: #273AAA;
         text-align: left;
-        padding: 2.5rem 1rem 0.5rem 1rem;
+        padding: 2.5rem 1rem 0.5rem 1.2rem;
     }
     
     #om-holdet{
-        padding: 0 1rem 1rem 1rem;
+        padding: 0 1rem 1rem 1.2rem;
     }
-    
+
     .holdet__container {
         width: 100%;
-        height:170px; 
+        height: 170px;
         overflow: hidden;
         position: relative;
         display: flex;
         justify-content: center;
-        align-items: flex-start; /* Placerer billederne højere oppe */
-        padding-top: 30px; /* Eventuel justering for at få dem lidt ned */
+        align-items: flex-start;
     }
-    
+
     .holdet__gallery {
         display: flex;
-        gap: 20px;
+        gap: 0;
         width: 100%;
         transition: transform 0.1s ease-out;
+        padding-top:10px;
     }
-    
+
     .holdet__gallery__li {
-        width: calc(100% / 4); /* Sikrer, at præcis 2 billeder vises */
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        width: calc(100% / 4); /* præcis 4 billeder vises */
         flex: 0 0 auto;
-        text-align:center;
+        text-align: center;
     }
-    
+
     .holdet__gallery__li img {
-        width: 60px;
-        height: 60px;
-        border-radius: 50px; /* Dette gør billederne runde*/
-        object-fit: cover; /* Gør at billederne passer fint i cirklerne */
-        margin: 0px; /* Reduceret margin mellem billederne */
+        width: 80px;
+        height: 80px;
+        border-radius: 50px; 
+        object-fit: cover; 
         border: 4px solid #273AAA;
         display: block;
         margin: 0 auto;
     }
-    
-    .holdet__gallery__li img:hover{
+
+    .holdet__gallery__li img:hover {
         border: 2px solid transparent;
     }
+
     
     .holdet__button {
         background-color: #F7C7D9;
         border: none;
     }
-    
-    #holdet__gallery__name{
+
+    #holdet__gallery__name {
         font-size: 0.8125em;
-        text-align: center; /* Centrer teksten */
+        text-align: center; 
         font-weight:bold;
         color: #273AAA;
         margin-top: 2px;
         white-space: nowrap;
-        max-width: fit-content; /* Sørger for, at det kun fylder det nødvendige */
+        max-width: fit-content;
         display: inline-block;
-        top:70px;
+        top:80px;
     
     }
     
     .holdet__gallery__titel {
         color: #000000;
-        white-space: nowrap; /* Sørger for at teksten ikke brydes */
-        display: block; /* Sikrer, at teksten opfører sig som en blok */
-        text-align: center; /* Centrer teksten */
-        font-size: 0.8125rem; /* Sørger for at den er mindre end name */
-        top:90px;
+        white-space: nowrap;
+        display: block; 
+        text-align: center; 
+        font-size: 0.8125rem;
+        top:100px;
     }
 
-    #holdet__gallery__name,.holdet__gallery__titel {
+    .holdet__gallery__titel {
+        color: #000000;
+        white-space: nowrap;
+        display: block;
+        text-align: center;
+        font-size: 0.8125rem;
+        top: 90px;
+    }
+
+    #holdet__gallery__name,
+    .holdet__gallery__titel {
         position: absolute;
-        width:100%;
-        left:50%;
+        width: 100%;
+        left: 50%;
         transform: translateX(-50%);
         margin: 0.5rem 0;
         padding: 0 60px 1rem 60px;
         text-align: center;
         gap: 10px;
-        display: block; /* Sikrer at teksten opfører sig som en blok */
-        text-align: center; /* Centrer teksten */
-
-
+        display: block; 
+        text-align: center;
     }
 
-    
-    #prevButton, #nextButton {
+
+    #prevButton,
+    #nextButton {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%); 
+        transform: translateY(-50%);
         background-color: #273AAA;
         color: #F7C7D9;
         border: none;
         padding: 10px 15px;
         font-size: 15px;
         cursor: pointer;
-        border-radius: 50%; 
+        border-radius: 50%;
     }
-    
-    #prevButton{
+
+    #prevButton {
         left: 10px;
         top:70%;
-        z-index: 10; /* Sørger for, at knappen ligger øverst */
-        pointer-events: auto; /* Sørger for, at den kan klikkes */
+        pointer-events: auto; 
     
     }
-    
-    #nextButton{
+
+    #nextButton {
         right: 10px;
         top:70%;
-        z-index: 10; /* Sørger for, at knappen ligger øverst */
-        pointer-events: auto; /* Sørger for, at den kan klikkes */
+        pointer-events: auto; 
     }
-    
-    #nextButton:hover, #prevButton:hover{
+
+    #nextButton:hover,
+    #prevButton:hover {
         background-color: #1d46da;
     }
-    
+
     #maria__popup__content {
         position: fixed;
         top: 0;
@@ -1131,14 +1162,14 @@ ul {
         width: 100vw;
         height: 100vh;
         backdrop-filter: blur(5px);
-        background-color:  rgba(247, 199, 217, 0.7);
-        z-index: 9999;
+        background-color: rgba(247, 199, 217, 0.7);
+        z-index: 11;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    
+
     .content__box {
         background: #FDEFF4;
         padding: 1rem;
@@ -1153,7 +1184,7 @@ ul {
         flex-direction: column;
         text-align: left;
     }
-    
+
     .maria__information {
         display: flex;
         padding: 0.5rem;
@@ -1165,22 +1196,21 @@ ul {
         font-weight: 900;
         padding: 1rem 1rem 0rem 1rem;
     }
-    
+
     .maria__popup__ul {
         font-weight: 900;
     }
-    
-    
-    .closeMariar {
-        background-color: #FDEFF4;
-        border: none;
-    }
-    
+
     #closeMaria img {
         border-radius: 0;
         border: none;
         object-fit: contain;
         width: 30%;
+        z-index:10000;
+    }
+
+    .ansog__text{
+        padding-left:0.4rem;
     }
 
     .footer-indhold {
@@ -1188,10 +1218,10 @@ ul {
     }
     
 }
- 
+
 
 @media (min-width: 1024px) {
-    
+
     h1 {
         font-size: 4rem;
     }
@@ -1215,27 +1245,30 @@ ul {
     #soegeResultater li a {
         font-size: 1rem;
     }
+
     /*header*/
-    .hamburger { 
-        background: #fff9f9;               
+    .hamburger {
+        background: #fff9f9;
         padding: 0px;
         cursor: pointer;
         position: absolute;
         left: 7px;
-        top: 160px;                       
+        top: 160px;
         font-size: 24px;
         border: none;
         display: none;
     }
+
     .logo {
         padding: 1rem;
         position: absolute;
-        left:8%; 
-        transform: translateX(-50%); 
-        width: 154px; 
-        height: 47px; 
+        left: 8%;
+        transform: translateX(-50%);
+        width: 154px;
+        height: 47px;
         margin-top: 6px;
     }
+
     /*hero*/
 
     .hero {
@@ -1255,7 +1288,7 @@ ul {
         display: none;
     }
 
-    .hero_ansøg_button {
+    .hero_ansog_button {
         font-size: 1.5rem;
         width: 10.375rem;
         height: 4rem;
@@ -1274,23 +1307,23 @@ ul {
 
     /*ansøg*/
 
-    .ansøg__button {
+    .ansog__button {
         font-size: 1.5rem;
         width: 10.375rem;
         height: 4rem;
         padding: 1rem;
     }
 
-    .ansøg {
+    .ansog {
         height: 28rem;
     }
 
-    .ansøg__text {
+    .ansog__text {
         height: 28rem;
         margin: 0px 66px;
     }
 
-    .ansøg__p {
+    .ansog__p {
         padding: 0rem 0rem 2rem 0rem;
     }
 
@@ -1304,38 +1337,40 @@ ul {
         margin: 0rem 0rem 1rem 0rem;
     }
 
-    .frivilligehus__container{
+    .frivilligehus__container {
         position: relative;
         height: 100vh;
-        display:flex;
-        align-items:center;
+        display: flex;
+        align-items: center;
         justify-content: center;
     }
-    
-    .frivilligehus__img{
+
+    .frivilligehus__img {
         max-height: 90vh;
-        width:auto;
+        width: auto;
         opacity: 70%;
     }
-    
+
     .etage-button {
         position: absolute;
-        left: 50%; /* Placeres i midten af huset */
-        transform: translateX(-50%); /* Finjusterer centering */
+        left: 50%; /* placerer sig i midten af huset */
+        transform: translateX(-50%); /* finjusterer centering */
     }
 
-    #openUngerodgiver, #openGruppeleder, #openForaeldrerodgiver, #openFordrag {
+    #openUngerodgiver,
+    #openGruppeleder,
+    #openForaeldrerodgiver,
+    #openFordrag {
         display: inline-block;
         position: absolute;
         align-items: center;
         left: 50%;
         transform: translateX(-50%);
         padding: 0.5rem 1rem;
-        border-radius: 8px; /* afrundet hjørner */
+        border-radius: 2.0625rem;
         width: 180px; 
         height: 50px; 
         text-decoration: none;
-        font-weight: bold;
         font-size: 1.2em;
         color: #273AAA;
         background-color: #F7C7D9;
@@ -1343,14 +1378,6 @@ ul {
         transition: all 0.2s ease;
         text-align: center;
         line-height: 1;
-        z-index:10;
-    }
-    
-    
-    .etage-button:hover, #openUngerodgiver:hover, #openGruppeleder:hover, #openForaeldrerodgiver:hover, #openFordrag:hover {
-        background-color: #F7C7D9;
-        text-decoration: underline;
-        font-weight: bold;
     }
     
     .etage-1 { top: 18%; }  
@@ -1359,131 +1386,144 @@ ul {
     .etage-4 { top: 76%; }   
     
     /*style holdet*/
-    
-    .holdet{
+
+    .holdet {
         position: relative;
         width: 100%;
         height: 510px;
         background-color: #F7C7D9;
     }
-    
-    #holdet__h2{
+
+    #holdet__h2 {
         color: #273AAA;
         padding: 3rem 70px 0 70px;
         text-align: left;
     }
 
-    #om-holdet{
+    #om-holdet {
         padding: 10px 70px 0 70px;
     }
-    
+
     .holdet__container {
         width: 100%;
-        height:800px;
+        height: 800px;
         overflow: hidden;
         position: relative;
         display: flex;
         justify-content: center;
-        align-items: flex-start; /* Placerer billederne højere oppe */
-        padding-top: 30px; /* Eventuel justering for at få dem lidt ned */
+        align-items: flex-start; 
+        padding-top: 30px; 
+
     }
-    
+
     .holdet__gallery {
         display: flex;
-        gap: 20px;
+        gap: 0;
         width: 100%;
         transition: transform 0.1s ease-out;
         padding-top:50px;
+        
     }
-    
+
     .holdet__gallery__li {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
         width: calc(100% / 7); /* Sikrer, at præcis 7 billeder vises */
         flex: 0 0 auto;
-        text-align:center;
+        text-align: center;
     }
-    
+
     .holdet__gallery__li img {
         width: 100px;
         height: 100px;
-        border-radius: 50px; /* Dette gør billederne runde*/
-        object-fit: cover; /* Gør at billederne passer fint i cirklerne */
+        border-radius: 50px; 
+        object-fit: cover; 
         margin-top: 90px;
-        margin-bottom: 5px;
         border: 4px solid #273AAA;
         display: block;
         margin: 0 auto;
+    
     }
+
+    .holdet__gallery__li button{
+        padding: 0;
+        margin: 0;
+        border: none;
+        background: none;
+        display: block;
+        z-index:10;
+    }  
+
     
     .holdet__gallery__li img:hover{
         border: 4px solid transparent;
     }
 
-    #holdet__gallery__name,.holdet__gallery__titel {
+    #holdet__gallery__name,
+    .holdet__gallery__titel {
         position: absolute;
         width: 100%;
         left: 50%;
         transform: translateX(-50%);
-        text-align: center;
-        margin: 0;
         font-size: 1rem;
-        display: block; /* Sikrer, at teksten opfører sig som en blok */
-        text-align: center; /* Centrer teksten */
+        display: block;
+        text-align: center; 
+        margin-top: 5px;
     }
-    
-    #holdet__gallery__name{
+
+    #holdet__gallery__name {
         font-size: 1.2em;
-        text-align: center; /* Centrer teksten */
         font-weight:bold;
         color: #273AAA;
         margin-top: 2px;
         white-space: nowrap;
-        max-width: fit-content; /* Sørger for, at det kun fylder det nødvendige */
+        max-width: fit-content;
         display: inline-block;
-        top:120px;
-    
+        top: 120px;
+
     }
-    
+
     .holdet__gallery__titel {
         color: #000000;
-        white-space: nowrap; /* Sørger for at teksten ikke brydes */
-        display: block; /* Sikrer, at teksten opfører sig som en blok */
-        text-align: center; /* Centrer teksten */
-        font-size: 1em; /* Sørger for at den er mindre end name */
+        white-space: nowrap;
+        display: block;
+        font-size: 1em;
         top:150px;
     }
-    
-    #prevButton, #nextButton {
+
+    #prevButton,
+    #nextButton {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%); 
+        transform: translateY(-50%);
         background-color: #273AAA;
         color: #F7C7D9;
         border: none;
         padding: 10px 15px;
         font-size: 24px;
         cursor: pointer;
-        border-radius: 50%; 
+        border-radius: 50%;
     }
-    
-    #prevButton{
+
+    #prevButton {
         left: 5px;
         top:70%;
-        z-index: 10; /* Sørger for, at knappen ligger øverst */
-        pointer-events: auto; /* Sørger for, at den kan klikkes */
+        pointer-events: auto; /* knappen kan klikkes */
     
     }
-    
-    #nextButton{
+
+    #nextButton {
         right: 5px;
-        top:70%;
-        z-index: 10; /* Sørger for, at knappen ligger øverst */
-        pointer-events: auto; /* Sørger for, at den kan klikkes */
+        top:70%; 
+        pointer-events: auto; 
     }
-    
-    #nextButton:hover, #prevButton:hover{
+
+    #nextButton:hover,
+    #prevButton:hover {
         background-color: #1d46da;
     }
-    
+
     .maria__popup__p {
         font-size: 0.8125rem;
         font-style: normal;
@@ -1508,6 +1548,7 @@ ul {
         border: none;
         object-fit: contain;
         width: 30%;
+        z-index:10000;
     }
     
     .footer {
@@ -1592,3 +1633,4 @@ ul {
     }
     
 }
+
