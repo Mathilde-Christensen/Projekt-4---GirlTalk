@@ -333,11 +333,10 @@ ul {
     left: 50%;
     transform: translateX(-50%);
     padding: 0.5rem 1rem;
-    border-radius: 8px; /* afrundet hjørner */
+    border-radius: 2.0625rem; /* afrundet hjørner */
     width: 120px; 
     height: 30px; 
     text-decoration: none;
-    font-weight: bold;
     font-size: 0.7em;
     color: #273AAA;
     background-color: #F7C7D9;
@@ -931,11 +930,10 @@ footer {
         left: 50%;
         transform: translateX(-50%);
         padding: 0.5rem 1rem;
-        border-radius: 8px; /* afrundet hjørner */
+        border-radius:2.0625rem;
         width: 120px; 
         height: 35px; 
         text-decoration: none;
-        font-weight: bold;
         font-size: 0.75em;
         color: #273AAA;
         background-color: #F7C7D9;
@@ -1302,11 +1300,10 @@ footer {
         left: 50%;
         transform: translateX(-50%);
         padding: 0.5rem 1rem;
-        border-radius: 8px; /* afrundet hjørner */
+        border-radius: 2.0625rem;
         width: 180px; 
         height: 50px; 
         text-decoration: none;
-        font-weight: bold;
         font-size: 1.2em;
         color: #273AAA;
         background-color: #F7C7D9;
