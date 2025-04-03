@@ -52,3 +52,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+// Åbn popup når man klikker på "Ansøg"
+document.querySelectorAll('.ansog__button').forEach(knap => {
+  knap.addEventListener('click', () => {
+    document.getElementById('ansogningPopup').style.display = 'flex';
+  });
+});
+
+document.querySelectorAll('.ansog__button').forEach(knap => {
+  knap.addEventListener('click', () => {
+    document.getElementById('ansogningPopup').style.display = 'flex';
+  });
+});
+document.getElementById('lukPopup').addEventListener('click', () => {
+  document.getElementById('ansogningPopup').style.display = 'none';
+});
