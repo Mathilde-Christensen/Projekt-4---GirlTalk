@@ -12,15 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!btn || !menu || !valueInput) return;
 
-    // Toggle dropdown visibility via .show
     btn.addEventListener("click", function (event) {
       event.stopPropagation();
-      // Luk alle andre dropdowns
       document.querySelectorAll(".dropdown-menu").forEach(m => m.classList.remove("show"));
       menu.classList.toggle("show");
     });
 
-    // Vælg en mulighed
     menu.addEventListener("click", function (event) {
       if (event.target.tagName === "LI") {
         const selectedValue = event.target.getAttribute("data-value");
@@ -31,39 +28,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Luk dropdowns når man klikker udenfor
   document.addEventListener("click", function () {
     document.querySelectorAll(".dropdown-menu").forEach(menu => menu.classList.remove("show"));
   });
 
-  // Luk dropdowns med Escape
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
       document.querySelectorAll(".dropdown-menu").forEach(menu => menu.classList.remove("show"));
     }
   });
 
-  // Tjek samtykke
-  document.querySelector("form").addEventListener("submit", function (e) {
-    const samtykke = document.getElementById("samtykke");
-    if (!samtykke.checked) {
-      alert("Du skal give samtykke for at kunne tilmelde dig.");
-      e.preventDefault();
-    }
-  });
-});
-// Åbn popup når man klikker på "Ansøg"
-document.querySelectorAll('.ansog__button').forEach(knap => {
-  knap.addEventListener('click', () => {
-    document.getElementById('ansogningPopup').style.display = 'flex';
-  });
-});
+  // 👇 Her definerer vi popup’en
+  const ansogningPopup = document.getElementById("ansogningPopup");
 
-document.querySelectorAll('.ansog__button').forEach(knap => {
-  knap.addEventListener('click', () => {
-    document.getElementById('ansogningPopup').style.display = 'flex';
+  // Åbn popup på knap klik
+  document.querySelectorAll(".ansog__button, .popup__ansog").forEach(knap => {
+    knap.addEventListener("click", () => {
+      ansogningPopup.style.display = "flex";
+    });
   });
-});
-document.getElementById('lukPopup').addEventListener('click', () => {
-  document.getElementById('ansogningPopup').style.display = 'none';
+
+  // Luk popup
+  const lukBtn = document.getElementById("lukPopup");
+  if (lukBtn) {
+    lukBtn.addEventListener("click", () => {
+      ansogningPopup.style.display = "none";
+    });
+  }
+
+  // Tjek samtykke
+  const form = ansogningPopup.querySelector("form");
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      const samtykke = document.getElementById("samtykke");
+      if (!samtykke || !samtykke.checked) {
+        alert("Du skal give samtykke for at kunne tilmelde dig.");
+        e.preventDefault();
+      }
+    });
+  }
 });
