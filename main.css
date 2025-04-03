@@ -1582,4 +1582,196 @@ ul {
     
     
 }
-
+.ansogning-wrapper {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    background-image: url("Nynybaggrund.webp");
+    background-size: 190%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .ansogning-wrapper .form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .ansogning-wrapper .dropdown {
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+  }
+  
+  .ansogning-wrapper .dropdown-row {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .ansogning-wrapper .form-group input[type='file'] {
+    margin-top: 30px;
+  }
+  
+  .ansogning-wrapper .dropdown label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .ansogning-wrapper .dropdown-btn {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .ansogning-wrapper .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+  
+  .ansogning-wrapper .dropdown-menu.show {
+    display: block;
+  }
+  
+  .ansogning-wrapper .dropdown-menu li {
+    padding: 10px 14px;
+    cursor: pointer;
+  }
+  
+  .ansogning-wrapper .dropdown-menu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .ansogning-wrapper .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .ansogning-wrapper .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  
+  .ansogning-wrapper .form-group input,
+  .ansogning-wrapper .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .ansogning-wrapper textarea {
+    resize: vertical;
+  }
+  
+  .ansogning-wrapper .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .ansogning-wrapper .submit-btn {
+    background-color: #4f46e5;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .ansogning-wrapper .submit-btn:hover {
+    background-color: #4338ca;
+  }
+  
+  .ansogning-wrapper .samtykke-box {
+    background-color: #f8f8ff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .ansogning-wrapper .samtykke-overskrift {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .ansogning-wrapper .samtykke-tekst {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .ansogning-wrapper .samtykke-box input[type="checkbox"] {
+    margin-top: 10px;
+    transform: scale(1.2);
+  }
+  
+  @media (max-width: 768px) {
+    .ansogning-wrapper {
+      padding: 20px;
+    }
+  
+    .ansogning-wrapper .form-container {
+      padding: 20px;
+    }
+  
+    .ansogning-wrapper .dropdown-row {
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .ansogning-wrapper .dropdown,
+    .ansogning-wrapper .form-group {
+      width: 100%;
+    }
+  
+    .ansogning-wrapper .dropdown-btn,
+    .ansogning-wrapper .form-group input,
+    .ansogning-wrapper .form-group textarea,
+    .ansogning-wrapper .submit-btn {
+      font-size: 16px;
+    }
+  
+    .ansogning-wrapper .submit-btn {
+      padding: 12px;
+    }
+  }
+  

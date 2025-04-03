@@ -123,7 +123,97 @@
                 </p>
 
                 <button class="hero_ansog_button">Ansøg</button>
+                <form class="form-container">
 
+                  <!--  3 Custom Dropdowns -->
+                  <div class="dropdown-row">
+                    <div class="dropdown">
+                      <label>Hvad er du interesseret i at hjælpe med?</label>
+                      <button type="button" class="dropdown-btn">Vælg mulighed ▼</button>
+                      <ul class="dropdown-menu">
+                        <li data-value="Rådgivning">Unge rådgiver</li>
+                        <li data-value="Events">Events</li>
+                        <li data-value="Kommunikation">Forældrerådgiver</li>
+                      </ul>
+                      <input type="hidden" class="dropdown-value" name="interesse">
+                    </div>
+                
+                    <div class="dropdown">
+                      <label>Hvilken afdeling vil du tilknyttes?</label>
+                      <button type="button" class="dropdown-btn">Vælg afdeling ▼</button>
+                      <ul class="dropdown-menu">
+                        <li data-value="København">København</li>
+                        <li data-value="Aarhus">Aarhus</li>
+                        <li data-value="Aalborg">Aalborg</li>
+                        <li data-value="Odense">Odense</li>
+                      </ul>
+                      <input type="hidden" class="dropdown-value" name="afdeling">
+                    </div>
+                
+                    <div class="dropdown">
+                      <label>Har du været til infoaften?</label>
+                      <button type="button" class="dropdown-btn">Vælg svar ▼</button>
+                      <ul class="dropdown-menu">
+                        <li data-value="Ja">Ja</li>
+                        <li data-value="Nej">Nej</li>
+                      </ul>
+                      <input type="hidden" class="dropdown-value" name="infoaften">
+                    </div>
+                  </div>
+                
+                  <!--  Personlige oplysninger -->
+                  <div class="form-group">
+                    <label>Dit fulde navn *</label>
+                    <input type="text" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Dit fødselsår *</label>
+                    <input type="number" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Dit telefonnummer *</label>
+                    <input type="tel" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Din e-mail *</label>
+                    <input type="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Din adresse *</label>
+                    <input type="text" required>
+                  </div>
+                
+                  <!--  Vedhæft filer -->
+                  <div class="form-group">
+                    <label>Vedhæft dit CV *</label>
+                    <input type="file" accept=".pdf,.doc,.docx" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Vedhæft din ansøgning *</label>
+                    <input type="file" accept=".pdf,.doc,.docx" required>
+                  </div>
+                
+                  <!--  Tekstfelt -->
+                  <div class="form-group">
+                    <label>Hvad tiltaler dig ved netop Girltalk?</label>
+                    <textarea rows="5" placeholder="Skriv her..." required></textarea>
+                  </div>
+                
+                  <!--  Samtykke -->
+                  <div class="form-group samtykke-box">
+                    <h3 class="samtykke-overskrift">Samtykke</h3>
+                    <label class="samtykke-tekst">
+                      Ved at sætte flueben giver jeg samtykke til, at Girltalk må indsamle og behandle mine oplysninger i forbindelse med denne ansøgning. 
+                      Oplysningerne vil kun blive brugt til rekruttering af frivillige og vil ikke blive delt med tredjeparter.
+                    </label>
+                    <input type="checkbox" class="samtykke" required>
+                  </div>
+                
+                  <!--  Tilmeld -->
+                  <button type="submit" class="submit-btn">Tilmeld mig</button>
+                
+                </form>
+                
             </div>
 
         </div>
@@ -207,7 +297,97 @@
 
                     <button class="popup__ansog">Ansøg</button>
                 </div>
+                <form class="form-container">
 
+                  <!--  3 Custom Dropdowns -->
+                  <div class="dropdown-row">
+                    <div class="dropdown">
+                      <label>Hvad er du interesseret i at hjælpe med?</label>
+                      <button type="button" class="dropdown-btn">Vælg mulighed ▼</button>
+                      <ul class="dropdown-menu">
+                        <li data-value="Rådgivning">Unge rådgiver</li>
+                        <li data-value="Events">Events</li>
+                        <li data-value="Kommunikation">Forældrerådgiver</li>
+                      </ul>
+                      <input type="hidden" class="dropdown-value" name="interesse">
+                    </div>
+                
+                    <div class="dropdown">
+                      <label>Hvilken afdeling vil du tilknyttes?</label>
+                      <button type="button" class="dropdown-btn">Vælg afdeling ▼</button>
+                      <ul class="dropdown-menu">
+                        <li data-value="København">København</li>
+                        <li data-value="Aarhus">Aarhus</li>
+                        <li data-value="Aalborg">Aalborg</li>
+                        <li data-value="Odense">Odense</li>
+                      </ul>
+                      <input type="hidden" class="dropdown-value" name="afdeling">
+                    </div>
+                
+                    <div class="dropdown">
+                      <label>Har du været til infoaften?</label>
+                      <button type="button" class="dropdown-btn">Vælg svar ▼</button>
+                      <ul class="dropdown-menu">
+                        <li data-value="Ja">Ja</li>
+                        <li data-value="Nej">Nej</li>
+                      </ul>
+                      <input type="hidden" class="dropdown-value" name="infoaften">
+                    </div>
+                  </div>
+                
+                  <!--  Personlige oplysninger -->
+                  <div class="form-group">
+                    <label>Dit fulde navn *</label>
+                    <input type="text" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Dit fødselsår *</label>
+                    <input type="number" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Dit telefonnummer *</label>
+                    <input type="tel" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Din e-mail *</label>
+                    <input type="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Din adresse *</label>
+                    <input type="text" required>
+                  </div>
+                
+                  <!--  Vedhæft filer -->
+                  <div class="form-group">
+                    <label>Vedhæft dit CV *</label>
+                    <input type="file" accept=".pdf,.doc,.docx" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Vedhæft din ansøgning *</label>
+                    <input type="file" accept=".pdf,.doc,.docx" required>
+                  </div>
+                
+                  <!--  Tekstfelt -->
+                  <div class="form-group">
+                    <label>Hvad tiltaler dig ved netop Girltalk?</label>
+                    <textarea rows="5" placeholder="Skriv her..." required></textarea>
+                  </div>
+                
+                  <!--  Samtykke -->
+                  <div class="form-group samtykke-box">
+                    <h3 class="samtykke-overskrift">Samtykke</h3>
+                    <label class="samtykke-tekst">
+                      Ved at sætte flueben giver jeg samtykke til, at Girltalk må indsamle og behandle mine oplysninger i forbindelse med denne ansøgning. 
+                      Oplysningerne vil kun blive brugt til rekruttering af frivillige og vil ikke blive delt med tredjeparter.
+                    </label>
+                    <input type="checkbox" class="samtykke" required>
+                  </div>
+                
+                  <!--  Tilmeld -->
+                  <button type="submit" class="submit-btn">Tilmeld mig</button>
+                
+                </form>
+                
             </div>
 
             <div id="gruppeleder__popup__content"  class="gruppeleder__popup__content" style="display: none;">
@@ -249,7 +429,97 @@
 
                     <button class="popup__ansog">Ansøg</button>
                 </div>
+                <form class="form-container">
+
+                  <!--  3 Custom Dropdowns -->
+                  <div class="dropdown-row">
+                    <div class="dropdown">
+                      <label>Hvad er du interesseret i at hjælpe med?</label>
+                      <button type="button" class="dropdown-btn">Vælg mulighed ▼</button>
+                      <ul class="dropdown-menu">
+                        <li data-value="Rådgivning">Unge rådgiver</li>
+                        <li data-value="Events">Events</li>
+                        <li data-value="Kommunikation">Forældrerådgiver</li>
+                      </ul>
+                      <input type="hidden" class="dropdown-value" name="interesse">
+                    </div>
                 
+                    <div class="dropdown">
+                      <label>Hvilken afdeling vil du tilknyttes?</label>
+                      <button type="button" class="dropdown-btn">Vælg afdeling ▼</button>
+                      <ul class="dropdown-menu">
+                        <li data-value="København">København</li>
+                        <li data-value="Aarhus">Aarhus</li>
+                        <li data-value="Aalborg">Aalborg</li>
+                        <li data-value="Odense">Odense</li>
+                      </ul>
+                      <input type="hidden" class="dropdown-value" name="afdeling">
+                    </div>
+                
+                    <div class="dropdown">
+                      <label>Har du været til infoaften?</label>
+                      <button type="button" class="dropdown-btn">Vælg svar ▼</button>
+                      <ul class="dropdown-menu">
+                        <li data-value="Ja">Ja</li>
+                        <li data-value="Nej">Nej</li>
+                      </ul>
+                      <input type="hidden" class="dropdown-value" name="infoaften">
+                    </div>
+                  </div>
+                
+                  <!--  Personlige oplysninger -->
+                  <div class="form-group">
+                    <label>Dit fulde navn *</label>
+                    <input type="text" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Dit fødselsår *</label>
+                    <input type="number" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Dit telefonnummer *</label>
+                    <input type="tel" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Din e-mail *</label>
+                    <input type="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Din adresse *</label>
+                    <input type="text" required>
+                  </div>
+                
+                  <!--  Vedhæft filer -->
+                  <div class="form-group">
+                    <label>Vedhæft dit CV *</label>
+                    <input type="file" accept=".pdf,.doc,.docx" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Vedhæft din ansøgning *</label>
+                    <input type="file" accept=".pdf,.doc,.docx" required>
+                  </div>
+                
+                  <!--  Tekstfelt -->
+                  <div class="form-group">
+                    <label>Hvad tiltaler dig ved netop Girltalk?</label>
+                    <textarea rows="5" placeholder="Skriv her..." required></textarea>
+                  </div>
+                
+                  <!--  Samtykke -->
+                  <div class="form-group samtykke-box">
+                    <h3 class="samtykke-overskrift">Samtykke</h3>
+                    <label class="samtykke-tekst">
+                      Ved at sætte flueben giver jeg samtykke til, at Girltalk må indsamle og behandle mine oplysninger i forbindelse med denne ansøgning. 
+                      Oplysningerne vil kun blive brugt til rekruttering af frivillige og vil ikke blive delt med tredjeparter.
+                    </label>
+                    <input type="checkbox" class="samtykke" required>
+                  </div>
+                
+                  <!--  Tilmeld -->
+                  <button type="submit" class="submit-btn">Tilmeld mig</button>
+                
+                </form>
+                                
             </div> 
             
             <div id="foraeldrerodgiver__popup__content" class="foraeldrerodgiver__popup__content" style="display: none;">
@@ -292,7 +562,97 @@
                     
                     <button class="popup__ansog">Ansøg</button>
                 </div>
+                <form class="form-container">
 
+                  <!--  3 Custom Dropdowns -->
+                  <div class="dropdown-row">
+                    <div class="dropdown">
+                      <label>Hvad er du interesseret i at hjælpe med?</label>
+                      <button type="button" class="dropdown-btn">Vælg mulighed ▼</button>
+                      <ul class="dropdown-menu">
+                        <li data-value="Rådgivning">Unge rådgiver</li>
+                        <li data-value="Events">Events</li>
+                        <li data-value="Kommunikation">Forældrerådgiver</li>
+                      </ul>
+                      <input type="hidden" class="dropdown-value" name="interesse">
+                    </div>
+                
+                    <div class="dropdown">
+                      <label>Hvilken afdeling vil du tilknyttes?</label>
+                      <button type="button" class="dropdown-btn">Vælg afdeling ▼</button>
+                      <ul class="dropdown-menu">
+                        <li data-value="København">København</li>
+                        <li data-value="Aarhus">Aarhus</li>
+                        <li data-value="Aalborg">Aalborg</li>
+                        <li data-value="Odense">Odense</li>
+                      </ul>
+                      <input type="hidden" class="dropdown-value" name="afdeling">
+                    </div>
+                
+                    <div class="dropdown">
+                      <label>Har du været til infoaften?</label>
+                      <button type="button" class="dropdown-btn">Vælg svar ▼</button>
+                      <ul class="dropdown-menu">
+                        <li data-value="Ja">Ja</li>
+                        <li data-value="Nej">Nej</li>
+                      </ul>
+                      <input type="hidden" class="dropdown-value" name="infoaften">
+                    </div>
+                  </div>
+                
+                  <!--  Personlige oplysninger -->
+                  <div class="form-group">
+                    <label>Dit fulde navn *</label>
+                    <input type="text" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Dit fødselsår *</label>
+                    <input type="number" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Dit telefonnummer *</label>
+                    <input type="tel" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Din e-mail *</label>
+                    <input type="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Din adresse *</label>
+                    <input type="text" required>
+                  </div>
+                
+                  <!--  Vedhæft filer -->
+                  <div class="form-group">
+                    <label>Vedhæft dit CV *</label>
+                    <input type="file" accept=".pdf,.doc,.docx" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Vedhæft din ansøgning *</label>
+                    <input type="file" accept=".pdf,.doc,.docx" required>
+                  </div>
+                
+                  <!--  Tekstfelt -->
+                  <div class="form-group">
+                    <label>Hvad tiltaler dig ved netop Girltalk?</label>
+                    <textarea rows="5" placeholder="Skriv her..." required></textarea>
+                  </div>
+                
+                  <!--  Samtykke -->
+                  <div class="form-group samtykke-box">
+                    <h3 class="samtykke-overskrift">Samtykke</h3>
+                    <label class="samtykke-tekst">
+                      Ved at sætte flueben giver jeg samtykke til, at Girltalk må indsamle og behandle mine oplysninger i forbindelse med denne ansøgning. 
+                      Oplysningerne vil kun blive brugt til rekruttering af frivillige og vil ikke blive delt med tredjeparter.
+                    </label>
+                    <input type="checkbox" class="samtykke" required>
+                  </div>
+                
+                  <!--  Tilmeld -->
+                  <button type="submit" class="submit-btn">Tilmeld mig</button>
+                
+                </form>
+                
             </div> 
 
 
@@ -339,7 +699,97 @@
                     </ul>
                     
                     <button class="popup__ansog">Ansøg</button>
+                    <form class="form-container">
 
+                      <!--  3 Custom Dropdowns -->
+                      <div class="dropdown-row">
+                        <div class="dropdown">
+                          <label>Hvad er du interesseret i at hjælpe med?</label>
+                          <button type="button" class="dropdown-btn">Vælg mulighed ▼</button>
+                          <ul class="dropdown-menu">
+                            <li data-value="Rådgivning">Unge rådgiver</li>
+                            <li data-value="Events">Events</li>
+                            <li data-value="Kommunikation">Forældrerådgiver</li>
+                          </ul>
+                          <input type="hidden" class="dropdown-value" name="interesse">
+                        </div>
+                    
+                        <div class="dropdown">
+                          <label>Hvilken afdeling vil du tilknyttes?</label>
+                          <button type="button" class="dropdown-btn">Vælg afdeling ▼</button>
+                          <ul class="dropdown-menu">
+                            <li data-value="København">København</li>
+                            <li data-value="Aarhus">Aarhus</li>
+                            <li data-value="Aalborg">Aalborg</li>
+                            <li data-value="Odense">Odense</li>
+                          </ul>
+                          <input type="hidden" class="dropdown-value" name="afdeling">
+                        </div>
+                    
+                        <div class="dropdown">
+                          <label>Har du været til infoaften?</label>
+                          <button type="button" class="dropdown-btn">Vælg svar ▼</button>
+                          <ul class="dropdown-menu">
+                            <li data-value="Ja">Ja</li>
+                            <li data-value="Nej">Nej</li>
+                          </ul>
+                          <input type="hidden" class="dropdown-value" name="infoaften">
+                        </div>
+                      </div>
+                    
+                      <!--  Personlige oplysninger -->
+                      <div class="form-group">
+                        <label>Dit fulde navn *</label>
+                        <input type="text" required>
+                      </div>
+                      <div class="form-group">
+                        <label>Dit fødselsår *</label>
+                        <input type="number" required>
+                      </div>
+                      <div class="form-group">
+                        <label>Dit telefonnummer *</label>
+                        <input type="tel" required>
+                      </div>
+                      <div class="form-group">
+                        <label>Din e-mail *</label>
+                        <input type="email" required>
+                      </div>
+                      <div class="form-group">
+                        <label>Din adresse *</label>
+                        <input type="text" required>
+                      </div>
+                    
+                      <!--  Vedhæft filer -->
+                      <div class="form-group">
+                        <label>Vedhæft dit CV *</label>
+                        <input type="file" accept=".pdf,.doc,.docx" required>
+                      </div>
+                      <div class="form-group">
+                        <label>Vedhæft din ansøgning *</label>
+                        <input type="file" accept=".pdf,.doc,.docx" required>
+                      </div>
+                    
+                      <!--  Tekstfelt -->
+                      <div class="form-group">
+                        <label>Hvad tiltaler dig ved netop Girltalk?</label>
+                        <textarea rows="5" placeholder="Skriv her..." required></textarea>
+                      </div>
+                    
+                      <!--  Samtykke -->
+                      <div class="form-group samtykke-box">
+                        <h3 class="samtykke-overskrift">Samtykke</h3>
+                        <label class="samtykke-tekst">
+                          Ved at sætte flueben giver jeg samtykke til, at Girltalk må indsamle og behandle mine oplysninger i forbindelse med denne ansøgning. 
+                          Oplysningerne vil kun blive brugt til rekruttering af frivillige og vil ikke blive delt med tredjeparter.
+                        </label>
+                        <input type="checkbox" class="samtykke" required>
+                      </div>
+                    
+                      <!--  Tilmeld -->
+                      <button type="submit" class="submit-btn">Tilmeld mig</button>
+                    
+                    </form>
+                    
                 </div>
                 
             </div>
@@ -554,8 +1004,109 @@
                 </p>
 
                 <button class="ansog__button">Ansøg</button>
+         
+                <h3 class="popup__h3">Hvad du får ud af det</h3>
+                <ul class="popup__ul">
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.webp" alt="pink hjerte">Grundig oplæring og hjælp til at forme dit foredrag</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.webp" alt="pink hjerte">Personlig udvikling og træning i at tale foran andre</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.webp" alt="pink hjerte">Løn: 750 kr. for 1 lektion / 1200 kr. for workshop + kørsel</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.webp" alt="pink hjerte">En stærk rolle som ung rollemodel, der gør en forskel</li>
+                    <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.webp" alt="pink hjerte">Mulighed for at nå bredt ud og røre mange på én gang</li>
+                </ul>
+                
+                <button class="popup__ansog">Ansøg</button>
+                <form class="form-container">
+
+                  <!--  3 Custom Dropdowns -->
+                  <div class="dropdown-row">
+                    <div class="dropdown">
+                      <label>Hvad er du interesseret i at hjælpe med?</label>
+                      <button type="button" class="dropdown-btn">Vælg mulighed ▼</button>
+                      <ul class="dropdown-menu">
+                        <li data-value="Rådgivning">Unge rådgiver</li>
+                        <li data-value="Events">Events</li>
+                        <li data-value="Kommunikation">Forældrerådgiver</li>
+                      </ul>
+                      <input type="hidden" class="dropdown-value" name="interesse">
+                    </div>
+                
+                    <div class="dropdown">
+                      <label>Hvilken afdeling vil du tilknyttes?</label>
+                      <button type="button" class="dropdown-btn">Vælg afdeling ▼</button>
+                      <ul class="dropdown-menu">
+                        <li data-value="København">København</li>
+                        <li data-value="Aarhus">Aarhus</li>
+                        <li data-value="Aalborg">Aalborg</li>
+                        <li data-value="Odense">Odense</li>
+                      </ul>
+                      <input type="hidden" class="dropdown-value" name="afdeling">
+                    </div>
+                
+                    <div class="dropdown">
+                      <label>Har du været til infoaften?</label>
+                      <button type="button" class="dropdown-btn">Vælg svar ▼</button>
+                      <ul class="dropdown-menu">
+                        <li data-value="Ja">Ja</li>
+                        <li data-value="Nej">Nej</li>
+                      </ul>
+                      <input type="hidden" class="dropdown-value" name="infoaften">
+                    </div>
+                  </div>
+                
+                  <!--  Personlige oplysninger -->
+                  <div class="form-group">
+                    <label>Dit fulde navn *</label>
+                    <input type="text" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Dit fødselsår *</label>
+                    <input type="number" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Dit telefonnummer *</label>
+                    <input type="tel" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Din e-mail *</label>
+                    <input type="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Din adresse *</label>
+                    <input type="text" required>
+                  </div>
+                
+                  <!--  Vedhæft filer -->
+                  <div class="form-group">
+                    <label>Vedhæft dit CV *</label>
+                    <input type="file" accept=".pdf,.doc,.docx" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Vedhæft din ansøgning *</label>
+                    <input type="file" accept=".pdf,.doc,.docx" required>
+                  </div>
+                
+                  <!--  Tekstfelt -->
+                  <div class="form-group">
+                    <label>Hvad tiltaler dig ved netop Girltalk?</label>
+                    <textarea rows="5" placeholder="Skriv her..." required></textarea>
+                  </div>
+                
+                  <!--  Samtykke -->
+                  <div class="form-group samtykke-box">
+                    <h3 class="samtykke-overskrift">Samtykke</h3>
+                    <label class="samtykke-tekst">
+                      Ved at sætte flueben giver jeg samtykke til, at Girltalk må indsamle og behandle mine oplysninger i forbindelse med denne ansøgning. 
+                      Oplysningerne vil kun blive brugt til rekruttering af frivillige og vil ikke blive delt med tredjeparter.
+                    </label>
+                    <input type="checkbox" class="samtykke" required>
+                  </div>
+                
+                  <!--  Tilmeld -->
+                  <button type="submit" class="submit-btn">Tilmeld mig</button>
+                
+                </form>
+                
             </div>
-        </div>
     </main>  
     
     <!--Alice - footer-->
