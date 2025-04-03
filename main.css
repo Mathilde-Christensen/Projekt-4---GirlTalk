@@ -83,7 +83,7 @@ ul {
 }
 
 .hejhjem {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Lato;
     font-weight: 600;
 }
 
@@ -107,7 +107,7 @@ ul {
 
 .hamburgermenuen a,
 .dropdown-knappen {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Lato;
     padding: 10px 15px;
     text-decoration: none;
     font-size: 15px;
@@ -128,7 +128,7 @@ ul {
 }
 
 .dropdown-indhold a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Lato;
     font-size: 13px;
     font-weight: 75;
     color: #273AAA;
@@ -152,9 +152,10 @@ ul {
 
 
 
-
-
-
+.dropdown-menu {
+    size: 10cm;
+    display: none;
+}
 
 
 
@@ -1217,12 +1218,19 @@ ul {
     .footer-indhold {
         display: none;
     }
+
+
+    .dropdown-menu {
+        display: none;
+    }
+
     
 }
 
 
 @media (min-width: 1024px) {
 
+    
     h1 {
         font-size: 4rem;
     }
@@ -1627,6 +1635,11 @@ ul {
         text-decoration: underline;
         cursor: pointer;
     }
+
+    .dropdown-menu {
+        display: block;
+    }
+
     
     
 }
