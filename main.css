@@ -149,11 +149,66 @@ ul {
     z-index: 100;
 }
 
-/* Dropdown
-.dropdown:focus-within .dropdown-indhold {
+
+
+/* Wrapper der placerer dropdowns ved siden af hinanden */
+.dropdown-menu {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Afstand mellem dropdowns */
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Styling af hver dropdown */
+.dropdown {
+    position: relative;
+}
+
+/* Styling af dropdown-knapper */
+.dropknap {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+/* Dropdown-indhold */
+.dropdown_indhold {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: px;
+    border-radius: 5px;
+    text-align: left;
+    justify-content: left;
+
+}
+
+/* Links i dropdown */
+.dropdown_indhold a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
     display: block;
 }
-*/
+
+/* Hover-effekt */
+.dropdown_indhold a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Vis dropdown ved hover */
+.dropdown:hover .dropdown_indhold {
+    display: block;
+}
+
+
+
+
+
 
 
 
@@ -839,7 +894,7 @@ ul {
     background: none;
     border: none;
     padding: 10px;
-    width: 20;              /*afstand fra plus/minus og tekst*/
+    width: 20;      /*hey det er afstanden fra plus til tekst*/
     text-align: left;
 }
 
@@ -1569,26 +1624,20 @@ ul {
         margin-right: 0;
     }
     
-    .footer-knap {
-        background: none;
-        border: none;
-        font-weight: bold;
+    .footer-sektion h3 {
         font-size: 18px;
+        font-weight: bold;
         color: #1a2fb0;
-        cursor: pointer;
-        display: block;
-        text-align: left;
-        width: 100%;
-        padding: 10px 0;
+        margin-bottom: 10px;
+        margin-top: 7.5%;
     }
     
-    .footer-knap span {
-        font-size: 20px;
-        margin-right: 5px;
+    .footer-knap {
+        display: none;
     }
     
     .footer-indhold {
-        display: none;
+        display: block; 
     }
     
     .footer-indhold ul {
@@ -1617,6 +1666,9 @@ ul {
     .footer_logo {
         width: 120px;
         margin-bottom: 10px;
+        margin-top: 1.5%;
+        width: 124px;
+        height: 15px;
     }
     
     .kontakt-information h4 {
@@ -1629,6 +1681,7 @@ ul {
         text-decoration: underline;
         cursor: pointer;
     }
+    
     
 }
 
