@@ -103,6 +103,8 @@ ul {
     /*------Eeeeller 10 - boksens skygge til højre*/
     z-index: 1000;
     /*sørger for at hamburgermenuen er forrest end andet indhold*/
+    font-family: Lato;
+
 }
 
 .hamburgermenuen a,
@@ -130,7 +132,7 @@ ul {
 .dropdown-indhold a {
     font-family: Lato;
     font-size: 13px;
-    font-weight: 75;
+    font-weight: 350;
     color: #273AAA;
     padding: 10px 65px;
     /*---- dropdowns længde hen til højre ----*/
