@@ -48,16 +48,46 @@
             <a href="index.html">
                 <img class="logo" src="billeder/girltalk_logo.webp" alt="GirlTalk logo">
             </a>
-            <!--Dropdown
-            <div class="dropdown">
-                <div class="dropdown-indhold">
-                    <a href="#">Vores tilbud</a>
-                    <a href="#">Støt</a>
-                    <a href="#">Om os</a>
-                    <a href="#">Shop</a>
+
+           <!--
+            <div class="dropdown-menu">
+                <div class="dropdown">
+                    <button class="dropknap">Vores tilbud</button>
+                    <div class="dropdown_indhold">
+                        <a href="#">...</a>
+                        <a href="#">...</a>
+                        <a href="#">...</a>
+                    </div>
+                </div>
+            
+                <div class="dropdown">
+                    <button class="dropknap">Støt</button>
+                    <div class="dropdown_indhold">
+                        <a href="#">...</a>
+                        <a href="#">...</a>
+                        <a href="#">...</a>
+                    </div>
+                </div>
+            
+                <div class="dropdown">
+                    <button class="dropknap">Om os</button>
+                    <div class="dropdown_indhold">
+                        <a href="#">...</a>
+                        <a href="#">...</a>
+                        <a href="#">...</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropknap">Shop</button>
+                    <div class="dropdown_indhold">
+                        <a href="#">...</a>
+                        <a href="#">...</a>
+                        <a href="#">...</a>
+                    </div>
                 </div>
             </div>
-            -->    
+            --> 
 
             <!-- Mathilde -->  
             <div id="soegefelt">
@@ -533,10 +563,11 @@
     <footer class="footer">
         <div class="footer-sektion">
             <button class="footer-knap" onclick="knapIndhold('girltalk-indhold', this)">
-                <span>+</span> Om GirlTalk
+                <span>+</span> 
             </button>
             <div id="girltalk-indhold" class="footer-indhold">
                 <ul>
+                    <h3>Om GirlTalk</h3>
                     <li><a href="#">Presse</a></li>
                     <li><a href="#">Vores tilbud</a></li>
                     <li><a href="#">Bliv frivillig</a></li>
@@ -549,17 +580,18 @@
     
         <div class="footer-sektion">
             <button class="footer-knap" onclick="knapIndhold('follow-indhold', this)">
-                <span>+</span> Følg os her
+                <span>+</span> 
             </button>
             <div id="follow-indhold" class="footer-indhold">
-                <div class="socialemedier-ikoner">
-                    <a href="#">YouTube</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">TikTok</a>
-                    <a href="#">Spotify</a>
-                </div>
+                <ul>
+                    <h3>Følg os her</h3>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="#">Spotify</a></li>
+                </ul>
             </div>
         </div>
     
@@ -567,16 +599,15 @@
             <img class="footer_logo" src="billeder/girltalk_logo.webp" alt="girltalks logo">
             <p>Martinsvej 7, 1
             <p>1926 Frederiksberg C</p>
-            <p>CVR 30 14 53 48</p>
+            <p class="cvr">CVR 30 14 53 48</p>
         </div>
     
         <div class="footer-sektion kontakt-information">
-            <h4>Kontakt os</h4>
+            <h4 class="kontakt_os">Kontakt os</h4>
             <p>info@girltalk.dk</p>
             <p>51 91 33 77</p>
-            <p>Telefontid mandag til torsdag kl.
-            <p>10.00 til 13.00</p>
-            <p><a href="#">GirlTalks FAQ Til Projektopgaver</a></p>
+            <p>Telefontid mandag til torsdag kl. 10.00 til 13.00</p>
+            <p class="faq"> GirlTalks FAQ Til Projektopgaver</p>
         </div>
     </footer>
 
