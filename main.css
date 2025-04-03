@@ -671,7 +671,7 @@ ul {
 .closePopup {
     background-color: #FDEFF4;
     border: none;
-    z-index:10000;
+    z-index:10;
 }
 
 .popup__li {
@@ -756,7 +756,7 @@ ul {
     right: 0.5rem;
     background: none;
     border: none;
-    z-index:10000;
+    z-index:10;
 }
 
 /*Ansøg*/
@@ -1173,7 +1173,7 @@ footer {
         border: none;
         object-fit: contain;
         width: 30%;
-        z-index:10000;
+        z-index:10;
     }
 
     .ansog__text{
@@ -1512,7 +1512,7 @@ footer {
         border: none;
         object-fit: contain;
         width: 30%;
-        z-index:10000;
+        z-index:10;
     }
 
 }
