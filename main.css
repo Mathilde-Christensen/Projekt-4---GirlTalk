@@ -1864,11 +1864,13 @@ ul {
         max-width: 800px;
         width: 100%;
     }
+
     .dropdown {
         flex: 1;
         min-width: 200px;
         position: relative; /* 💡 Gør at dropdown placerer sig korrekt */
     }
+
     .dropdown-row {
         margin-bottom: 50px;
         display: flex;
@@ -1876,10 +1878,10 @@ ul {
         gap: 20px; /* mellemrum mellem hver dropdown */
     }
     
-        /* Ekstra mellemrum under dropdowns */
+    /* Ekstra mellemrum under dropdowns */
     .dropdown-row {
             margin-bottom: 50px;
-        }
+    }
         
     /* Ekstra mellemrum over vedhæftningsfelter */
     .form-group input[type='file'] {
