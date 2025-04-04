@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     { btnId: "dropdownBtn3", menuId: "dropdownMenu3", valueId: "dropdownValue3" }
   ];
 
+
+  
   dropdowns.forEach(({ btnId, menuId, valueId }) => {
     const btn = document.getElementById(btnId);
     const menu = document.getElementById(menuId);
