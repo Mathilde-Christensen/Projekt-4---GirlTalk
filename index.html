@@ -22,6 +22,8 @@
 
         <div class="header">
             
+            <div class="header">
+            
                 <button class="hamburger" onclick="openNav(0)">
         
                     <svg width="40" height="17" viewBox="0 0 55 24" fill="none">              
@@ -30,26 +32,25 @@
                         <rect id="streg_3" y="20" width="25" height="3" fill="#273AAA"></rect>
                     </svg>  <!--størrelsen, højden og farven for mine streger - hamburgermenuen-->  
                 </button>
-            <div id="mySidenav" class="sidenav">
-                <a href="#" class="hejhjem">Hjem</a>
-                <a href="#">Vores tilbud</a>
-                <a href="#">Støt</a>
-                <a href="#">Om os</a>
-                <a href="#">Shop</a>
+            <div id="minHamburgermenu" class="hamburgermenuen">
+                <a href="index.html" class="hejhjem">Hjem</a>
+                <a href="#girltalk__frivilligeunivers__h2">Vores tilbud</a>
+                <a href="index.html">Støt</a>
+                <a href="index.html">Om os</a>
+                <a href="index.html">Shop</a>
                 
                 <button class="dropdown-knappen">Bliv frivillig   </button>
                 <div class="dropdown-indhold">
-                    <a href="ungrådgiver.html">Bliv ungrådgiver</a>
-                    <a href="#">Bliv gruppeleder</a>
-                    <a href="#">Bliv forældrerådgiver</a>
-                    <a href="#">Hold foredrag</a>
+                    <a href="#girltalk__frivilligeunivers__h2">Bliv ungrådgiver</a>
+                    <a href="#girltalk__frivilligeunivers__h2">Bliv gruppeleder</a>
+                    <a href="#girltalk__frivilligeunivers__h2">Bliv forældrerådgiver</a>
+                    <a href="#girltalk__frivilligeunivers__h2">Hold foredrag</a>
                 </div>
             </div>
             <a href="index.html">
                 <img class="logo" src="billeder/girltalk_logo.webp" alt="GirlTalk logo">
             </a>
 
-           <!--
             <div class="dropdown-menu">
                 <div class="dropdown">
                     <button class="dropknap">Vores tilbud</button>
@@ -87,7 +88,6 @@
                     </div>
                 </div>
             </div>
-            --> 
 
             <!-- Mathilde -->  
             <div id="soegefelt">
@@ -205,7 +205,7 @@
                         <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.webp" alt="pink hjerte">Meningsfulde samtaler – og følelsen af virkelig at gøre en forskel</li>
                     </ul>
 
-                    <button class="popup__ansog">Ansøg</button>
+                    <a href="#ansogningsformular" class="ansog__button">Ansøg</a>
                 </div>
 
             </div>
@@ -247,7 +247,7 @@
                         <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.webp" alt="pink hjerte">Et stærkt fællesskab med engagerede frivillige</li>
                     </ul>
 
-                    <button class="popup__ansog">Ansøg</button>
+                    <a href="#ansogningsformular" class="ansog__button">Ansøg</a>
                 </div>
                 
             </div> 
@@ -338,7 +338,7 @@
                         <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.webp" alt="pink hjerte">Mulighed for at nå bredt ud og røre mange på én gang</li>
                     </ul>
                     
-                    <button class="popup__ansog">Ansøg</button>
+                    <a href="#ansogningsformular" class="ansog__button">Ansøg</a>
 
                 </div>
                 
@@ -553,22 +553,104 @@
                     Nu mangler vi bare dig.
                 </p>
 
-                <button class="ansog__button">Ansøg</button>
+                <a href="#ansogningsformular" class="ansog__button">Ansøg</a>
+
             </div>
         </div>
     </main>  
-    <!-- POPUP WRAPPER -->
-<div class="ansogning-popup" id="ansogningPopup">
-  <div class="popup-indhold">
-    <button class="luk-popup" id="lukPopup">&times;</button>
+   
+    <form id="ansogningsformular" class="form-container">
 
-    <!-- DIN FORMULAR HER -->
-    <form class="form-container">
-      <!-- ... din ansøgningsformular ... -->
-    </form>
-
-</div>
-</div>
+    
+            <!--  3 Custom Dropdowns -->
+            <div class="dropdown-row">
+              <div class="dropdown">
+                <label>Hvad er du interesseret i at hjælpe med?</label>
+                <button type="button" class="dropdown-btn">Vælg mulighed ▼</button>
+                <ul class="dropdown-menu">
+                  <li data-value="Rådgivning">Unge rådgiver</li>
+                  <li data-value="Events">Events</li>
+                  <li data-value="Kommunikation">Forældrerådgiver</li>
+                </ul>
+                <input type="hidden" class="dropdown-value" name="interesse">
+              </div>
+          
+              <div class="dropdown">
+                <label>Hvilken afdeling vil du tilknyttes?</label>
+                <button type="button" class="dropdown-btn">Vælg afdeling ▼</button>
+                <ul class="dropdown-menu">
+                  <li data-value="København">København</li>
+                  <li data-value="Aarhus">Aarhus</li>
+                  <li data-value="Aalborg">Aalborg</li>
+                  <li data-value="Odense">Odense</li>
+                </ul>
+                <input type="hidden" class="dropdown-value" name="afdeling">
+              </div>
+          
+              <div class="dropdown">
+                <label>Har du været til infoaften?</label>
+                <button type="button" class="dropdown-btn">Vælg svar ▼</button>
+                <ul class="dropdown-menu">
+                  <li data-value="Ja">Ja</li>
+                  <li data-value="Nej">Nej</li>
+                </ul>
+                <input type="hidden" class="dropdown-value" name="infoaften">
+              </div>
+            </div>
+          
+            <!--  Personlige oplysninger -->
+            <div class="form-group">
+              <label>Dit fulde navn *</label>
+              <input type="text" required>
+            </div>
+            <div class="form-group">
+              <label>Dit fødselsår *</label>
+              <input type="number" required>
+            </div>
+            <div class="form-group">
+              <label>Dit telefonnummer *</label>
+              <input type="tel" required>
+            </div>
+            <div class="form-group">
+              <label>Din e-mail *</label>
+              <input type="email" required>
+            </div>
+            <div class="form-group">
+              <label>Din adresse *</label>
+              <input type="text" required>
+            </div>
+          
+            <!--  Vedhæft filer -->
+            <div class="form-group">
+              <label>Vedhæft dit CV *</label>
+              <input type="file" accept=".pdf,.doc,.docx" required>
+            </div>
+            <div class="form-group">
+              <label>Vedhæft din ansøgning *</label>
+              <input type="file" accept=".pdf,.doc,.docx" required>
+            </div>
+          
+            <!--  Tekstfelt -->
+            <div class="form-group">
+              <label>Hvad tiltaler dig ved netop Girltalk?</label>
+              <textarea rows="5" placeholder="Skriv her..." required></textarea>
+            </div>
+          
+            <!--  Samtykke -->
+            <div class="form-group samtykke-box">
+              <h3 class="samtykke-overskrift">Samtykke</h3>
+              <label class="samtykke-tekst">
+                Ved at sætte flueben giver jeg samtykke til, at Girltalk må indsamle og behandle mine oplysninger i forbindelse med denne ansøgning. 
+                Oplysningerne vil kun blive brugt til rekruttering af frivillige og vil ikke blive delt med tredjeparter.
+              </label>
+              <input type="checkbox" class="samtykke" required>
+            </div>
+          
+            <!--  Tilmeld -->
+            <button type="submit" class="submit-btn">Tilmeld mig</button>
+          
+          </form>
+    
 
     <!--Alice - footer-->
 
