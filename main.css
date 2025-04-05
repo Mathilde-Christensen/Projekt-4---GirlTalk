@@ -484,7 +484,7 @@ ul {
 }
 
 .holdet__gallery__titel {
-    color: #000000;
+    color: #333;
     white-space: nowrap; 
     display: block; 
     top:90px;
@@ -607,7 +607,7 @@ ul {
     height: 100vh;
     backdrop-filter: blur(5px);
     background-color: rgba(247, 199, 217, 0.7);
-    z-index: 9999;
+    z-index: 20;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -622,7 +622,7 @@ ul {
     height: 100vh;
     backdrop-filter: blur(5px);
     background-color: rgba(247, 199, 217, 0.7);
-    z-index: 9999;
+    z-index: 20;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -637,7 +637,7 @@ ul {
     height: 100vh;
     backdrop-filter: blur(5px);
     background-color: rgba(247, 199, 217, 0.7);
-    z-index: 9999;
+    z-index: 20;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -652,7 +652,7 @@ ul {
     height: 100vh;
     backdrop-filter: blur(5px);
     background-color: rgba(247, 199, 217, 0.7);
-    z-index: 9999;
+    z-index: 20;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -869,7 +869,7 @@ ul {
 
 .footer-indhold ul li a {
     text-decoration: none;
-    color: #000000;
+    color: #333;
     font-size: 1rem;
 }
 
@@ -972,32 +972,23 @@ ul {
     padding: 12px;
   }
 
-  .ansogning-wrapper {
+
+  .form-container {
     padding: 20px;
   }
 
-  .ansogning-wrapper .form-container {
-    padding: 20px;
-  }
-
-  .ansogning-wrapper .dropdown-row {
+  .dropdown-row {
     flex-direction: column;
     gap: 16px;
   }
 
-  .ansogning-wrapper .dropdown,
-  .ansogning-wrapper .form-group {
+  .dropdown,
+  .form-group {
     width: 100%;
   }
 
-  .ansogning-wrapper .dropdown-btn,
-  .ansogning-wrapper .form-group input,
-  .ansogning-wrapper .form-group textarea,
-  .ansogning-wrapper .submit-btn {
-    font-size: 16px;
-  }
 
-  .ansogning-wrapper .submit-btn {
+  .submit-btn {
     padding: 12px;
   }
   
@@ -1165,7 +1156,7 @@ ul {
     }
     
     .holdet__gallery__titel {
-        color: #000000;
+        color: #333;
         white-space: nowrap;
         display: block; 
         text-align: center; 
@@ -1174,7 +1165,7 @@ ul {
     }
 
     .holdet__gallery__titel {
-        color: #000000;
+        color: #333;
         white-space: nowrap;
         display: block;
         text-align: center;
@@ -1575,7 +1566,7 @@ ul {
     }
 
     .holdet__gallery__titel {
-        color: #000000;
+        color: #333;
         white-space: nowrap;
         display: block;
         font-size: 1em;
@@ -1739,271 +1730,113 @@ ul {
         cursor: pointer;
     }
 
-    .dropdown-menu {
-        display: block;
-    }
-
-    .ansogning-wrapper {
-        font-family: 'Inter', sans-serif;
-        background: linear-gradient(to right, #e0eafc, #cfdef3);
-        margin: 0;
-        padding: 30px;
-        display: flex;
-        justify-content: center;
-        background-image: url("Nynybaggrund.webp");
-        background-size: 190%;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    
-    .ansogning-wrapper .form-container {
-        background-color: white;
-        padding: 40px;
-        border-radius: 16px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        max-width: 800px;
-        width: 100%;
-    }
-    
-    .ansogning-wrapper .dropdown {
-        flex: 1;
-        min-width: 200px;
-        position: relative;
-    }
-    
-    .ansogning-wrapper .dropdown-row {
-        margin-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .ansogning-wrapper .form-group input[type='file'] {
-        margin-top: 30px;
-    }
-    
-    .ansogning-wrapper .dropdown label {
-        font-weight: 600;
-        display: block;
-        margin-bottom: 5px;
-    }
-    
-    .ansogning-wrapper .dropdown-btn {
-        width: 100%;
-        padding: 10px 14px;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-        background-color: #ffffff;
-        font-weight: 500;
-        cursor: pointer;
-        text-align: left;
-    }
-    
-    .ansogning-wrapper .dropdown-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: white;
-        width: 100%;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        list-style: none;
-        padding: 0;
-        margin-top: 5px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        z-index: 10;
-    }
-    
-    .ansogning-wrapper .dropdown-menu.show {
-        display: block;
-    }
-    
-    .ansogning-wrapper .dropdown-menu li {
-        padding: 10px 14px;
-        cursor: pointer;
-    }
-    
-    .ansogning-wrapper .dropdown-menu li:hover {
-        background-color: #f0f0f0;
-    }
-    
-    .ansogning-wrapper .form-group {
-        margin-bottom: 20px;
-    }
-    
-    .ansogning-wrapper .form-group label {
-        display: block;
-        font-weight: 600;
-        margin-bottom: 6px;
-    }
-    
-    .ansogning-wrapper .form-group input,
-    .ansogning-wrapper .form-group textarea {
-        width: 100%;
-        padding: 12px;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-        font-size: 14px;
-    }
-    
-    .ansogning-wrapper textarea {
-        resize: vertical;
-    }
-    
-    .ansogning-wrapper .checkbox-group {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .ansogning-wrapper .submit-btn {
-        background-color: #4f46e5;
-        color: white;
-        padding: 14px 20px;
-        border: none;
-        border-radius: 8px;
-        font-weight: 600;
-        cursor: pointer;
-        font-size: 16px;
-        margin-top: 20px;
-        width: 100%;
-    }
-    
-    .ansogning-wrapper .submit-btn:hover {
-        background-color: #4338ca;
-    }
-    
-    .ansogning-wrapper .samtykke-box {
-        background-color: #f8f8ff;
-        border: 1px solid #ccc;
-        padding: 20px;
-        border-radius: 10px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-    
-    .ansogning-wrapper .samtykke-overskrift {
-        font-size: 18px;
-        font-weight: 700;
-        color: #000000;
-        margin-bottom: 10px;
-    }
-    
-    .ansogning-wrapper .samtykke-tekst {
-        font-size: 14px;
-        line-height: 1.6;
-        margin-bottom: 10px;
-        font-weight: 500;
-        color: #333;
-    }
-    
-    .ansogning-wrapper .samtykke-box input[type="checkbox"] {
-        margin-top: 10px;
-        transform: scale(1.2);
-    }
     .ansogning-popup {
-        display: none; /* skjult som udgangspunkt */
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(0,0,0,0.5); /* mørk baggrund */
-        backdrop-filter: blur(3px);
-        z-index: 99999;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
         justify-content: center;
         align-items: center;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        
+    }
+
+    .highlight {
+        color: #FC4C5D;
+        font-weight: bold; 
+    }
+
+    .highlight2{
+        color: #273AAA;
     }
     
-    .ansogning-popup .popup-indhold {
-        background: white;
+    .popup-indhold {
+        background: #FDEFF4;
         padding: 2rem;
         border-radius: 12px;
-        max-width: 600px;
+        max-width: 800px;
+        max-height: 90vh;
         width: 90%;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        overflow-y: auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         position: relative;
     }
     
-    .form-container {
-        background-color: white;
-        padding: 40px;
-        border-radius: 16px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        max-width: 800px;
-        width: 100%;
-    }
-
-    .dropdown {
-        flex: 1;
-        min-width: 200px;
-        position: relative; /* 💡 Gør at dropdown placerer sig korrekt */
-    }
-
-    .dropdown-row {
-        margin-bottom: 50px;
-        display: flex;
-        flex-direction: column; /* 🔁 Drop flex-row – brug column i stedet */
-        gap: 20px; /* mellemrum mellem hver dropdown */
-    }
-    
-    /* Ekstra mellemrum under dropdowns */
-    .dropdown-row {
-            margin-bottom: 50px;
-    }
-        
-    /* Ekstra mellemrum over vedhæftningsfelter */
-    .form-group input[type='file'] {
-        margin-top: 30px;
-    }
-
-    .dropdown label {
-        font-weight: 600;
-        display: block;
-        margin-bottom: 5px;
-    }
-    
-    .dropdown-btn {
-        width: 100%;
-        padding: 10px 14px;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-        background-color: #ffffff;
-        font-weight: 500;
+    #lukPopup {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
         cursor: pointer;
-        text-align: left;
     }
     
+    /* Style til dropdown-menu */
     .dropdown-menu {
         display: none;
         position: absolute;
-        top: 100%;
-        left: 0;
-        background: white;
-        width: 100%;
-        border: 1px solid #ccc;
+        background-color: #FFFFFF;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
         border-radius: 8px;
-        list-style: none;
-        padding: 0;
-        margin-top: 5px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        z-index: 10;
-    }
-    
-    .dropdown-menu.show {
-        display: block;
     }
     
     .dropdown-menu li {
-        padding: 10px 14px;
+        color: #333;
+        padding: 8px 16px;
+        text-align: left;
         cursor: pointer;
     }
     
     .dropdown-menu li:hover {
-        background-color: #f0f0f0;
+        background-color: #F7C7D9;
+    }
+    
+    /* Når dropdown er aktiv */
+    .dropdown-menu.show {
+        display: block;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-btn {
+        color: #273AAA;
+        padding: 10px 14px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        background-color: #FFFFFF;
+        font-weight: 500;
+        text-align: left;
+    }
+    
+    .dropdown-btn:hover {
+        background-color: #FDEFF4;
+    }
+    
+    
+    .samtykke-box input[type="checkbox"] {
+        margin-top: 10px;
+        transform: scale(1.2);
+    }
+
+    
+    .dropdown-row {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
     
     
@@ -2019,30 +1852,27 @@ ul {
     
     .form-group input,
     .form-group textarea {
+        font-family: Archivo;
         width: 100%;
         padding: 12px;
         border-radius: 8px;
         border: 1px solid #ccc;
+        background-color:#FFFFFF;
         font-size: 14px;
     }
     
-    textarea {
-        resize: vertical;
-    }
-    
+
     .checkbox-group {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         gap: 10px;
-    }
-    
-    .checkbox-group input {
-        margin-top: 4px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     
     .submit-btn {
-        background-color: #4f46e5;
-        color: white;
+        background-color: #273AAA;
+        color: #FFFFFF;
         padding: 14px 20px;
         border: none;
         border-radius: 8px;
@@ -2054,11 +1884,130 @@ ul {
     }
     
     .submit-btn:hover {
-        background-color: #4338ca;
+        background-color: #F7C7D9;
+        color:#273AAA;
     }
+    
+    .samtykke-box {
+        background-color: #f8f8ff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .samtykke-overskrift {
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .samtykke-tekst {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: #333;
+    }
+    
+    .samtykke-box input[type="checkbox"] {
+        margin-top: 10px;
+        transform: scale(1.2);
+    }
+    .ansogning-popup {
+        display: none; /* skjult som udgangspunkt */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: blur(5px);
+        background-color: rgba(247, 199, 217, 0.7);
+        z-index: 30;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ansogning-popup .popup-indhold {
+        background: #FDEFF4;
+        padding: 2rem;
+        border-radius: 12px;
+        max-width: 600px;
+        width: 90%;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        position: relative;
+    }
+    
+    .form-container {
+        background-color: #FDEFF4;
+        padding: 40px;
+        border-radius: 16px;
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .dropdown {
+        flex: 1;
+        min-width: 200px;
+        position: relative;
+    }
+
+    .dropdown-row {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+    }
+    
+        
+    .form-group input[type='file'] {
+        margin-top: 30px;
+    }
+
+    .dropdown label {
+        font-weight: 600;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #FFFFFF;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        list-style: none;
+        padding: 0;
+        margin-top: 5px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    
+    .dropdown-menu li {
+        padding: 10px 14px;
+        cursor: pointer;
+    }
+
+    
     .checkbox-group {
         display: flex;
-        align-items: center; /* 💡 Centrer label og checkbox vertikalt */
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .checkbox-group input {
+        margin-top: 4px;
+    }
+    
+    .checkbox-group {
+        display: flex;
+        align-items: center;
         gap: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -2075,7 +2024,7 @@ ul {
     .samtykke-overskrift {
         font-size: 18px;
         font-weight: 700;
-        color: #000000;
+        color: #333;
         margin-bottom: 10px;
     }
     
@@ -2087,10 +2036,7 @@ ul {
         color: #333;
     }
     
-    .samtykke-box input[type="checkbox"] {
-        margin-top: 10px;
-        transform: scale(1.2);
-    }
+   
 
 }
   
