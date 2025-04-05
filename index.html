@@ -15,93 +15,92 @@
     <script src="js/casper.js" defer></script>
     <script src="js/mathilde.js" defer></script>
     <script src="js/kirja.js" defer></script>
-    <script src="js/footer.js" defer></script>
 </head>
 <body>
     <header>
 
         <div class="header">
             
-            <div class="header">
-            
-                <button class="hamburger" onclick="openNav(0)">
         
-                    <svg width="40" height="17" viewBox="0 0 55 24" fill="none">              
-                        <rect id="streg_1" width="25" height="3" fill="#273AAA"></rect>         
-                        <rect id="streg_2" y="10" width="25" height="3" fill="#273AAA"></rect>
-                        <rect id="streg_3" y="20" width="25" height="3" fill="#273AAA"></rect>
-                    </svg>  <!--størrelsen, højden og farven for mine streger - hamburgermenuen-->  
-                </button>
-            <div id="minHamburgermenu" class="hamburgermenuen">
-                <a href="index.html" class="hejhjem">Hjem</a>
-                <a href="#girltalk__frivilligeunivers__h2">Vores tilbud</a>
-                <a href="index.html">Støt</a>
-                <a href="index.html">Om os</a>
-                <a href="index.html">Shop</a>
-                
-                <button class="dropdown-knappen">Bliv frivillig   </button>
-                <div class="dropdown-indhold">
-                    <a href="#girltalk__frivilligeunivers__h2">Bliv ungrådgiver</a>
-                    <a href="#girltalk__frivilligeunivers__h2">Bliv gruppeleder</a>
-                    <a href="#girltalk__frivilligeunivers__h2">Bliv forældrerådgiver</a>
-                    <a href="#girltalk__frivilligeunivers__h2">Hold foredrag</a>
-                </div>
-            </div>
-            <a href="index.html">
-                <img class="logo" src="billeder/girltalk_logo.webp" alt="GirlTalk logo">
-            </a>
-
-            <div class="dropdown-menu">
-                <div class="dropdown">
-                    <button class="dropknap">Vores tilbud</button>
-                    <div class="dropdown_indhold">
-                        <a href="#">...</a>
-                        <a href="#">...</a>
-                        <a href="#">...</a>
-                    </div>
-                </div>
             
-                <div class="dropdown">
-                    <button class="dropknap">Støt</button>
-                    <div class="dropdown_indhold">
-                        <a href="#">...</a>
-                        <a href="#">...</a>
-                        <a href="#">...</a>
-                    </div>
-                </div>
-            
-                <div class="dropdown">
-                    <button class="dropknap">Om os</button>
-                    <div class="dropdown_indhold">
-                        <a href="#">...</a>
-                        <a href="#">...</a>
-                        <a href="#">...</a>
-                    </div>
-                </div>
+          <button class="hamburger" onclick="openNav(0)">
+  
+            <svg width="40" height="17" viewBox="0 0 55 24" fill="none">              
+                <rect id="streg_1" width="25" height="3" fill="#273AAA"></rect>         
+                <rect id="streg_2" y="10" width="25" height="3" fill="#273AAA"></rect>
+                <rect id="streg_3" y="20" width="25" height="3" fill="#273AAA"></rect>
+            </svg>  <!--størrelsen, højden og farven for mine streger - hamburgermenuen-->  
+          </button>
+          <div id="minHamburgermenu" class="hamburgermenuen">
+              <a href="index.html" class="hejhjem">Hjem</a>
+              <a href="#girltalk__frivilligeunivers__h2">Vores tilbud</a>
+              <a href="index.html">Støt</a>
+              <a href="index.html">Om os</a>
+              <a href="index.html">Shop</a>
+              
+              <button class="dropdown-knappen">Bliv frivillig  </button>
+              <div class="dropdown-indhold">
+                  <a href="#girltalk__frivilligeunivers__h2">Bliv ungrådgiver</a>
+                  <a href="#girltalk__frivilligeunivers__h2">Bliv gruppeleder</a>
+                  <a href="#girltalk__frivilligeunivers__h2">Bliv forældrerådgiver</a>
+                  <a href="#girltalk__frivilligeunivers__h2">Hold foredrag</a>
+              </div>
+          </div>
+          <a href="index.html">
+              <img class="logo" src="billeder/girltalk_logo.webp" alt="GirlTalk logo">
+          </a>
 
-                <div class="dropdown">
-                    <button class="dropknap">Shop</button>
-                    <div class="dropdown_indhold">
-                        <a href="#">...</a>
-                        <a href="#">...</a>
-                        <a href="#">...</a>
-                    </div>
-                </div>
-            </div>
+          <div class="dropdown-menu">
+              <div class="dropdown">
+                  <button class="dropknap">Vores tilbud</button>
+                  <div class="dropdown_indhold">
+                      <a href="#">...</a>
+                      <a href="#">...</a>
+                      <a href="#">...</a>
+                  </div>
+              </div>
+          
+              <div class="dropdown">
+                  <button class="dropknap">Støt</button>
+                  <div class="dropdown_indhold">
+                      <a href="#">...</a>
+                      <a href="#">...</a>
+                      <a href="#">...</a>
+                  </div>
+              </div>
+          
+              <div class="dropdown">
+                  <button class="dropknap">Om os</button>
+                  <div class="dropdown_indhold">
+                      <a href="#">...</a>
+                      <a href="#">...</a>
+                      <a href="#">...</a>
+                  </div>
+              </div>
 
-            <!-- Mathilde -->  
-            <div id="soegefelt">
-                <button id="soegefeltButton" onclick="soeFeltIndput()"><img class="soegefeltBillede" src="billeder/soegeikon.webp" alt="forstørrelsslag som søge ikon"></button>
-        
-                <div id="soegBoks" style="display: none;">
-                    <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;"><img class="lukKnapBillede" src="billeder/luknap.webp" alt="kryds"></button>
-                    <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
+              <div class="dropdown">
+                  <button class="dropknap">Shop</button>
+                  <div class="dropdown_indhold">
+                      <a href="#">...</a>
+                      <a href="#">...</a>
+                      <a href="#">...</a>
+                  </div>
+              </div>
+          </div>
 
-                    <ul id="soegeResultater"></ul> <!-- tom ul liste som bliver fyldt i js med søgeresultater -->
-                </div>
-        
-                
-            </div>    
+          <!-- Mathilde -->  
+          <div id="soegefelt">
+              <button id="soegefeltButton" onclick="soeFeltIndput()"><img class="soegefeltBillede" src="billeder/soegeikon.webp" alt="forstørrelsslag som søge ikon"></button>
+      
+              <div id="soegBoks" style="display: none;">
+                  <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;"><img class="lukKnapBillede" src="billeder/luknap.webp" alt="kryds"></button>
+                  <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
+
+                  <ul id="soegeResultater"></ul> <!-- tom ul liste som bliver fyldt i js med søgeresultater -->
+              </div>
+      
+              
+          </div>    
         </div>
     </header>
 
@@ -658,7 +657,7 @@
         <div class="footer-sektion">
             <button class="footer-knap" onclick="knapIndhold('girltalk-indhold', this)">
                 <span class="span__knap">+</span>
-                <h3>Om GirlTalk</h3>
+                <h3 class="om_gt">Om GirlTalk</h3>
             </button>
             <div id="girltalk-indhold" class="footer-indhold">
                 <ul>
@@ -675,7 +674,7 @@
         <div class="footer-sektion">
             <button class="footer-knap" onclick="knapIndhold('follow-indhold', this)">
                 <span class="span__knap">+</span>
-                <h3>Følg os her</h3>
+                <h3 class="folg_os">Følg os her</h3>
             </button>
             <div id="follow-indhold" class="footer-indhold">
                 <ul>
@@ -693,15 +692,15 @@
             <img class="footer_logo" src="billeder/girltalk_logo.webp" alt="girltalks logo">
             <p>Martinsvej 7, 1
             <p>1926 Frederiksberg C</p>
-            <p class="cvr">CVR 30 14 53 48</p>
+            <p id="cvr">CVR 30 14 53 48</p>
         </div>
     
         <div class="footer-sektion kontakt-information">
             <h3 class="kontakt_os">Kontakt os</h3>
             <p>info@girltalk.dk</p>
             <p>51 91 33 77</p>
-            <p>Telefontid mandag til torsdag kl. 10.00 til 13.00</p>
-            <p class="faq"> GirlTalks FAQ Til Projektopgaver</p>
+            <p>Telefontid mandag til torsdag kl. <br> 10.00 til 13.00</p>
+            <p id="faq"> GirlTalks FAQ Til Projektopgaver</p>
         </div>
     </footer>
 
