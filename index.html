@@ -40,7 +40,7 @@
               
               <button class="dropdown-knappen">Bliv frivillig  </button>
               <div class="dropdown-indhold">
-                  <a href="#girltalk__frivilligeunivers__h2">Bliv ungrådgiver</a>
+                  <a href="#girltalk__frivilligeunivers__h2">Bliv ungerådgiver</a>
                   <a href="#girltalk__frivilligeunivers__h2">Bliv gruppeleder</a>
                   <a href="#girltalk__frivilligeunivers__h2">Bliv forældrerådgiver</a>
                   <a href="#girltalk__frivilligeunivers__h2">Hold foredrag</a>
@@ -148,7 +148,7 @@
                 <img class="frivilligehus__img" src="billeder/frivilligehuset.webp" alt="illustration af frivilligehus">
 
                 <div id="ungerodgiver__popup" class="etage-button etage-1">
-                    <button id="openUngerodgiver">Ungrådgiver</button>
+                    <button id="openUngerodgiver">Ungerådgiver</button>
                 </div>
 
 
@@ -173,7 +173,7 @@
 
                   <button id="closeUngerodgiver" class="closePopup"><img class="lukKnapBillede" src="billeder/luknap.webp" alt="kryds"></button>
 
-                  <h2 class="popup__h2">Bliv ungrådgiver</h2>
+                  <h2 class="popup__h2">Bliv ungerådgiver</h2>
                   <p class="popup__p">Giv unge piger et trygt rum, hvor de kan tale frit
                           – og få rådgivning, der gør en forskel.
                   </p>
@@ -204,7 +204,7 @@
                       <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.webp" alt="pink hjerte">Meningsfulde samtaler – og følelsen af virkelig at gøre en forskel</li>
                   </ul>
 
-                  <a href="#ansogningsformular" class="ansog__button">Ansøg</a>
+                  <button class="popup__ansog">Ansøg</button>
               </div>
 
             </div>
@@ -246,7 +246,7 @@
                       <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.webp" alt="pink hjerte">Et stærkt fællesskab med engagerede frivillige</li>
                   </ul>
 
-                  <a href="#ansogningsformular" class="ansog__button">Ansøg</a>
+                  <button class="popup__ansog">Ansøg</button>
                 </div>
                 
             </div> 
@@ -337,7 +337,7 @@
                       <li class="popup__li"><img class="pink__hjerte" src="billeder/pink__hjerte.webp" alt="pink hjerte">Mulighed for at nå bredt ud og røre mange på én gang</li>
                   </ul>
                   
-                  <a href="#ansogningsformular" class="ansog__button">Ansøg</a>
+                  <button class="popup__ansog">Ansøg</button>
 
               </div>
               
@@ -552,20 +552,22 @@
                     Nu mangler vi bare dig.
                 </p>
 
-                <a href="#ansogningsformular" class="ansog__button">Ansøg</a>
+                <button class="ansog__button">Ansøg</button>
 
             </div>
         </div>
     </main>  
   
     <!--Alice - footer-->
+    
 
     <footer class="footer">
         <div class="footer-sektion">
-            <button class="footer-knap" onclick="knapIndhold('girltalk-indhold', this)">
-                <span class="span__knap">+</span>
+            <label class="footer-knap" for="girltalk-checkbox">
+                <span class="span__knap f">+</span>
                 <h3 class="om_gt">Om GirlTalk</h3>
-            </button>
+            </label>
+            <input type="checkbox" id="girltalk-checkbox" class="footer-checkbox">
             <div id="girltalk-indhold" class="footer-indhold">
                 <ul>
                     <li><a href="#">Presse</a></li>
@@ -579,11 +581,13 @@
         </div>
     
         <div class="footer-sektion">
-            <button class="footer-knap" onclick="knapIndhold('follow-indhold', this)">
+            <label class="footer-knap" for="follow-checkbox">
                 <span class="span__knap">+</span>
                 <h3 class="folg_os">Følg os her</h3>
-            </button>
+            </label>
+            <input type="checkbox" id="follow-checkbox" class="footer-checkbox">
             <div id="follow-indhold" class="footer-indhold">
+            <ul>
                 <ul>
                     <li><a href="#">YouTube</a></li>
                     <li><a href="#">Instagram</a></li>
@@ -611,16 +615,18 @@
         </div>
     </footer>
 
+     <!-- Ansøgningsformular--->
+
     <div id="ansogningPopup" class="ansogning-popup">
       <div class="popup-indhold">
         <button id="lukPopup" class="close-btn"><span class="highlight"> ✖</span></button>
-        <form id="ansogningsformular" class="form-container">
+        <form class="form-container">
 
             <div class="dropdown-row">
-              <div class="dropdown">
+              <div class="dropdown-ansogning">
                 <label>Hvad er du interesseret i at hjælpe med?</label>
                 <button type="button" class="dropdown-btn">Vælg mulighed<span class="highlight2"> ▼</span></button>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-ansogning__menu">
                   <li data-value="Rådgivning">Ungerådgiver</li>
                   <li data-value="Events">Events</li>
                   <li data-value="Kommunikation">Forældrerådgiver</li>
@@ -628,10 +634,10 @@
                 <input type="hidden" class="dropdown-value" name="interesse">
               </div>
             
-              <div class="dropdown">
+              <div class="dropdown-ansogning">
                 <label>Hvilken afdeling vil du tilknyttes?</label>
                 <button type="button" class="dropdown-btn">Vælg afdeling<span class="highlight2"> ▼</span></button>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-ansogning__menu">
                   <li data-value="København">København</li>
                   <li data-value="Aarhus">Aarhus</li>
                   <li data-value="Aalborg">Aalborg</li>
@@ -640,10 +646,10 @@
                 <input type="hidden" class="dropdown-value" name="afdeling">
               </div>
           
-              <div class="dropdown">
+              <div class="dropdown-ansogning">
                 <label>Har du været til infoaften?</label>
                 <button type="button" class="dropdown-btn">Vælg svar<span class="highlight2"> ▼</span></button>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-ansogning__menu">
                   <li data-value="Ja">Ja</li>
                   <li data-value="Nej">Nej</li>
                 </ul>
