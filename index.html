@@ -20,8 +20,34 @@
     <header>
 
         <div class="header">
-            
+            <a href="index.html">
+                <img class="logo" src="billeder/girltalk_logo.webp" alt="GirlTalk logo">
+            </a>
+                        
+            <button class="hamburger" onclick="openNav(0)">
         
+                    <svg width="40" height="17" viewBox="0 0 55 24" fill="none">              
+                        <rect id="streg_1" width="25" height="3" fill="#273AAA"></rect>         
+                        <rect id="streg_2" y="10" width="25" height="3" fill="#273AAA"></rect>
+                        <rect id="streg_3" y="20" width="25" height="3" fill="#273AAA"></rect>
+                    </svg>  <!--størrelsen, højden og farven for mine streger - hamburgermenuen-->  
+            </button>
+
+                <div id="minHamburgermenu" class="hamburgermenuen">
+                    <a href="index.html" class="hejhjem">Hjem</a>
+                    <a href="#girltalk__frivilligeunivers__h2">Vores tilbud</a>
+                    <a href="index.html">Støt</a>
+                    <a href="index.html">Om os</a>
+                    <a href="index.html">Shop</a>
+                
+            <button class="dropdown-knappen">Bliv frivillig   </button>
+                <div class="dropdown-indhold">
+                    <a href="#girltalk__frivilligeunivers__h2">Bliv ungrådgiver</a>
+                    <a href="#girltalk__frivilligeunivers__h2">Bliv gruppeleder</a>
+                    <a href="#girltalk__frivilligeunivers__h2">Bliv forældrerådgiver</a>
+                    <a href="#girltalk__frivilligeunivers__h2">Hold foredrag</a>
+                </div>  
+        </div>
             
           <button class="hamburger" onclick="openNav(0)">
   
@@ -50,43 +76,22 @@
               <img class="logo" src="billeder/girltalk_logo.webp" alt="GirlTalk logo">
           </a>
 
-          <div class="dropdown-menu">
-              <div class="dropdown">
-                  <button class="dropknap">Vores tilbud</button>
-                  <div class="dropdown_indhold">
-                      <a href="#">...</a>
-                      <a href="#">...</a>
-                      <a href="#">...</a>
-                  </div>
+        <div class="midten-dropdown">
+            <div class="selve-dropdown">
+              <button class="tilbud_dropdown">Vores tilbud</button>
+              <div class="under_tilbud_dropdown">
+                <a href="#girltalk__frivilligeunivers__h2">Bliv ungrådgiver</a>
+                <a href="#girltalk__frivilligeunivers__h2">Bliv gruppeleder</a>
+                <a href="#girltalk__frivilligeunivers__h2">Bliv forældrerådgiver</a>
+                <a href="#girltalk__frivilligeunivers__h2">Hold foredrag</a>
               </div>
+            </div>
           
-              <div class="dropdown">
-                  <button class="dropknap">Støt</button>
-                  <div class="dropdown_indhold">
-                      <a href="#">...</a>
-                      <a href="#">...</a>
-                      <a href="#">...</a>
-                  </div>
-              </div>
-          
-              <div class="dropdown">
-                  <button class="dropknap">Om os</button>
-                  <div class="dropdown_indhold">
-                      <a href="#">...</a>
-                      <a href="#">...</a>
-                      <a href="#">...</a>
-                  </div>
-              </div>
-
-              <div class="dropdown">
-                  <button class="dropknap">Shop</button>
-                  <div class="dropdown_indhold">
-                      <a href="#">...</a>
-                      <a href="#">...</a>
-                      <a href="#">...</a>
-                  </div>
-              </div>
+            <a href="index.html" class="dropknap">Støt</a>
+            <a href="index.html" class="dropknap">Om os</a>
+            <a href="index.html" class="dropknap">Shop</a>
           </div>
+
 
           <!-- Mathilde -->  
           <div id="soegefelt">
@@ -97,11 +102,9 @@
                   <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
 
                   <ul id="soegeResultater"></ul> <!-- tom ul liste som bliver fyldt i js med søgeresultater -->
-              </div>
-      
-              
-          </div>    
+              </div>    
         </div>
+        
     </header>
 
     <main>
