@@ -1,70 +1,80 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const dropdowns = [
-    { btnId: "dropdownBtn1", menuId: "dropdownMenu1", valueId: "dropdownValue1" },
-    { btnId: "dropdownBtn2", menuId: "dropdownMenu2", valueId: "dropdownValue2" },
-    { btnId: "dropdownBtn3", menuId: "dropdownMenu3", valueId: "dropdownValue3" }
-  ];
+  // denne variabel finder alle knapper med de relevante klasser
+  const ansogKnapper = document.querySelectorAll(".hero_ansog_button, .ansog__button, .popup__ansog");
 
-  dropdowns.forEach(({ btnId, menuId, valueId }) => {
-    const btn = document.getElementById(btnId);
-    const menu = document.getElementById(menuId);
-    const valueInput = document.getElementById(valueId);
-
-    if (!btn || !menu || !valueInput) return;
-
-    btn.addEventListener("click", function (event) {
-      event.stopPropagation();
-      document.querySelectorAll(".dropdown-menu").forEach(m => m.classList.remove("show"));
-      menu.classList.toggle("show");
-    });
-
-    menu.addEventListener("click", function (event) {
-      if (event.target.tagName === "LI") {
-        const selectedValue = event.target.getAttribute("data-value");
-        btn.textContent = selectedValue + " ▼";
-        valueInput.value = selectedValue;
-        menu.classList.remove("show");
-      }
-    });
-  });
-
-  document.addEventListener("click", function () {
-    document.querySelectorAll(".dropdown-menu").forEach(menu => menu.classList.remove("show"));
-  });
-
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") {
-      document.querySelectorAll(".dropdown-menu").forEach(menu => menu.classList.remove("show"));
-    }
-  });
-
-  // 👇 Her definerer vi popup’en
+  // denne variabel finder popup-elementet
   const ansogningPopup = document.getElementById("ansogningPopup");
 
-  // Åbn popup på knap klik
-  document.querySelectorAll(".ansog__button, .popup__ansog").forEach(knap => {
-    knap.addEventListener("click", () => {
-      ansogningPopup.style.display = "flex";
-    });
+  // denne åbner popup'en, når en af knapperne klikkes
+  ansogKnapper.forEach(knap => {
+      knap.addEventListener("click", () => {
+          ansogningPopup.style.display = "flex";
+      });
   });
 
-  // Luk popup
+  // denne lukker popup'en
   const lukBtn = document.getElementById("lukPopup");
   if (lukBtn) {
-    lukBtn.addEventListener("click", () => {
-      ansogningPopup.style.display = "none";
-    });
+      lukBtn.addEventListener("click", () => {
+          ansogningPopup.style.display = "none";
+          resetDropdowns();  // her nulstilles dropdowns, når popup'en lukkes
+      });
   }
 
-  // Tjek samtykke
-  const form = ansogningPopup.querySelector("form");
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      const samtykke = document.getElementById("samtykke");
-      if (!samtykke || !samtykke.checked) {
-        alert("Du skal give samtykke for at kunne tilmelde dig.");
-        e.preventDefault();
+  // denne lukker popup'en ved klik uden for formularen
+  window.addEventListener("click", function (event) {
+      if (event.target === ansogningPopup) {
+          ansogningPopup.style.display = "none";
+          resetDropdowns();  
       }
-    });
+  });
+
+  // Dropdown funktionalitet
+  const dropdownBtns = document.querySelectorAll(".dropdown-btn");
+  dropdownBtns.forEach(btn => {
+      btn.addEventListener("click", function () {
+          const dropdownMenu = this.nextElementSibling;
+          dropdownMenu.classList.toggle("show");
+      });
+  });
+
+  // denne opdaterer dropdown-knappen med valgt mulighed/input
+  const dropdownMenus = document.querySelectorAll(".dropdown-menu");
+  dropdownMenus.forEach(menu => {
+      menu.addEventListener("click", function (e) {
+          if (e.target.tagName === "LI") {
+              const selectedValue = e.target.getAttribute("data-value");
+              const dropdownBtn = this.previousElementSibling;
+              const hiddenInput = this.nextElementSibling;
+
+              // opdaterer knapteksten uden pilen
+              dropdownBtn.textContent = `${e.target.textContent}`;
+              hiddenInput.value = selectedValue;
+
+              // Lukker dropdown efter valgt mulighed
+              this.classList.remove("show");
+          }
+      });
+  });
+
+  // Lukker dropdown'en, når der klikkes udenfor formularen
+  window.addEventListener("click", function (e) {
+      if (!e.target.matches('.dropdown-btn')) {
+          dropdownMenus.forEach(menu => {
+              menu.classList.remove('show');
+          });
+      }
+  });
+
+  // dette er funktionen til at nulstille dropdowns
+  function resetDropdowns() {
+      dropdownBtns.forEach(btn => {
+          btn.textContent = "Vælg mulighed ▼";  // nulstiller til placeholderen i feltet
+      });
+
+      const hiddenInputs = document.querySelectorAll(".dropdown-value");
+      hiddenInputs.forEach(input => {
+          input.value = "";  // denne tømmer den skjulte input-værdi
+      });
   }
 });
