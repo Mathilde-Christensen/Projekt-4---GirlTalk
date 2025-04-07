@@ -1666,6 +1666,9 @@ footer details[open] .footer-indhold {
         font-size: 1.5rem;
         cursor: pointer;
     }
+    .dropdown_menu {
+        display: none;
+      }
 }
 
 @media (min-width: 1024px) {
