@@ -18,6 +18,7 @@
     <script src="js/footer.js" defer></script>
 </head>
 <body>
+    
     <header>
 
         <div class="header">
@@ -41,57 +42,50 @@
                 <a href="index.html">Støt</a>
                 <a href="index.html">Om os</a>
                 <a href="index.html">Shop</a>
-            </div>    
                 
-            <button class="dropdown-knappen">Bliv frivillig </button>
+                <button class="dropdown-knappen">Bliv frivillig </button>
 
-            <div class="dropdown-indhold">
-                <a href="#girltalk__frivilligeunivers__h2">Bliv ungrådgiver</a>
-                <a href="#girltalk__frivilligeunivers__h2">Bliv gruppeleder</a>
-                <a href="#girltalk__frivilligeunivers__h2">Bliv forældrerådgiver</a>
-                <a href="#girltalk__frivilligeunivers__h2">Hold foredrag</a>
-            </div>
-
-        </div>
- 
-
-  
-        <div class="dropdown_menu">
-            <div class="dropdown">
-                <button class="dropknap">Vores tilbud</button>
-                <div class="dropdown_indhold">
+                <div class="dropdown-indhold">
                     <a href="#girltalk__frivilligeunivers__h2">Bliv ungrådgiver</a>
                     <a href="#girltalk__frivilligeunivers__h2">Bliv gruppeleder</a>
                     <a href="#girltalk__frivilligeunivers__h2">Bliv forældrerådgiver</a>
                     <a href="#girltalk__frivilligeunivers__h2">Hold foredrag</a>
                 </div>
+
             </div>
-        
-            <div class="dropdown_">
-                <button class="dropknap"><a class="stotte_dropdown" href="index.html">Støt</a></button>
+            
+
+            <ul class="menu_desktop">
+                <li class="menu_desktop_li"><a class="menu_desktop_link" href="#girltalk__frivilligeunivers__h2">Vores Tilbud</a></li>
+                <li class="menu_desktop_li"><a class="menu_desktop_link" href="index.html">Støt</a></li>
+                <li class="menu_desktop_li"><a class="menu_desktop_link" href="index.html">Om os</a></li>
+                <li class="menu_desktop_li"><a class="menu_desktop_link" href="index.html">Shop</a></li>
+                <li class="desktop_undersider">
+                    <a class="desktop_undersider_link" href="index.html">Bliv frivillig</a>
+                    <ul class="desktop_undersider_ul">
+                        <li class="desktop_undersider_li"><a href="#girltalk__frivilligeunivers__h2">Bliv ungrådgiver</a></li>
+                        <li class="desktop_undersider_li"><a href="#girltalk__frivilligeunivers__h2">Bliv gruppeleder</a></li>
+                        <li class="desktop_undersider_li"><a href="#girltalk__frivilligeunivers__h2">Bliv forældrerådgiver</a></li>
+                        <li class="desktop_undersider_li"><a href="#girltalk__frivilligeunivers__h2">Hold foredrag</a></li>
+                    </ul>
+                </li>
+            </ul>
+    
+    
+            <!-- Mathilde -->  
+            <div id="soegefelt">
+                <button id="soegefeltButton" onclick="soeFeltIndput()"><img class="soegefeltBillede" src="billeder/soegeikon.webp" alt="forstørrelsslag som søge ikon"></button>
+          
+                <div id="soegBoks" style="display: none;">
+                    <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;"><img class="lukKnapBillede" src="billeder/luknap.webp" alt="kryds"></button>
+                    <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
+    
+                    <ul id="soegeResultater"></ul> <!-- tom ul liste som bliver fyldt i js med søgeresultater -->
+                 </div>    
             </div>
-        
-            <div class="dropdown">
-                <button class="dropknap"><a class="stotte_dropdown" href="index.html">Om os</a></button>
-            </div>
-        
-            <div class="dropdown">
-                <button class="dropknap"><a class="stotte_dropdown" href="index.html">Shop</a></button>
-            </div>
+
         </div>
-
-
-        <!-- Mathilde -->  
-        <div id="soegefelt">
-            <button id="soegefeltButton" onclick="soeFeltIndput()"><img class="soegefeltBillede" src="billeder/soegeikon.webp" alt="forstørrelsslag som søge ikon"></button>
-      
-            <div id="soegBoks" style="display: none;">
-                <button id="lukKnap" onclick="soeFeltIndput()" style="display: none;"><img class="lukKnapBillede" src="billeder/luknap.webp" alt="kryds"></button>
-                <input id="indputFelt" type="text" placeholder="Hvad leder du efter?" name="soeg" style="display: none;" onkeyup="filterLinks()">
-
-                <ul id="soegeResultater"></ul> <!-- tom ul liste som bliver fyldt i js med søgeresultater -->
-             </div>    
-        </div>
+ 
         
     </header>
 

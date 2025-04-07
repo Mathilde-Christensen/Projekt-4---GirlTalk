@@ -153,7 +153,7 @@ ul {
 }
 
 
-.dropdown_menu {
+.header_menu_desktop {
     display: none;
 }
 
@@ -2398,12 +2398,35 @@ footer details[open] .footer-indhold {
         padding-left: 32px;
       }
 
-    .dropdown_menu {
-        display: block;
-        position: fixed;
+    .menu_desktop_link {
+        color: #212529;
+        font-family: Lato;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        background-color: #FFFEF9;
+        border: none;
     }
-    
 
+    .desktop_undersider_link {
+        color: #212529;
+        font-family: Lato;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        background-color: #FFFEF9;
+        border: none;
+    }
+
+    .desktop_undersider_ul {
+        display: none;
+    }
+
+    .desktop_undersider_link:hover .desktop_undersider_ul{
+        display: block;
+    }
+
+    
 
 
 
