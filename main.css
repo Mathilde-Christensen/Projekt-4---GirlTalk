@@ -2398,9 +2398,9 @@ footer details[open] .footer-indhold {
         padding-left: 32px;
       }
 
-      .dropdown_menu {
-        display: none;
-      }
+    .dropdown_menu {
+        display: block;
+    }
     
 
 
