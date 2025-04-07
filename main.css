@@ -2419,13 +2419,35 @@ footer details[open] .footer-indhold {
     }
 
     .desktop_undersider_ul {
+        text-align: left;
+        font-family: Lato;
         display: none;
     }
+
 
     .desktop_undersider:hover .desktop_undersider_ul {
         display: block;
         position: absolute;
-        
+    }
+
+    .desktop_undersider_li a {
+        display: block;
+        background-color: #f9f9f9; 
+        color: #F7C7D9; 
+        font-family: Lato, sans-serif;
+        font-size: 0.9rem;
+        font-weight: 400;
+        text-decoration: none;
+        padding: 10px 16px;
+        margin-bottom: 6px;
+        transition: background-color 0.3s ease;
+        width: 170px; /* Ens bredde */
+        text-align: left;
+    }
+
+    .desktop_undersider_li a:hover {
+        background-color: #FFB6C1; /* Rød hover */
+        color: #273AAA;
     }
 
     .menu_desktop {
