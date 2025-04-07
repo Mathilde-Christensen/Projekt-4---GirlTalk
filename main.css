@@ -2426,6 +2426,9 @@ footer details[open] .footer-indhold {
         display: block;
     }
 
+    .tester{
+        display: none;
+    }
     
 
 
