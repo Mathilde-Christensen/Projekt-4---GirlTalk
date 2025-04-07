@@ -856,7 +856,7 @@ ul {
 }
 
 
-.footer-checkbox:checked + .footer-indhold {
+.footer-checkbox:checked ~ .footer-indhold {
     display: block;
 }
 
