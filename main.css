@@ -2441,12 +2441,12 @@ footer details[open] .footer-indhold {
         padding: 10px 16px;
         margin-bottom: 6px;
         transition: background-color 0.3s ease;
-        width: 170px; /* Ens bredde */
+        width: 170px; 
         text-align: left;
     }
 
     .desktop_undersider_li a:hover {
-        background-color: #FFB6C1; /* Rød hover */
+        background-color: #FFB6C1; 
         color: #273AAA;
     }
 
