@@ -747,7 +747,7 @@ ul {
     margin: 0.5rem;
 }
 
-.popup__ansog:hover {
+.popup__ansog:hover{
     background-color: #FDEFF4;
     border: 2px solid #F7C7D9;
 }
@@ -837,30 +837,51 @@ ul {
 
 .footer-knap {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     cursor: pointer;
-    color: #273AAA;
-    font-size: 1.3rem;
-    font-weight: bold;
     background: none;
     border: none;
-    padding-left:20px;
-    padding-top:10px;
-    width: 20;      /*hey det er afstanden fra plus til tekst*/
-    text-align: left;
+    padding-left: 20px;
+    margin: 0;
+    font-size: 1rem;
+    color: #273AAA;
 }
+
+.footer-knap:hover {
+    color: #FFB6C1;
+}
+
+
+.om_gt,.span__knap.f{
+    padding-top:30px;
+}
+
+.footer-checkbox {
+    display: none;
+}
+
+
+.footer-checkbox:checked + .footer-indhold {
+    display: block;
+}
+
 
 .footer-knap span {
     font-size: 1.5rem;
     margin-right: 10px;
+    transition: transform 0.2s ease;
 }
 
+
 .footer-indhold {
-    display: block;
+    display: none;
     padding-left: 60px;
     font-size: 1.3rem;
-    padding-top:5px;
+    padding-top: 5px;
+}
+
+footer details[open] .footer-indhold {
+    display: block;
 }
 
 .footer-indhold ul {
@@ -879,34 +900,19 @@ ul {
 
 .footer-indhold ul li a:hover {
     text-decoration: none;
-    color:#FFB6C1;
-    
+    color: #FFB6C1;
 }
 
-/*.socialemedier-ikoner {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
 
-.socialemedier-ikoner a {
-    text-decoration: none;
-    font-size: 1rem;
-}
-*/    
-
-
-.om_gt,.folg_os{
+.om_gt, .folg_os{
     font-family: Archivo;
     color:#273AAA;
 }
-
 
 .footer-sektion p {
     font-family: Archivo;
     font-size: 1rem;
 }
- 
 
 .kontakt_os {
     font-family: Archivo;
@@ -914,8 +920,8 @@ ul {
     justify-content: space-between;
     align-items: center;
     color: #273AAA;
-    font-size: 1.5rem;
-    padding-left:20px;
+    font-size: 1.25rem;
+    padding-left: 20px;
     margin-bottom: 5%;
     font-weight: bold;
     text-align: left;
@@ -923,21 +929,23 @@ ul {
 
 .footer-sektion.kontakt-information {
     margin-bottom: 10%;
-} 
+}
 
 .footer-sektion.kontakt-information p {
     margin-bottom: 3%;
-    padding-left:20px;
+    padding-left: 20px;
 }
 
-.footer_logo{
+.footer_logo {
+    width:150px;
+    height:20px;
     margin-top: 6%;
     margin-bottom: 5%;
-    padding-left:15px;
+    padding-left: 17px;
 }
 
-.footer-sektion.kontakt p{
-    padding-left:20px;
+.footer-sektion.kontakt p {
+    padding-left: 20px;
 }
 
 #cvr {
@@ -946,55 +954,211 @@ ul {
 }
 
 #faq {
-    margin-top:30px;
+    margin-top: 30px;
+    color: #273AAA;
+}
+
+/*Style til ansøningsformular*/
+
+.dropdown-ansogning__menu {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.dropdown-ansogning__menu li {
+    color: #333;
+    padding: 12px 16px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-ansogning__menu li:hover {
+    background-color: #F7C7D9;
+}
+
+.dropdown-ansogning__menu.show {
+    display: block;
+}
+
+.dropdown-ansogning {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-btn {
+    color: #273AAA;
+    padding: 12px 16px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #FFFFFF;
+    font-weight: 500;
+    text-align: left;
+}
+
+.dropdown-btn:hover {
+    background-color: #FDEFF4;
+}
+
+.samtykke-box input[type="checkbox"] {
+    margin-top: 12px;
+    transform: scale(1.2);
+}
+
+.dropdown-row {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group input[type='file'] {
+    margin-top: 30px;
+}
+
+.dropdown-ansogning label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: Archivo, sans-serif;
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 10px 0;
+}
+
+.checkbox-group input {
+    margin-top: 4px;
+}
+
+.submit-btn {
+    background-color: #273AAA;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #F7C7D9;
+    color: #273AAA;
+}
+
+.samtykke-box {
+    background-color: #f8f8ff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.samtykke-overskrift {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.samtykke-tekst {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+.ansogning-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FDEFF4;
+    z-index: 30;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.ansogning-popup .popup-indhold {
+    background: #FDEFF4;
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 100%;
+    width: 100%;
+    box-shadow: none;
+    position: relative;
+}
+
+.form-container {
+    background-color: #FDEFF4;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 100%;
+    width: 100%;
+}
+
+#lukPopup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.highlight {
+    color: #FC4C5D;
+    font-weight: bold; 
+}
+
+.highlight2{
     color: #273AAA;
 }
 
 
-.form-container {
-    padding: 20px;
-  }
-
-  .dropdown-row {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .dropdown,
-  .form-group {
-    width: 100%;
-  }
-
-  .dropdown-btn,
-  .form-group input,
-  .form-group textarea,
-  .submit-btn {
-    font-size: 16px;
-  }
-
-  .submit-btn {
-    padding: 12px;
-  }
-
-
-  .form-container {
-    padding: 20px;
-  }
-
-  .dropdown-row {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .dropdown,
-  .form-group {
-    width: 100%;
-  }
-
-
-  .submit-btn {
-    padding: 12px;
-  }
   
 @media (min-width: 600px) {
 
@@ -1118,12 +1282,14 @@ ul {
     }
 
     .holdet__gallery__li {
-        display:flex;
-        flex-direction:column;
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
         width: calc(100% / 4); /* præcis 4 billeder vises */
         flex: 0 0 auto;
         text-align: center;
+        gap: 0.5rem;
     }
 
     .holdet__gallery__li img {
@@ -1146,50 +1312,18 @@ ul {
         border: none;
     }
 
-    #holdet__gallery__name {
-        font-size: 0.8125em;
-        text-align: center; 
-        font-weight:bold;
-        color: #273AAA;
-        margin-top: 2px;
-        white-space: nowrap;
-        max-width: fit-content;
-        display: inline-block;
-        top:80px;
-    
-    }
-    
-    .holdet__gallery__titel {
-        color: #333;
-        white-space: nowrap;
-        display: block; 
-        text-align: center; 
-        font-size: 0.8125rem;
-        top:100px;
-    }
-
-    .holdet__gallery__titel {
-        color: #333;
-        white-space: nowrap;
-        display: block;
-        text-align: center;
-        font-size: 0.8125rem;
-        top: 90px;
-    }
 
     #holdet__gallery__name,
     .holdet__gallery__titel {
-        position: absolute;
         width: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        margin: 0.5rem 0;
-        padding: 0 60px 1rem 60px;
+        margin: 1rem 0;
+        padding: 0 60px 0 60px;
         text-align: center;
         gap: 10px;
         display: block; 
         text-align: center;
     }
+
 
 
     #prevButton,
@@ -1287,9 +1421,13 @@ ul {
     }
 
     .footer_logo{
-        margin-bottom:0;
-        padding-bottom:10px;
+        width:150px;
+        height:20px;
+        margin-top:40px;
+        margin-bottom:10px;
+        padding-left: 17px;
     }
+        
 
     .kontakt_os{
         margin-bottom:0;
@@ -1299,9 +1437,236 @@ ul {
     .ansogning-popup {
         display: none;
     }
- 
-}
 
+     /*Styling af ansøgningsformularen*/
+
+     .dropdown-ansogning__menu {
+        display: none;
+        position: absolute;
+        background-color: #FFFFFF;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 8px;
+    }
+    
+    .dropdown-ansogning__menu li {
+        color: #333;
+        padding: 8px 16px;
+        text-align: left;
+        cursor: pointer;
+    }
+    
+    .dropdown-ansogning__menu li:hover {
+        background-color: #F7C7D9;
+    }
+
+    /* Når dropdown er aktiv */
+    .dropdown-ansogning__menu.show {
+        display: block;
+    }
+    .dropdown-ansogning {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-btn {
+        color: #273AAA;
+        padding: 10px 14px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        background-color: #FFFFFF;
+        font-weight: 500;
+        text-align: left;
+    }
+    
+    .dropdown-btn:hover {
+        background-color: #FDEFF4;
+    }
+    
+    
+    .samtykke-box input[type="checkbox"] {
+        margin-top: 10px;
+        transform: scale(1.2);
+    }
+
+    
+    .dropdown-row {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-family: Archivo;
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        background-color:#FFFFFF;
+        font-size: 14px;
+    }
+    
+
+    .checkbox-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .checkbox-group input {
+        margin-top: 4px;
+    }
+    
+    .submit-btn {
+        background-color: #273AAA;
+        color: #FFFFFF;
+        padding: 14px 20px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    .submit-btn:hover {
+        background-color: #F7C7D9;
+        color:#273AAA;
+    }
+    
+    .samtykke-box {
+        background-color: #f8f8ff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .samtykke-overskrift {
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .samtykke-tekst {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: #333;
+    }
+    
+    .ansogning-popup {
+        display: none; /* skjult som udgangspunkt */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: blur(5px);
+        background-color: rgba(247, 199, 217, 0.7);
+        z-index: 30;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+    
+    .ansogning-popup .popup-indhold {
+        background: #FDEFF4;
+        padding: 2rem;
+        border-radius: 12px;
+        max-width: 600px;
+        width: 90%;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        position: relative;
+    }
+    
+    .form-container {
+        background-color: #FDEFF4;
+        padding: 40px;
+        border-radius: 16px;
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .dropdown-ansogning {
+        flex: 1;
+        min-width: 200px;
+        position: relative;
+    }
+
+    .dropdown-row {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+    }
+    
+        
+    .form-group input[type='file'] {
+        margin-top: 30px;
+    }
+
+    .dropdown-ansogning label {
+        font-weight: 600;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .highlight {
+        color: #FC4C5D;
+        font-weight: bold; 
+    }
+
+    .highlight2{
+        color: #273AAA;
+    }
+    
+    .popup-indhold {
+        background: #FDEFF4;
+        padding: 2rem;
+        border-radius: 12px;
+        max-width: 800px;
+        max-height: 90vh;
+        width: 90%;
+        overflow-y: auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        position: relative;
+    }
+    
+    #lukPopup {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
 
 @media (min-width: 1024px) {
 
@@ -1635,6 +2000,7 @@ ul {
         z-index:10;
     }
     
+    /*Footeren*/
     .footer {
         display: flex;
         justify-content: space-between;
@@ -1658,6 +2024,10 @@ ul {
         margin-right: 0;
     }
 
+    .footer-knap{
+        padding-top:15px;
+    }
+
     .om_gt,.folg_os{
         font-size: 19px;
         font-weight: bold;
@@ -1667,7 +2037,6 @@ ul {
         padding-left:40px;
         
     }
-
     .footer-knap span {
         display: none;
     }   
@@ -1700,7 +2069,6 @@ ul {
         padding-top:10px;
         margin: 0;
     }
-
     .kontakt_os{
         font-family: Archivo;
         font-size: 19px;
@@ -1709,11 +2077,9 @@ ul {
         padding-top:60px;
         padding-bottom:20px;
     }
-
     .footer-sektion.kontakt-information p{
         margin-bottom:15px;
     }
-
     .footer_logo {
         width: 200px;
         height:70px;
@@ -1721,7 +2087,6 @@ ul {
         padding-bottom:10px;
         margin:20px 0 7px 0;
     }
-
     .footer-sektion.kontakt p{
         padding-left:20px;
         padding-top:0;
@@ -1733,6 +2098,7 @@ ul {
         cursor: pointer;
     }
 
+    
     .ansogning-popup {
         display: none;
         position: fixed;
@@ -1748,12 +2114,10 @@ ul {
         font-weight: 400;
         
     }
-
     .highlight {
         color: #FC4C5D;
         font-weight: bold; 
     }
-
     .highlight2{
         color: #273AAA;
     }
@@ -1779,9 +2143,11 @@ ul {
         font-size: 1.5rem;
         cursor: pointer;
     }
+
     
-    /* Style til dropdown-menu */
-    .dropdown-menu {
+    /*Styling af ansøgningsformularen*/
+
+    .dropdown-ansogning__menu {
         display: none;
         position: absolute;
         background-color: #FFFFFF;
@@ -1791,22 +2157,22 @@ ul {
         border-radius: 8px;
     }
     
-    .dropdown-menu li {
+    .dropdown-ansogning__menu li {
         color: #333;
         padding: 8px 16px;
         text-align: left;
         cursor: pointer;
     }
     
-    .dropdown-menu li:hover {
+    .dropdown-ansogning__menu li:hover {
         background-color: #F7C7D9;
     }
-    
+
     /* Når dropdown er aktiv */
-    .dropdown-menu.show {
+    .dropdown-ansogning__menu.show {
         display: block;
     }
-    .dropdown {
+    .dropdown-ansogning {
         position: relative;
         display: inline-block;
     }
@@ -1872,6 +2238,10 @@ ul {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+    .checkbox-group input {
+        margin-top: 4px;
+    }
     
     .submit-btn {
         background-color: #273AAA;
@@ -1915,10 +2285,6 @@ ul {
         color: #333;
     }
     
-    .samtykke-box input[type="checkbox"] {
-        margin-top: 10px;
-        transform: scale(1.2);
-    }
     .ansogning-popup {
         display: none; /* skjult som udgangspunkt */
         position: fixed;
@@ -1931,6 +2297,8 @@ ul {
         z-index: 30;
         justify-content: center;
         align-items: center;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
     }
     
     .ansogning-popup .popup-indhold {
@@ -1951,7 +2319,7 @@ ul {
         width: 100%;
     }
 
-    .dropdown {
+    .dropdown-ansogning {
         flex: 1;
         min-width: 200px;
         position: relative;
@@ -1969,74 +2337,41 @@ ul {
         margin-top: 30px;
     }
 
-    .dropdown label {
+    .dropdown-ansogning label {
         font-weight: 600;
         display: block;
         margin-bottom: 5px;
     }
-    
-    
-    .dropdown-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: #FFFFFF;
-        width: 100%;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        list-style: none;
-        padding: 0;
-        margin-top: 5px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-    
-    
-    .dropdown-menu li {
-        padding: 10px 14px;
-        cursor: pointer;
+
+    .highlight {
+        color: #FC4C5D;
+        font-weight: bold; 
     }
 
-    
-    .checkbox-group {
-        display: flex;
-        align-items: flex-start;
-        gap: 10px;
+    .highlight2{
+        color: #273AAA;
     }
     
-    .checkbox-group input {
-        margin-top: 4px;
+    .popup-indhold {
+        background: #FDEFF4;
+        padding: 2rem;
+        border-radius: 12px;
+        max-width: 800px;
+        max-height: 90vh;
+        width: 90%;
+        overflow-y: auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        position: relative;
     }
     
-    .checkbox-group {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }  
-    .samtykke-box {
-        background-color: #f8f8ff;
-        border: 1px solid #ccc;
-        padding: 20px;
-        border-radius: 10px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-    
-    .samtykke-overskrift {
-        font-size: 18px;
-        font-weight: 700;
-        color: #333;
-        margin-bottom: 10px;
-    }
-    
-    .samtykke-tekst {
-        font-size: 14px;
-        line-height: 1.6;
-        margin-bottom: 10px;
-        font-weight: 500;
-        color: #333;
+    #lukPopup {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
     }
     
     .nav-menu {
