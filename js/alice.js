@@ -34,8 +34,3 @@ document.addEventListener('click', function(event) {
 });
 
 
-function toggleCheckbox(id) {
-    const checkbox = document.getElementById(id);
-    checkbox.checked = !checkbox.checked;
-}
-
