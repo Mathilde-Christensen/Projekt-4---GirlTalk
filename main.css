@@ -2400,6 +2400,7 @@ footer details[open] .footer-indhold {
 
     .dropdown_menu {
         display: block;
+        position: fixed;
     }
     
 
