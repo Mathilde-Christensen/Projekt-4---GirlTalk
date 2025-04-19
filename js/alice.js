@@ -2,7 +2,7 @@ let hamburgermenuens = [document.getElementById("minHamburgermenu")];
 let hamburgers = [document.querySelector(".hamburger")];
 
 function openNav(index) {
-    hamburgermenuens[index].style.width = "200px";      /*boksens længde*/
+    hamburgermenuens[index].style.width = "200px";      
     document.addEventListener("click", closeNavOutside); 
 }
 
@@ -19,8 +19,8 @@ function closeNavOutside(event) {
     });
 }
 
-var dropdown = document.querySelector('.dropdown-knappen');
-var dropdownIndhold = document.querySelector('.dropdown-indhold');
+let dropdown = document.querySelector('.dropdown-knappen');
+let dropdownIndhold = document.querySelector('.dropdown-indhold');
 
 dropdown.addEventListener('click', function(event) {
     event.stopPropagation();
